@@ -55,6 +55,10 @@ const LifeInGyanodhayamContent = () => {
                   data-aos-duration="1200">
             <h3 className="course2-top-content">This understanding of life acts as a basic ignition to awaken our wisdom.<br/>
 (Gyanodhayam = Gyan( Wisdom) + Udayam (rise) )</h3>
+
+<p className="course2-content" style={{textAlign:"center"}}>As part of Gyanodhayam society, we not only get to practice disciplined life style every day but also get
+lot of chances to involve in variety of activities to serve the mankind and help them to lead a healthy and
+happier life.</p>
             </div>
             <div className="col-lg-3 course2-syllabus">
               <div className="sticky">
