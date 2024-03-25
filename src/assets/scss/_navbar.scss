@@ -1,3 +1,16 @@
+
+
+.tick-icon {
+	list-style-type: none; /* Remove default bullets */
+  }
+  
+  .tick-icon li::before {
+	content: "\2713"; /* Unicode character for tick icon */
+	color: #f58f44; /* Color of the tick icon */
+	margin-right: 5px; /* Add some spacing between the icon and the list item text */
+	font-weight: 700;
+  }
+
 .navbar-toggler {
 	width: 32px;
 	height: 24px;
@@ -1144,6 +1157,17 @@ li {
 	padding-bottom: 50px
 }
 
+
+.course2-top-content {
+    color: #f58635;
+    font-weight: 500;
+    font-family: "archerpromedium";
+    margin: 0px;
+    font-size: 26px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
 .course2-content {
 	color: #525252;
 	font-weight: 500;
@@ -1274,7 +1298,6 @@ li {
 
 .first-sem-list {
 	font-family: "archerpromedium";
-	list-style: none;
 	padding: 0px;
 }
 
@@ -1553,6 +1576,51 @@ li {
 .w-60-100{
 	width: 60%;
 }
+
+
+// life in gyanodhayam
+
+.lifeGyanodhayam-image-1{
+	position: absolute;
+	left: -301px;
+	z-index: -999;
+}
+
+.lifeGyanodhayam-image-2{
+	position: absolute;
+	z-index: -999;
+	right: -480px;
+}
+
+.lifeGyanodhayam-image-3{
+	position: absolute;
+	z-index: -999;
+	left: -500px;
+}
+
+// special Days flower images
+.specialDays-flower-image-1{
+	position: absolute;
+	z-index: -999;
+	left: -300px;
+	top: -100px;
+  }
+
+  .specialDays-flower-image-2{
+	position: absolute;
+	z-index: -999;
+	right: -280px;
+ }
+
+ .specialDays-flower-image-3{
+	position: absolute;
+	z-index: -999;
+	left: -535px;
+    top: 334px;
+ }
+
+
+
 
 // home 
 
@@ -1961,4 +2029,55 @@ font-size: 30px;
 .w-60-100{
 	width: 100%;
 }
+
+
+
+// life in gyanodhayam
+
+.lifeGyanodhayam-image-1{
+	position: absolute;
+	left: 50px;
+	z-index: -999;
+}
+
+.lifeGyanodhayam-image-2 {
+    position: absolute;
+    z-index: -999;
+    right: 30px;
+    top: -25px;
+}
+
+
+.lifeGyanodhayam-image-3 {
+    position: absolute;
+    z-index: -999;
+    left: 50px;
+    top: -65px;
+}
+
+
+
+// special Days flower images
+.specialDays-flower-image-1{
+	position: absolute;
+	z-index: -999;
+	left: 60px;
+	top: 0px;
+  }
+
+  .specialDays-flower-image-2{
+	position: absolute;
+	z-index: -999;
+	right: 80px;
+	top: 280px;
+ }
+
+ .specialDays-flower-image-3{
+	position: absolute;
+	z-index: -999;
+	left: 70px;
+    top:615px;
+ }
+
+
 }

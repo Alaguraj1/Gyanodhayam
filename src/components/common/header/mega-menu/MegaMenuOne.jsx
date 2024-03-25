@@ -327,6 +327,97 @@ const MegaMenuOne = () => {
         </Link>
       </li>
 
+
+
+      <li className="nav-item dropdown mega-dropdown-md">
+        <button
+          className="nav-link dropdown-toggle"
+          data-bs-toggle="dropdown"
+          data-bs-auto-close="outside"
+          aria-expanded="false"
+        >
+          {/* <Link to='/founder'  className="nav-link">Founder</Link> */}
+          Media & Press
+        </button>
+        <ul className="dropdown-menu">
+          <li>
+            <div className="row">
+              <div className="col-lg-4 menus-padding">
+                <h4 className="full-width-navbar-header">
+                  Events
+                </h4>
+                <p
+                  className="full-width-navbar-content"
+                  style={{ fontWeight: "bold" }}
+                >
+                  {" "}
+                  <Link to="/founder">Detail About Guru</Link>
+                </p>
+                <div class="dotted-line"></div>
+              </div>
+              <div className="col-lg-4  menus-padding">
+                <h4 className="full-width-navbar-header">
+                  Autobiography of a Jai Guruji
+                </h4>
+                <div className="founder-menu-autobiography">
+                  <img
+                    style={{ paddingRight: "20px" }}
+                    src={NavbarImage1}
+                    alt="image"
+                  />
+                  <p
+                    className="full-width-navbar-content"
+                    style={{ fontSize: "14px" }}
+                  >
+                    The book that changed the lives of millions! Available in
+                    our 50 languages{" "}
+                  </p>
+                </div>
+                <button className="full-width-navbar-button">
+                  Order your copy today
+                </button>
+              </div>
+              <div className="col-lg-4  menus-padding">
+                <h4 className="full-width-navbar-header">
+                  Yoga: a Graceful Journey Inward
+                </h4>
+                <img
+                  src={NavbarImage2}
+                  alt="image"
+                  style={{ paddingBottom: "20px" }}
+                />
+                <p
+                  className="full-width-navbar-content"
+                  style={{ fontSize: "14px" }}
+                >
+                  Watch the video of jai Gurugi{" "}
+                </p>
+              </div>
+
+              {/* {pagesMegaMenuData.map((item) => (
+                <div className="col-lg-4" key={item.id}>
+                  <div className="menu-column">
+                    <h6 className="mega-menu-title">{item.title}</h6>
+                    <ul className="style-none mega-dropdown-list">
+                      {item.menuList.map((list, i) => (
+                        <li key={i}>
+                          <CustomLink
+                            to={list.routeLink}
+                            className="dropdown-item"
+                          >
+                            <span>{list.name}</span>
+                          </CustomLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))} */}
+            </div>
+          </li>
+        </ul>
+      </li>
+
       {/* <li className="nav-item dropdown mega-dropdown-sm">
         <button
           className="nav-link dropdown-toggle"

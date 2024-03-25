@@ -90,9 +90,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Body" ? <i className="body-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Body" ? (
+                      <i
+                        className="body-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#body">Body</a>
                   </li>
                   <li
@@ -104,9 +107,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                    {
-                      activeTab === "Exercises/Yoga" ? <i className="yoga-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Exercises/Yoga" ? (
+                      <i
+                        className="yoga-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#exercises-yoga">Exercises/Yoga</a>
                   </li>
                   <li
@@ -118,9 +124,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Food Habits" ? <i className="food-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Food Habits" ? (
+                      <i
+                        className="food-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#food"> Food Habits</a>
                   </li>
                   <li
@@ -132,9 +141,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                    {
-                      activeTab === "Mind" ? <i className="mind-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Mind" ? (
+                      <i
+                        className="mind-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#mind"> Mind</a>
                   </li>
                   <li
@@ -146,9 +158,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Characters" ? <i className="characters-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Characters" ? (
+                      <i
+                        className="characters-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#characters">Characters</a>
                   </li>
                   <li
@@ -160,9 +175,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                    {
-                      activeTab === "Meditation" ? <i className="meditation-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Meditation" ? (
+                      <i
+                        className="meditation-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#meditation">Meditation</a>
                   </li>
 
@@ -175,9 +193,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Relationship" ? <i className="relationship-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Relationship" ? (
+                      <i
+                        className="relationship-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#relationship">Relationship</a>
                   </li>
                   <li
@@ -189,9 +210,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                     {
-                      activeTab === "Karma" ? <i className="karma-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Karma" ? (
+                      <i
+                        className="karma-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#karma">Karma</a>
                   </li>
                   <li
@@ -203,9 +227,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                     {
-                      activeTab === "Soul" ? <i className="soul-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Soul" ? (
+                      <i
+                        className="soul-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#soul">Soul</a>
                   </li>
                   <li
@@ -217,9 +244,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Nobleness" ? <i className="nobleness-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Nobleness" ? (
+                      <i
+                        className="nobleness-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#nobleness">Nobleness</a>
                   </li>
                   <li
@@ -231,9 +261,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Arts" ? <i className="arts-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Arts" ? (
+                      <i
+                        className="arts-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#arts">Arts</a>
                   </li>
                   <li
@@ -245,9 +278,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                      {
-                      activeTab === "Services" ? <i className="services-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Services" ? (
+                      <i
+                        className="services-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#services">Services</a>
                   </li>
                   <li
@@ -259,9 +295,12 @@ const Courses2 = () => {
                     }
                     style={{ marginBottom: "8px" }}
                   >
-                     {
-                      activeTab === "Mounam" ? <i className="mounam-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                    }
+                    {activeTab === "Mounam" ? (
+                      <i
+                        className="mounam-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#mounam">Mounam(Silence)</a>
                   </li>
                 </ul>
@@ -665,8 +704,26 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  lorem ippusom
+                  Art is the manifestation of our actions and work that
+                  captivates and leaves an impression on others. Creativity
+                  finds its expression in various forms of art. While all arts
+                  are actions, not all actions can be considered art. Art and
+                  spirituality share a profound connection, intertwining with
+                  body, mind, soul, and the divine. Our actions become
+                  impressive to others when we ourselves are impressed by them.
+                  To achieve this, we need to cultivate interest, effort,
+                  practice, dedication, skill, confidence, and the grace of the
+                  divine. Understanding various art forms in a spiritual course
+                  is crucial as they significantly influence society,
+                  necessitating comprehension and management.
                 </p>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={nobless} alt="nobless" />
+                </div>
               </div>
 
               <div id="services" className="course2-outer">
@@ -684,8 +741,30 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  lorem ippusom
+                  Service constitutes the latter part of meditation practice.
+                  While meditation entails closing our eyes to realize the
+                  divine, service allows us to see and serve the divine in all
+                  living beings with our eyes open. The level of our meditation
+                  practice is reflected in our daily behavior; thus, meditation
+                  and actions should harmonize. When encountering others, we
+                  should perceive them as reflections of ourselves, treating
+                  them with the same respect, consideration, and attention as we
+                  would afford ourselves. This approach facilitates spiritual
+                  progress by aligning our actions with our meditation practice.
+                  A true service is one rendered without any expectation,
+                  Springs out from genuine personal involvement. Service knows
+                  no bounds in terms of quantity, type, or who can participate,
+                  as long as it is motivated by benefiting others. Those who
+                  selflessly care for others are already cared for, by the
+                  divine
                 </p>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={nobless} alt="nobless" />
+                </div>
               </div>
 
               <div id="mounam" className="course2-outer">
@@ -703,8 +782,32 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  lorem ippusom
+                  Silence serves as the channel through which the divine within
+                  us communicates. By quieting our expressions and actions,
+                  silence enables us to listen to the voice of Divinity. When we
+                  cease talking and externalizing ourselves, we also halt other
+                  actions and limit external influences, creating space to tune
+                  into the divine message. Speaking gives rise to actions and
+                  thoughts linked to words, manifesting externally. Conversely,
+                  embracing silence reduces the chatter of our thoughts,
+                  allowing the mind to submerge into tranquility. Our actions
+                  are shaped by our karma, with the mind urging us to
+                  externalize thoughts through words and actions. Thus, silence
+                  converges our thoughts, leading to a tranquil mind and
+                  weakened expressions. The sensations perceived by the five
+                  senses are typically articulated through words and actions.
+                  However, the outcomes of our actions do not necessarily lead
+                  to liberation. To attain liberation and experience profound
+                  divine peace, disciplined practice in embracing silence is
+                  indispensable in spiritual growth.
                 </p>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={nobless} alt="nobless" />
+                </div>
               </div>
 
               <div

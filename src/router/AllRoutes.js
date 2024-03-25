@@ -69,6 +69,8 @@ import LifeGyanodhayam from "../pages/life/LifeGyanodhayam";
 import Teachers from "../pages/courses/Teachers";
 import Guru from "../pages/courses/Guru";
 import SpecialDays from "../pages/specialDays/SpecialDays";
+import GroupActivities from "../pages/group-activities/GroupActivities";
+import ServicesActivites from "../pages/services-activites/ServicesActivites"
 
 const AllRoutes = () => {
   return (
@@ -88,6 +90,8 @@ const AllRoutes = () => {
         <Route path="/teachers-practice-course" element={< Teachers/>} />
         <Route path="/guru-practice-course" element={<Guru/>} />
         <Route path="/special-days" element={<SpecialDays />} />
+        <Route path="/group-activities" element={<GroupActivities />} />
+        <Route path="/services-activites" element={<ServicesActivites />} />
 
         {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />

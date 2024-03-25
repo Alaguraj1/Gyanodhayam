@@ -3,10 +3,10 @@ import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Header from "../../components/business/Header";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
-import SpecialDaysContent from "../../components/specialDays/SpecialDaysContent";
+import GroupActivitiesContent from "../../components/GroupActivites/GroupActivitiesContent";
 
 
-const SpecialDays = () => {
+const GroupActivities = () => {
   return (
     <div className="main-page-wrapper">
       <Seo title="Special Days" />
@@ -15,7 +15,7 @@ const SpecialDays = () => {
 
       <Header />
       
-      <SpecialDaysContent />
+      <GroupActivitiesContent />
 
       <Footer />
 
@@ -23,4 +23,4 @@ const SpecialDays = () => {
   );
 };
 
-export default SpecialDays;
+export default GroupActivities;
