@@ -98,7 +98,7 @@ const ServicesActivitiesContent = () => {
           >
             Service Activities
           </h3>
-          <div>
+          {/* <div>
             <div className="row">
               <div
                 className="col-lg-9 order-lg-2"
@@ -189,7 +189,7 @@ const ServicesActivitiesContent = () => {
                 <img src={kelvi} alt="kelvi" className="width-100" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
