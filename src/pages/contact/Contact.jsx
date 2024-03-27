@@ -41,12 +41,12 @@ const Contact = () => {
       <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50 text-align">
         <div className="row">
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", }}>
               <div>
                 <h3 className="first-side-header">South Zone:</h3>
                 <ul className="first-sem-list">
@@ -85,12 +85,12 @@ const Contact = () => {
             </div>
           </div>
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex",}}>
               <div>
                 <h3 className="first-side-header">East Zone:</h3>
                 <ul className="first-sem-list">
@@ -128,16 +128,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="row mt-50 lg-mt-30">
+
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex",  }}>
               <div>
                 <h3 className="first-side-header">West Zone:</h3>
                 <ul className="first-sem-list">
@@ -163,13 +162,20 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+
+
+        </div>
+
+        <div className="row mt-50 lg-mt-30">
+         
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", }}>
               <div>
                 <h3 className="first-side-header">North Zone:</h3>
                 <ul className="first-sem-list">
@@ -198,16 +204,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="row mt-50 lg-mt-30">
+
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex",  }}>
               <div>
                 <h3 className="first-side-header">Singapore:</h3>
                 <ul className="first-sem-list">
@@ -217,13 +222,15 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+
           <div
-            className="col-lg-6"
+            className="col-lg-4"
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div style={{ display: "flex", }}>
               <div>
                 <h3 className="first-side-header">Malaysia:</h3>
                 <ul className="first-sem-list">
@@ -232,7 +239,11 @@ const Contact = () => {
               </div>
             </div>
           </div>
+
+
         </div>
+
+      
       </div>
 
       {/* <div className="contact-section-six mt-100 mb-60 lg-mt-50">

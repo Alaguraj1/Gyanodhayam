@@ -59,12 +59,12 @@ const GalleryContent = () => {
           {/* <Blog /> */}
           {/* <!-- /.blog-meta-wrapper --> */}
 
-          <div
+          {/* <div
             className="page-pagination-one"
             style={{ display: "flex", justifyContent: "center" }}
           >
             <Pagination />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
