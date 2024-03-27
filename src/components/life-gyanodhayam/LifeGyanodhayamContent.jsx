@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 const LifeInGyanodhayamContent = () => {
   const contentRef = useRef(null);
-  const [activeTab, setActiveTab] = useState("Our Founder");
+  const [activeTab, setActiveTab] = useState("Service Activities");
 
   // useEffect(() => {
   //   AOS.init(); // Initialize AOS when the component mounts
@@ -50,15 +50,24 @@ const LifeInGyanodhayamContent = () => {
       <div className="container mt-100 mb-50 lg-mt-50 lg-mb-20">
         <div className="relative">
           <div className="row mt-50 sticky-container">
-            <div data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200">
-            <h3 className="course2-top-content">This understanding of life acts as a basic ignition to awaken our wisdom.<br/>
-(Gyanodhayam = Gyan( Wisdom) + Udayam (rise) )</h3>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1200"
+            >
+              <h3 className="course2-top-content">
+                This understanding of life acts as a basic ignition to awaken
+                our wisdom.
+                <br />
+                (Gyanodhayam = Gyan( Wisdom) + Udayam (rise) )
+              </h3>
 
-<p className="course2-content" style={{textAlign:"center"}}>As part of Gyanodhayam society, we not only get to practice disciplined life style every day but also get
-lot of chances to involve in variety of activities to serve the mankind and help them to lead a healthy and
-happier life.</p>
+              <p className="course2-content" style={{ textAlign: "center" }}>
+                As part of Gyanodhayam society, we not only get to practice
+                disciplined life style every day but also get lot of chances to
+                involve in variety of activities to serve the mankind and help
+                them to lead a healthy and happier life.
+              </p>
             </div>
             <div className="col-lg-3 course2-syllabus">
               <div className="sticky">
@@ -85,7 +94,7 @@ happier life.</p>
                   >
                     {activeTab === "Service Activities" ? (
                       <i
-                        className="nanneri-line"
+                        className="services-line"
                         style={{ backgroundColor: "#f58635" }}
                       ></i>
                     ) : null}
@@ -103,7 +112,7 @@ happier life.</p>
                   >
                     {activeTab === "Special Days" ? (
                       <i
-                        className="trust-line"
+                        className="specialDays-line"
                         style={{ backgroundColor: "#f58635" }}
                       ></i>
                     ) : null}
@@ -121,7 +130,7 @@ happier life.</p>
                   >
                     {activeTab === "Group Activities" ? (
                       <i
-                        className="Motivation-line"
+                        className="group-line"
                         style={{ backgroundColor: "#f58635" }}
                       ></i>
                     ) : null}
@@ -181,11 +190,11 @@ happier life.</p>
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                   <img
-                  src={flower_2}
-                  alt="illustration"
-                  className="lifeGyanodhayam-image-2"
-                />
+                  <img
+                    src={flower_2}
+                    alt="illustration"
+                    className="lifeGyanodhayam-image-2"
+                  />
                   <h4 className="course2-title">Special Days</h4>
                   <p className="course2-content">
                     In Gyanodhayam, we dedicate each Saturday for a special
@@ -201,7 +210,7 @@ happier life.</p>
                 >
                   <img src={trust} alt="illustration" />
                 </div>
-               
+
                 <p
                   className="guru-read-2 text-align"
                   data-aos="fade-up"
@@ -220,11 +229,11 @@ happier life.</p>
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                   <img
-                  src={flower_3}
-                  alt="illustration"
-                  className="lifeGyanodhayam-image-3"
-                />
+                  <img
+                    src={flower_3}
+                    alt="illustration"
+                    className="lifeGyanodhayam-image-3"
+                  />
                   <h4 className="course2-title">Group Activities</h4>
                   <p className="course2-content">
                     The members of gyanodhayam along with their family members

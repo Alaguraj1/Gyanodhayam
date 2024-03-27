@@ -421,49 +421,122 @@
 		transform: scale(1);
 	}
 
-	.navbar .mega-dropdown-md .dropdown-menu {
+	.navbar .mega-dropdown-founder .dropdown-menu {
 		min-width: 100vw;
-		left: -231px;
+		left: -265px;
 		background-color: #fff8f3;
 		border-bottom: 10px solid #de6a10;
 	}
 
 	@media(max-width:1540px){
-		.navbar .mega-dropdown-md .dropdown-menu {
+		.navbar .mega-dropdown-founder .dropdown-menu {
 			left: -254px;
 		}
 	}
 
 	@media(max-width:1440px){
-		.navbar .mega-dropdown-md .dropdown-menu {
+		.navbar .mega-dropdown-founder .dropdown-menu {
 			left: -237px;
 		}
 	}
 
 	@media(max-width:1366px){
-		.navbar .mega-dropdown-md .dropdown-menu {
+		.navbar .mega-dropdown-founder .dropdown-menu {
 			left: -197px;
 		}
 	}
 
 	@media(max-width:1280px){
-		.navbar .mega-dropdown-md .dropdown-menu {
+		.navbar .mega-dropdown-founder .dropdown-menu {
 			left: -183px;
 		}
 	}
 
 	@media(max-width:1024px){
-		.navbar .mega-dropdown-md .dropdown-menu {
+		.navbar .mega-dropdown-founder .dropdown-menu {
 			left: -129px;
 		}
 	}
 
 
 
-	.navbar .mega-dropdown-sm .dropdown-menu {
-		min-width: 270px;
-		left: -75px;
+	.navbar .mega-dropdown-courses .dropdown-menu {
+		min-width: 100vw;
+		left: -476px;
+		background-color: #fff8f3;
+		border-bottom: 10px solid #de6a10;
 	}
+
+	@media(max-width:1540px){
+		.navbar .mega-dropdown-courses .dropdown-menu {
+			left: -457px;
+		}
+	}
+
+	@media(max-width:1440px){
+		.navbar .mega-dropdown-courses .dropdown-menu {
+			left: -424px;
+		}
+	}
+
+	@media(max-width:1366px){
+		.navbar .mega-dropdown-courses .dropdown-menu {
+			left: -374px;
+		}
+	}
+
+	@media(max-width:1280px){
+		.navbar .mega-dropdown-courses .dropdown-menu {
+			left: -346px;
+		}
+	}
+
+	@media(max-width:1024px){
+		.navbar .mega-dropdown-courses .dropdown-menu {
+			left: -253px;
+		}
+	}
+
+
+
+	.navbar .mega-dropdown-life .dropdown-menu {
+		min-width: 100vw;
+		left: -927px;
+		background-color: #fff8f3;
+		border-bottom: 10px solid #de6a10;
+	}
+
+	@media(max-width:1540px){
+		.navbar .mega-dropdown-life .dropdown-menu {
+			left: -888px;
+		}
+	}
+
+	@media(max-width:1440px){
+		.navbar .mega-dropdown-life .dropdown-menu {
+			left: -821px;
+		}
+	}
+
+
+	@media(max-width:1366px){
+		.navbar .mega-dropdown-life .dropdown-menu {
+			left: -753px;
+		}
+	}
+
+	@media(max-width:1280px){
+		.navbar .mega-dropdown-life .dropdown-menu {
+			left: -695px;
+		}
+	}
+
+	@media(max-width:1024px){
+		.navbar .mega-dropdown-life .dropdown-menu {
+			left: -528px;
+		}
+	}
+
 
 	.navbar .dropdown-menu.home-sub-menu {
 		min-width: 450px;

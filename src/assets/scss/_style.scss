@@ -13412,6 +13412,50 @@ color: white;
     transition: .3s;
   }
 
+// life in gyanodhayam sidemenu line 
+
+// course menu side line
+.services-line{
+  position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #de6a10;
+    top: 14%;
+    right: unset;
+    left: -60px;
+    transition: .3s;
+}
+
+.specialDays-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 51%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+.group-line{
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #de6a10;
+  top: 87%;
+  right: unset;
+  left: -60px;
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+
 @media(max-width:992px) {
   .home-testimonial-img-outer{
     display: block;
@@ -13443,7 +13487,7 @@ color: white;
   }
 
   .navbar [class*=mega-dropdown] .row [class*=col-]{
-border-bottom: 1px solid  #ffead9;  }
+border-bottom: 1px solid  #ffead9 !important;  }
 
 .menus-padding{
   padding: 30px 20px;
@@ -13510,4 +13554,8 @@ border-bottom: 1px solid  #ffead9;  }
 }
 
 
+
+.nav-item .nav-link.active {
+  color: #f58635; /* Set the color to red for active links */
+}
 
