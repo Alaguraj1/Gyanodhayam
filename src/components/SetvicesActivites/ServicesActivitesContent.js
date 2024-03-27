@@ -14,6 +14,10 @@ import flower_2 from "../../assets/images/flower-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ServicesActivities from "../../pages/services-activites/ServicesActivites";
+import { Link } from "react-router-dom";
+import Year_2017 from "../../assets/pdf/2017.pdf";
+import Year_2018 from "../../assets/pdf/2018.pdf";
+import Year_2019 from "../../assets/pdf/2019.pdf";
 
 const ServicesActivitiesContent = () => {
   // useEffect(() => {
@@ -50,7 +54,7 @@ const ServicesActivitiesContent = () => {
             data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
-            className="sem1-flower-image-1"
+            className="services-flower-image-1"
           />
           <div
             data-aos="fade-up"
@@ -90,34 +94,58 @@ const ServicesActivitiesContent = () => {
             </ul>
           </div>
 
-          <h3
-            className="first-sem-header text-align"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            Service Activities
-          </h3>
-          {/* <div>
+          <div style={{ marginTop: "50px" }}>
             <div className="row">
               <div
-                className="col-lg-9 order-lg-2"
+                className="col-lg-4 order-lg-2 sem1-images"
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-              
-                <div className="text-align" style={{ paddingBottom: "20px" }}>
-                  <h5 className="first-side-subHeader">Family Day</h5>
-                  <p className="first-sem-exam text-align">
-                    The members of gyanodhayam along with their family members
-                    celebrate the day with fun filled activities and games along
-                    with a spiritual touch.
-                  </p>
-                </div>
+                <img
+                  src={flower_2}
+                  alt="illustration"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                  className="services-flower-image-2"
+                />
+                <ul className="first-sem-list tick-icon">
+                  <h3>Service Activities</h3>
+                  <li className="year-services">
+                    <a
+                      href={Year_2019}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Year - 2019
+                    </a>
+                  </li>
+
+                  <li className="year-services">
+                    <a
+                      href={Year_2018}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Year - 2018
+                    </a>
+                  </li>
+
+                  <li className="year-services">
+                    <a
+                      href={Year_2017}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      Year - 2017
+                    </a>
+                  </li>
+                </ul>
               </div>
               <div
-                className="col-lg-3 order-lg-1 sem1-images"
+                className="col-lg-8 order-lg-1"
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
@@ -125,71 +153,7 @@ const ServicesActivitiesContent = () => {
                 <img src={kelvi} alt="kelvi" className="width-100" />
               </div>
             </div>
-
-            <div style={{ paddingBottom: "20px", paddingTop: "20px" }}>
-              <div className="row">
-                <div
-                  className="col-lg-9 order-lg-2 text-align"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <h5 className="first-side-subHeader">Convocation Day</h5>
-                  <p className="first-sem-exam text-align">
-                    At the end of each gyanodhayam batch, all the students who
-                    have finished the classes are taken to trekking to give them
-                    an experience which tests both their mental and physical
-                    strengths.
-                  </p>
-                </div>
-                <div
-                  className="col-lg-3 sem1-images order-lg-1"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <img src={kelvi} alt="kelvi" className="width-100" />
-                </div>
-              </div>
-            </div>
-
-            <div className="row" style={{ paddingBottom: "20px" }}>
-              <div
-                className="col-lg-9 order-lg-2  text-align"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              >
-                <div>
-                  <h5 className="first-side-subHeader">Founders Day</h5>
-                  <img
-                    src={flower_2}
-                    alt="illustration"
-                    className="sem1-flower-image-2"
-                  />
-                  <p className="first-sem-content text-align">
-                    A right guide to reach the destination of the lives on the
-                    earth is Guru. Our Guide...Our Guru was born on an
-                    auspicious full moon day. The purpose of his avathaar is to
-                    enlighten the mankind .He summarizes the nectar of Four
-                    vedas in the language of a common man and elevates the soul.
-                  </p>
-                  <p className="first-sem-content text-align">
-                    His birth Anniversary is celebrated as Founder&#39;s Day
-                    every year.
-                  </p>
-                </div>
-              </div>
-              <div
-                className="col-lg-3 sem1-images order-lg-1"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              >
-                <img src={kelvi} alt="kelvi" className="width-100" />
-              </div>
-            </div>
-          </div> */}
+          </div>
         </div>
       </div>
     </>
