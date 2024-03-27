@@ -1,11 +1,14 @@
 import React from "react";
 import banner from "../../assets/images/media/img_63.jpg";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
-import Header from "../../components/business/Header";
+// import Header from "../../components/business/Header";
 // import Address from "../../components/common/address/Address";
 import FromStyleThree from "../../components/common/contact/FromStyleThree";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
+import Header from "../../components/business/Header";
+import homeBanner from "../../assets/images/Banner.jpg";
+import bannerLogo from "../../assets/images/BannerLogo.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -15,27 +18,40 @@ const Contact = () => {
 
   return (
     <div className="main-page-wrapper">
-      <Seo title="Contact V2" />
+      <Seo title="Contact" />
 
       <Sidebar />
 
+
+      
+
       <Header />
 
-      <div
-        className="inside-hero-two"
-        style={{
-          backgroundImage: `url(${banner})`,
-        }}
-      >
-        <div className="container">
-          <h2 className="page-title">Contact Us</h2>
-          <p>Get our all info and also can message us directly from here</p>
+      <div>
+        <div
+          style={{
+            backgroundImage: `url(${homeBanner})`,
+            height: "60vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div className="banner-content-outer">
+            {/* <div style={{ display: "flex", justifyContent: "center" }}>
+              <img
+                src={bannerLogo}
+                alt="banner-logo"
+                style={{ width: "20%" }}
+              />
+            </div>
+            <h2 className="banner-header">
+              {" "}
+              "Faith on Guru never goes in vain"
+            </h2>
+            <h4 className="banner-subHeader">- Jai Guruji </h4> */}
+          </div>
         </div>
-        <img
-          src={require("../../assets/images/shape/shape_24.svg").default}
-          alt="shape"
-          className="shapes shape-one"
-        />
       </div>
 
       <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50 text-align">
