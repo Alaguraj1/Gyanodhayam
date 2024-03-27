@@ -7,7 +7,12 @@ import FromStyleThree from "../../components/common/contact/FromStyleThree";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Contact = () => {
+  AOS.init();
+
   return (
     <div className="main-page-wrapper">
       <Seo title="Contact V2" />
@@ -35,7 +40,12 @@ const Contact = () => {
 
       <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50 text-align">
         <div className="row">
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">South Zone:</h3>
@@ -74,7 +84,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">East Zone:</h3>
@@ -116,7 +131,12 @@ const Contact = () => {
         </div>
 
         <div className="row mt-50 lg-mt-30">
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">West Zone:</h3>
@@ -143,7 +163,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">North Zone:</h3>
@@ -176,7 +201,12 @@ const Contact = () => {
         </div>
 
         <div className="row mt-50 lg-mt-30">
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">Singapore:</h3>
@@ -187,7 +217,12 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div
+            className="col-lg-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <div style={{ display: "flex", justifyContent: "center" }}>
               <div>
                 <h3 className="first-side-header">Malaysia:</h3>
@@ -200,23 +235,17 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="contact-section-six mt-100 mb-60 lg-mt-50">
+      {/* <div className="contact-section-six mt-100 mb-60 lg-mt-50">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-6">
               <div className="form-style-three light-bg ps-0 sm-pb-80">
                 <FromStyleThree />
               </div>
-              {/* <!-- /.form-style-three --> */}
             </div>
-            {/* End .col */}
-            {/* <div className="col-lg-5 col-md-6 ms-auto">
-              <Address />
-            </div> */}
-            {/* End .col */}
+          
           </div>
         </div>
-        {/* End .container */}
 
         <div className="map-area-one mt-100 lg-mt-50">
           <div className="mapouter">
@@ -229,7 +258,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
     </div>
