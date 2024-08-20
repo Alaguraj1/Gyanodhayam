@@ -157,7 +157,7 @@ const MegaMenuOne = () => {
                       to="/trust-course"
                       className="dropdown-item font-style"
                     >
-                      Trust Course
+                     Gyanodhayam Educational Trust Certificate Course
                     </CustomLink>
                   </li>
                   <div class="dotted-line"></div>
