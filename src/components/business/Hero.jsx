@@ -40,7 +40,10 @@ const Hero = () => {
               </p>
               <p className="guru-read">
                 {" "}
-                <Link to="/founder" style={{ textDecoration: "underline" }}>
+                <Link
+                  to="/life-in-gyanodhayam"
+                  style={{ textDecoration: "underline" }}
+                >
                   Read More
                 </Link>
               </p>
@@ -192,7 +195,11 @@ const Hero = () => {
                 talented expert We are helping client to create WordPress
                 websites with our talented expert.
               </p>
-              <p className="guru-read-4">Know More</p>
+              <p className="guru-read-4">
+                <Link to="/services-activites" style={{ textDecoration: "underline" }}>
+                  Know More
+                </Link>
+              </p>
               <div className="flower-image-outer-4">
                 <img
                   src={flower_4}

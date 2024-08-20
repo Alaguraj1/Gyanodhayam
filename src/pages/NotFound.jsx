@@ -13,8 +13,7 @@ function NotFound() {
           <h6>404</h6>
           <h1 className="font-recoleta">Page Not Found </h1>
           <p className="text-lg">
-            Publishing industries for previewing layouts & <br /> visual mockups
-            used.
+          Oops! The page you are looking for does not exist.<br/> Please return to the site’s homepage.
           </p>
           <Link to="/" className="theme-btn-four">
             GO BACK
