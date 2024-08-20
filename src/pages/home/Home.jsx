@@ -23,7 +23,9 @@ const Business = () => {
             height: "100vh",
             display: "flex",
             alignItems: "center",
-            justifyContent: "center",
+            justifyContent: "center", 
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div className="banner-content-outer">
