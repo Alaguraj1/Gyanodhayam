@@ -6,10 +6,6 @@ import NavbarImage1 from "../../../../assets/images/menu-img-1.jpg";
 import NavbarImage2 from "../../../../assets/images/menu-img-2.jpg";
 
 const MegaMenuOne = () => {
-
-
-
-
   return (
     <ul className="navbar-nav">
       <li className="d-block d-lg-none">
@@ -22,7 +18,13 @@ const MegaMenuOne = () => {
       {/* End Brnad */}
 
       <li className="nav-item  dropdown mega-dropdown">
-        <NavLink exact  to="/" className="nav-link" active  activeClassName="active">
+        <NavLink
+          exact
+          to="/"
+          className="nav-link"
+          active
+          activeClassName="active"
+        >
           Home
         </NavLink>
       </li>
@@ -157,7 +159,7 @@ const MegaMenuOne = () => {
                       to="/trust-course"
                       className="dropdown-item font-style"
                     >
-                     Gyanodhayam Educational Trust Certificate Course
+                      Gyanodhayam Educational Trust Certificate Course
                     </CustomLink>
                   </li>
                   <div class="dotted-line"></div>
@@ -166,22 +168,34 @@ const MegaMenuOne = () => {
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
                   <li>
-                    <CustomLink
-                      to="/first-sem"
-                      className="dropdown-item font-style"
-                    >
-                      First Sem
+                    <CustomLink to="#" className="dropdown-item font-style">
+                      Motivation
                     </CustomLink>
-                  </li>
-                  <div class="dotted-line"></div>
-                  <li>
-                    <CustomLink
-                      to="/second-sem"
-                      className="dropdown-item font-style"
+                    <ul
+                      className="style-none mega-dropdown-list"
+                      style={{ paddingLeft: "20px" }}
                     >
-                      Second Sem
-                    </CustomLink>
+                      <li>
+                        <CustomLink
+                          to="/first-sem"
+                          className="dropdown-item font-style"
+                        >
+                          First Sem
+                        </CustomLink>
+                      </li>
+                      <li>
+                        <CustomLink
+                          to="/second-sem"
+                          className="dropdown-item font-style"
+                        >
+                          Second Sem
+                        </CustomLink>
+                      </li>
+                    </ul>
                   </li>
+
+                  {/* <div class="dotted-line"></div> */}
+
                   <div class="dotted-line"></div>
                   <li>
                     <CustomLink
@@ -217,14 +231,16 @@ const MegaMenuOne = () => {
 
       {/* End course mega menu */}
 
-
-
       <li className="nav-item dropdown mega-dropdown-md">
-        <NavLink exact to="/testimonial" className="nav-link"   activeClassName="active">
+        <NavLink
+          exact
+          to="/testimonial"
+          className="nav-link"
+          activeClassName="active"
+        >
           Testimonial
         </NavLink>
       </li>
-    
 
       {/* life in gyanodhayam mega menu start */}
 
@@ -309,21 +325,26 @@ const MegaMenuOne = () => {
       {/* life in gyanodhatam mega menu end */}
 
       <li className="nav-item dropdown mega-dropdown-md">
-        <NavLink exact to="/gallery" className="nav-link"   activeClassName="active">
+        <NavLink
+          exact
+          to="/gallery"
+          className="nav-link"
+          activeClassName="active"
+        >
           Gallery
         </NavLink>
       </li>
 
-     
-
       <li className="nav-item dropdown mega-dropdown-md">
-        <NavLink exact to="/media" className="nav-link"   activeClassName="active">
+        <NavLink
+          exact
+          to="/media"
+          className="nav-link"
+          activeClassName="active"
+        >
           Media & Press
         </NavLink>
       </li>
-
-
-      
     </ul>
     //   {/* End navbar-nav */}
   );
