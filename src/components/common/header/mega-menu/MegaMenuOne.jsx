@@ -169,7 +169,7 @@ const MegaMenuOne = () => {
                 <ul className="style-none mega-dropdown-list">
                   <li className="dropdown-item font-style">
                     {/* <CustomLink to="#" className="dropdown-item font-style"> */}
-                    Motivation
+                    Gyanodhayam Educational Trust Motivation Class (Degree)
                     {/* </CustomLink> */}
                     <ul
                       className="style-none mega-dropdown-list"

@@ -317,7 +317,7 @@ const CourseContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <Link to="/ui-header-v5">Learn More</Link>
+                  <Link to="/teachers-practice-course">Learn More</Link>
                 </p>
               </div>
 
@@ -365,7 +365,7 @@ const CourseContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <Link to="/ui-header-v5">Learn More</Link>
+                  <Link to="/guru-practice-course">Learn More</Link>
                 </p>
               </div>
             </div>
