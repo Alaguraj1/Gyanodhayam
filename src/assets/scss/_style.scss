@@ -12964,7 +12964,11 @@ body .theme-btn-eighteen:hover:before {
   position: relative;
 }
 
-
+.home-testimonial-content p{
+font-size: 30px;
+color: rgb(245 134 53);
+line-height: 36px;
+}
 
 .testimonial{
   color: white;
@@ -12984,6 +12988,12 @@ body .theme-btn-eighteen:hover:before {
 }
 
 .testimonial-content{
+  font-size: 28px;
+  line-height: 34px;
+  color: #f7932c;
+}
+
+.testimonial-content p {
   font-size: 28px;
   line-height: 34px;
   color: #f7932c;

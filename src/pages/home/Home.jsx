@@ -38,7 +38,7 @@ const Business = () => {
             </div>
             <h2 className="banner-header">
               {" "}
-              "Faith on Guru never goes in vain"
+              "What do you live for? To love, to be<br/> ecstatic and to be spiritual "
             </h2>
             <h4 className="banner-subHeader">- Jai Guruji </h4>
           </div>

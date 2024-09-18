@@ -6,8 +6,8 @@ const GalleryBanner = () => {
       <div className="row intro-main">
         <div className="col-12 intro-header">
           <div className="testimonial">
-            <h3 style={{ color: "white", paddingBottom: "20px" }}>Gallery</h3>
-            <p
+            <h3 style={{ color: "white" }}>Gallery</h3>
+            {/* <p
               className="testimonial-para "
               style={{
                 fontSize: "24px",
@@ -18,7 +18,7 @@ const GalleryBanner = () => {
               lorem ippusom is simply dummy text of the printing and typesetting
               <br />
               industry dummy industry dummy typesetting industry
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

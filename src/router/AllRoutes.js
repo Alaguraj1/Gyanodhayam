@@ -136,23 +136,23 @@ const AllRoutes = () => {
 
         <Route path="/contact" element={<Contact />} />
 
-        {/* <Route path="/blog-v1" element={<BlogV1 />} />
+        <Route path="/blog-v1" element={<BlogV1 />} />
         <Route path="/blog-v2" element={<BlogV2 />} />
         <Route path="/blog-v3" element={<BlogV3 />} />
         <Route path="/blog-v4" element={<BlogV4 />} />
         <Route path="/blog-details-v1" element={<BlogDetailsV1 />} />
         <Route path="/blog-details-v2" element={<BlogDetailsV2 />} />
         <Route path="/blog-details-v3" element={<BlogDetailsV3 />} />
-        <Route path="/blog-details/:id" element={<DynamicBlogDetails />} /> */}
+        <Route path="/blog-details/:id" element={<DynamicBlogDetails />} />
 
         <Route path="*" element={<NotFound />} />
         {/* <Route path="/introduction" element={<Introduction />} /> */}
         {/* <Route path="/founders" element={<Founders />} /> */}
         <Route path="/testimonial" element={<Testimonial />} />
-        <Route path="/single-testimonial" element={<SingleTestimonial />} />
+        <Route path="/testimonials/:slug" element={<SingleTestimonial />} />
         <Route path="/media" element={<Media />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path='/single-gallery' element={<SingleGallery />} />
+        <Route path='/gallery/:slug' element={<SingleGallery />} />
         <Route path="/life-in-gyanodhayam" element={<LifeGyanodhayam />} />
       </Routes>
     </>

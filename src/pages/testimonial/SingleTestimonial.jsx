@@ -4,8 +4,10 @@ import Header from "../../components/business/Header";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
 import SingleTestimonialContent from "../../components/testimonial/SingleTestimonialContent";
+import { useParams } from "react-router-dom";
 
 const SingleTestimonial = () => {
+  const {slug} = useParams();
   return (
     <div className="main-page-wrapper">
       <Seo title="Single Testimonial" />
@@ -14,7 +16,7 @@ const SingleTestimonial = () => {
 
       <Header />
 
-      <SingleTestimonialContent />
+      <SingleTestimonialContent slug={slug}/>
       {/* footer section */}
       <Footer />
     </div>

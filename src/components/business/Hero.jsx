@@ -34,9 +34,10 @@ const Hero = () => {
             <div className="jai-guru-1">
               <h3 className="hero-heading-1  theme-mb-0">Gyanodhayam</h3>
               <p className="hero-sub-heading-1">
-                We are helping client to create WordPress websites with our
-                talented expert We are helping client to create WordPress
-                websites with our talented expert.
+                “By Understanding the Ultimate Truth by realizing the Soul, We
+                will attain the Ultimate Joy in Life”. Gyanodhayam Educational
+                Trust was created for mankind to attain nobleness and to
+                experience eternal bliss by leading a normal life in society!
               </p>
               <p className="guru-read">
                 {" "}
@@ -97,9 +98,9 @@ const Hero = () => {
                 Our Course
               </h3>
               <p className="hero-sub-heading-2">
-                We are helping client to create WordPress websites with our
-                talented expert We are helping client to create WordPress
-                websites with our talented expert.
+                Experience the ancient and deep-rooted techniques of yoga,
+                beginners and advanved kriya meditation, art, science, and
+                spirituality.
               </p>
               <p className="guru-read-2">
                 <Link to="/course" style={{ textDecoration: "underline" }}>
@@ -132,9 +133,11 @@ const Hero = () => {
                 Our Centers
               </h3>
               <p className="hero-sub-heading-3">
-                We are helping client to create WordPress websites with our
-                talented expert We are helping client to create WordPress
-                websites with our talented expert.
+                Built around the purpose of good health, happiness and joy of
+                living, our members go through a journey of fulfillment in the
+                areas of healthy and happy living. In light of this objective
+                and to reach the masses, our centre is available in India and
+                Singapore.
               </p>
               <p className="guru-read-3">Know More</p>
               <div className="flower-image-outer-3">
@@ -191,12 +194,13 @@ const Hero = () => {
                 Our Initiatives
               </h3>
               <p className="hero-sub-heading-4">
-                We are helping client to create WordPress websites with our
-                talented expert We are helping client to create WordPress
-                websites with our talented expert.
+                Service of mankind is service to God
               </p>
               <p className="guru-read-4">
-                <Link to="/services-activites" style={{ textDecoration: "underline" }}>
+                <Link
+                  to="/services-activites"
+                  style={{ textDecoration: "underline" }}
+                >
                   Know More
                 </Link>
               </p>

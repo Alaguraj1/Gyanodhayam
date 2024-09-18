@@ -44,8 +44,12 @@ const Courses2 = () => {
                 Gyanodhayam Educational Trust Certificate Course
               </h3>
               <p className="intro-content">
-                “By Understanding the Ultimate Truth by realizing the Soul, We
-                will attain the Ultimate Joy in Life”-
+                The class educates on yoga, meditation, art, science, and
+                spirituality. Being born a human is a great boon.  For
+                self-realization, one should fulfill all his duties and remove
+                the karma attached to the soul by following a disciplined
+                lifestyle, which leads to attaining enlightenment through
+                spirituality.
               </p>
             </div>
           </div>
