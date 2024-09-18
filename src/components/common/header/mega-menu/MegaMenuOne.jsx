@@ -169,7 +169,7 @@ const MegaMenuOne = () => {
                 <ul className="style-none mega-dropdown-list">
                   <li className="dropdown-item font-style">
                     {/* <CustomLink to="#" className="dropdown-item font-style"> */}
-                      Motivation
+                    Motivation
                     {/* </CustomLink> */}
                     <ul
                       className="style-none mega-dropdown-list"
@@ -180,7 +180,7 @@ const MegaMenuOne = () => {
                           to="/first-sem"
                           className="dropdown-item font-style"
                         >
-                          First Sem
+                          - First Sem
                         </CustomLink>
                       </li>
                       <li>
@@ -188,7 +188,7 @@ const MegaMenuOne = () => {
                           to="/second-sem"
                           className="dropdown-item font-style"
                         >
-                          Second Sem
+                          - Second Sem
                         </CustomLink>
                       </li>
                     </ul>
