@@ -24,11 +24,10 @@ const SingleTestimonialContent = ({ slug }) => {
                   lineHeight: "28 px",
                   color: "#f0ecec",
                 }}
-              >
-                lorem ippusom is simply dummy text of the printing and
-                typesetting
-                <br /> industry dummy industry dummy typesetting industry
-              </p>
+                dangerouslySetInnerHTML={{
+                  __html: TestimonialSingleData?.author,
+                }}
+              ></p>
             </div>
           </div>
         </div>
@@ -52,7 +51,12 @@ const SingleTestimonialContent = ({ slug }) => {
                   __html: TestimonialSingleData?.content,
                 }}
               ></div>
-              <p style={{textAlign:"end", color:"#f58635"}} dangerouslySetInnerHTML={{__html:TestimonialSingleData?.author}}></p>
+              <p
+                style={{ textAlign: "end", color: "#f58635" }}
+                dangerouslySetInnerHTML={{
+                  __html: TestimonialSingleData?.author,
+                }}
+              ></p>
             </div>
           </div>
         </div>
