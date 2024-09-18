@@ -167,10 +167,10 @@ const MegaMenuOne = () => {
               </div>
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
-                  <li>
-                    <CustomLink to="#" className="dropdown-item font-style">
+                  <li className="dropdown-item font-style">
+                    {/* <CustomLink to="#" className="dropdown-item font-style"> */}
                       Motivation
-                    </CustomLink>
+                    {/* </CustomLink> */}
                     <ul
                       className="style-none mega-dropdown-list"
                       style={{ paddingLeft: "20px" }}
