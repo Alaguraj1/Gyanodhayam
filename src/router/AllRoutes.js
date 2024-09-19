@@ -71,6 +71,9 @@ import Guru from "../pages/courses/Guru";
 import SpecialDays from "../pages/specialDays/SpecialDays";
 import GroupActivities from "../pages/group-activities/GroupActivities";
 import ServicesActivites from "../pages/services-activites/ServicesActivites"
+import SearvicesActivitesEvents from "../pages/services-activites/SearvicesActivitesEvents";
+import EventsDetails from "../pages/services-activites/EventsDetails";
+import EventsFullDetails from "../pages/services-activites/EventsFullDetails";
 
 const AllRoutes = () => {
   return (
@@ -92,6 +95,9 @@ const AllRoutes = () => {
         <Route path="/special-days" element={<SpecialDays />} />
         <Route path="/group-activities" element={<GroupActivities />} />
         <Route path="/services-activites" element={<ServicesActivites />} />
+        <Route path='/services-activites-events' element={<SearvicesActivitesEvents />} />
+        <Route path='/services-activites-events/:slug' element={<EventsDetails />} />
+        <Route path='/services-activites-events-details/:slug' element={<EventsFullDetails />} />
 
         {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />
