@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import qoutes_up from "../../assets/images/quotes-up.svg";
 import qoutes_down from "../../assets/images/quotes-down.svg";
 import footerImage from "../../assets/images/footer-bg.jpg";
@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { sortContent, TestimonialData } from "../../utils/constant.utils";
+import axios from "axios";
 
 const CounterUp = () => {
   // const [post, setPost] = useState([])
@@ -35,6 +36,25 @@ const CounterUp = () => {
   const LatestOneTestimonial = TestimonialData[0];
   console.log("✌️LatestOneTestimonial --->", LatestOneTestimonial);
 
+  const [quote, setQuote] = useState([]);
+
+  useEffect(() => {
+    GetQoute();
+  }, []);
+
+  const GetQoute = () => {
+    axios
+      .get("https://file.gyanodhayam.org/wp-json/wp/v2/pages/?slug=daily-quote")
+      .then((res) => {
+        console.log("res", res);
+        setQuote(res.data[0]);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+  console.log("qoute", quote);
   return (
     <>
       <div className="container">
@@ -95,12 +115,11 @@ const CounterUp = () => {
               <img src={qoutes_up} alt="qoutes" className="qoutes-up" />
             </div>
             <div className="qoutes-content-outer">
-              <p className="qoutes-content">
-                His support and advise will be continuously present in all the
-                trust activites. he is an individual who understand the need os
-                disciples and support the right time.
-              </p>
-              <p className="qoutes-author">-Sri N. jayakichenin</p>
+              <div
+                className="qoutes-content"
+                dangerouslySetInnerHTML={{ __html: quote?.content?.rendered }}
+              ></div>
+              {/* <p className="qoutes-author">-Sri N. jayakichenin</p> */}
             </div>
             <div className="qoutes-down-outer">
               <img src={qoutes_down} alt="qoutes" className="qoutes-down" />
