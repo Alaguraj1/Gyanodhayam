@@ -18,7 +18,7 @@ const TestimonialContent = () => {
               <h3 style={{ color: "white", paddingBottom: "20px" }}>
                 Testimonial
               </h3>
-              <p
+              {/* <p
                 className="testimonial-para"
                 style={{
                   fontSize: "24px",
@@ -30,7 +30,7 @@ const TestimonialContent = () => {
                 typesetting
                 <br />
                 industry dummy industry dummy typesetting industry
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
