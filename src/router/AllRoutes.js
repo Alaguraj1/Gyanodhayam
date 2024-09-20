@@ -74,6 +74,7 @@ import ServicesActivites from "../pages/services-activites/ServicesActivites"
 import SearvicesActivitesEvents from "../pages/services-activites/SearvicesActivitesEvents";
 import EventsDetails from "../pages/services-activites/EventsDetails";
 import EventsFullDetails from "../pages/services-activites/EventsFullDetails";
+import Centers from "../pages/centers/Centers";
 
 const AllRoutes = () => {
   return (
@@ -98,6 +99,7 @@ const AllRoutes = () => {
         <Route path='/services-activites-events' element={<SearvicesActivitesEvents />} />
         <Route path='/services-activites-events/:slug' element={<EventsDetails />} />
         <Route path='/services-activites-events-details/:slug' element={<EventsFullDetails />} />
+        <Route path="/our-centers" element={<Centers />} />
 
         {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />
