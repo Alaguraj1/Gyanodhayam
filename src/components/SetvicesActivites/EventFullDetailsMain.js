@@ -9,10 +9,10 @@ const EventsFullDetailsMain = ({ postData }) => {
     <>
       <div className="container mt-50 mb-100">
         <div className="text-center pb-20">
-          <h3 className="mb-10 services-title">
+          <h3 className="mb-10 course2-title">
             {postData.title.rendered}
           </h3>{" "}
-          <span style={{ fontSize: "16px", color:"gray", }}>
+          <span className="course2-content" style={{ fontSize: "20px", color:"gray", }}>
             Date: {new Date(postData.date).toLocaleDateString()}
           </span>
         </div>
