@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { sortContent, TestimonialData } from "../../utils/constant.utils";
 import axios from "axios";
+import FeatureMediaSingle from "../SetvicesActivites/FeatureMediaSingle";
 
 const CounterUp = () => {
   // const [post, setPost] = useState([])
@@ -54,7 +55,97 @@ const CounterUp = () => {
       });
   };
 
+  const [posts, setPosts] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      setIsLoading(true);
+      try {
+        // First, we need to get the category ID for the given slug
+        const categoryResponse = await axios.get(
+          `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${"testimonials"}`
+        );
+
+        if (categoryResponse.data.length === 0) {
+          throw new Error("Category not found");
+        }
+
+        const categoryId = categoryResponse.data[0].id;
+
+        // Now we can fetch posts for this category
+        const postsResponse = await axios.get(
+          `https://file.gyanodhayam.org/wp-json/wp/v2/posts?categories=${categoryId}&per_page=100`
+        );
+
+        setPosts(postsResponse.data[0]);
+      } catch (e) {
+        setError(e.message);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    fetchPosts();
+  }, []);
+
+  const truncateContent = (content, maxLength) => {
+    if (!content) return "";
+
+    // Create a temporary DOM element
+    const tempElement = document.createElement("div");
+    tempElement.innerHTML = content;
+
+    let truncated = "";
+    let currentLength = 0;
+
+    // Recursive function to traverse DOM nodes
+    const traverseNodes = (node) => {
+      if (currentLength >= maxLength) return;
+
+      if (node.nodeType === Node.TEXT_NODE) {
+        const remainingLength = maxLength - currentLength;
+        const text = node.textContent.slice(0, remainingLength);
+        truncated += text;
+        currentLength += text.length;
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        truncated += `<${node.tagName.toLowerCase()}>`;
+        for (const childNode of node.childNodes) {
+          traverseNodes(childNode);
+        }
+        truncated += `</${node.tagName.toLowerCase()}>`;
+      }
+    };
+
+    // Start traversing from the root
+    for (const childNode of tempElement.childNodes) {
+      traverseNodes(childNode);
+      if (currentLength >= maxLength) {
+      }
+    }
+
+    // Add ellipsis if truncated
+    if (currentLength >= maxLength) {
+      truncated += "...";
+    }
+
+    return truncated;
+  };
+
+  const renderContent = (content,maxLength) => {
+    if (!content) return "";
+
+    if (content.length > maxLength) {
+      return content.slice(0, maxLength) + "...";
+    } else {
+      return content;
+    }
+  }
+
+  console.log("posts", posts);
   console.log("qoute", quote);
+
   return (
     <>
       <div className="container">
@@ -74,11 +165,18 @@ const CounterUp = () => {
             data-aos-duration="1200"
           >
             <div className="home-testimonial-img-outer">
-              <img
+              {posts._links?.["wp:featuredmedia"]?.map((mediaLink) => (
+                <FeatureMediaSingle
+                  key={mediaLink.href}
+                  mediaLink={mediaLink.href}
+                  className="js-img-single"
+                />
+              ))}
+              {/* <img
                 src={testmonial}
                 alt="footer"
                 className="home-testimonial-img"
-              />
+              /> */}
             </div>
           </div>
           <div
@@ -88,15 +186,18 @@ const CounterUp = () => {
             data-aos-duration="1200"
           >
             <div className="home-testimonial-contents">
-              <p className="course2-content">{LatestOneTestimonial.title}</p>
+              <p className="course2-content">{posts.title?.rendered}</p>
               <div
                 className="qoutes-content home-testimonial-content"
                 dangerouslySetInnerHTML={{
-                  __html: LatestOneTestimonial.sortContent,
+                  __html: renderContent(posts.content?.rendered,130),
                 }}
               ></div>
               <p className="main-testimonial">
-                <Link to="/testimonial" style={{ textDecoration: "underline" }}>
+                <Link
+                  to={`/testimonials/${posts.slug}`}
+                  style={{ textDecoration: "underline" }}
+                >
                   Read More
                 </Link>
               </p>

@@ -69,6 +69,15 @@ const SingleTestimonialContent = ({ postData }) => {
             </div>
           </div>
         </div>
+        <div className="text-end">
+          <button
+            className="btn btn-primary "
+            onClick={() => window.history.go(-1)}
+            style={{ backgroundColor: "#f58635", borderColor: "#f58635" }}
+          >
+            back
+          </button>
+        </div>
       </div>
     </>
   );
