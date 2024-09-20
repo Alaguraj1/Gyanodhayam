@@ -17,7 +17,7 @@ const EventsFullDetailsMain = ({ postData }) => {
           </span>
         </div>
 
-        <div className="pb-20">
+        <div className="pb-20" style={{display:"flex", justifyContent:"center"}}>
           {postData._links?.["wp:featuredmedia"]?.map((mediaLink) => (
             <FeatureMediaSingle
               key={mediaLink.href}
