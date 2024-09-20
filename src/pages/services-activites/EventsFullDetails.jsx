@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Footer from "../../components/business/Footer";
+import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDetailsBannerMain";
+import Header from "../../components/business/Header";
+import Sidebar from "../../components/common/header/sidebar/Sidebar";
+import Seo from "../../components/common/seo/Seo";
+import EventsFullDetailsMain from "../../components/SetvicesActivites/EventFullDetailsMain";
 
 const ServiceActivityPost = () => {
   const [postData, setPostData] = useState(null);
@@ -39,12 +45,21 @@ const ServiceActivityPost = () => {
   if (!postData) return <div>No data found for this post.</div>;
 
   return (
-    <div className="container mt-5">
-      <h1>{postData.title.rendered}</h1>
-      <div dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
-      <p>Date: {new Date(postData.date).toLocaleDateString()}</p>
-      {/* Add more fields as needed */}
-    </div>
+    <>
+      <div className="main-page-wrapper">
+        <Seo title="Events" />
+
+        <Sidebar />
+
+        <Header />
+
+        <EventDetailsBannerMain title="Event Details" />
+
+        <EventsFullDetailsMain postData={postData} />
+
+        <Footer />
+      </div>
+    </>
   );
 };
 

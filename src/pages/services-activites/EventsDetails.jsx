@@ -10,6 +10,7 @@ import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import EventDetailsMain from "../../components/SetvicesActivites/EventDetailsMain";
 import { useParams } from "react-router-dom";
+import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDetailsBannerMain";
 const ServicesActivitiesContent = () => {
   const { slug } = useParams();
   console.log("✌️slug --->", slug);
@@ -17,11 +18,13 @@ const ServicesActivitiesContent = () => {
   return (
     <>
       <div className="main-page-wrapper">
-        <Seo title="Special Days" />
+        <Seo title="Events" />
 
         <Sidebar />
 
         <Header />
+
+        <EventDetailsBannerMain title="Events" />
 
         <EventDetailsMain slug={slug} />
 

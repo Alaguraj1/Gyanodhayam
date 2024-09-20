@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import FeatureMediaSingle from "./FeatureMediaSingle";
 
-const CategoryPosts = ({ slug }) => {
+const EventDetailsMain = ({ slug }) => {
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -41,28 +43,68 @@ const CategoryPosts = ({ slug }) => {
   if (error) return <div>Error: {error}</div>;
 
   return (
-    <div style={{ marginTop: "100px" }}>
-      <h3 style={{ textAlign: "center" }}> {slug}</h3>
-      {posts.length === 0 ? (
-        <p>No posts found in this category.</p>
-      ) : (
-        <ul>
-          {posts.map((post) => (
-            <li key={post.id}>
-              <h2>{post.title.rendered}</h2>
-              <div
-                dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}
-              />
-              <p>Date: {new Date(post.date).toLocaleDateString()}</p>
-              <a href={`/services-activites-events-details/${post.slug}`} >
-                Read more
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <>
+      <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
+        <div className="container">
+          <div className="row  course2-content">
+            {posts.map((element) => {
+              console.log("✌️element --->", element);
+              const featuredImageUrl =
+                element._embedded?.["wp:featuredmedia"]?.[0]?.href || "";
+              console.log("featuredImageUrl", featuredImageUrl);
+              return (
+                <div
+                  className="col-lg-4 col-md-6 col-lg-pb-50  pb-30 "
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <div>
+                    {element._links?.["wp:featuredmedia"]?.map((mediaLink) => (
+                      <FeatureMediaSingle
+                        key={mediaLink.href}
+                        mediaLink={mediaLink.href}
+                        className="js-img-single"
+                      />
+                    ))}
+                    {/* <img
+                      src={element._links?.["wp:attachment"][0]?.href}
+                      alt="blog post"
+                    /> */}
+                  </div>
+                  <div style={{ textAlign: "center" }}>
+                    <Link
+                      to={`/services-activites-events-details/${element.slug}`}
+                      className="title gallery-title"
+                    >
+                      {element.title.rendered}
+                    </Link>
+                    <div className="post-info gallery-read-more">
+                      <Link
+                        to={`/services-activites-events-details/${element.slug}`}
+                        style={{ textDecoration: "underline" }}
+                      >
+                        Read More
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="text-center">
+            <button
+              className="btn btn-primary "
+              onClick={() => window.history.go(-1)}
+              style={{ backgroundColor: "#f58635", borderColor: "#f58635" }}
+            >
+              back
+            </button>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default CategoryPosts;
+export default EventDetailsMain;
