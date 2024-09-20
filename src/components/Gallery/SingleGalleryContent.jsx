@@ -12,52 +12,50 @@ import img3 from "../../assets/images/photos/img-3.jpg";
 import img4 from "../../assets/images/photos/img-4.jpg";
 import img5 from "../../assets/images/photos/img-5.jpg";
 
-const getDataById = (slug) => {
-  if (slug == "lorem-ipsum-1") return FirstData;
-  if (slug == "lorem-ipsum-2") return SecondData;
-  if (slug == "lorem-ipsum-3") return ThirdData;
-  return [];
-};
-
-const SingleGalleryContent = () => {
+const SingleGalleryContent = ({ postData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
-  const [galleryData, setGalleryData] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 2;
-
-  const { slug } = useParams();
+  const [galleryImages, setGalleryImages] = useState([]);
 
   useEffect(() => {
     AOS.init();
-    const data = getDataById(slug);
-    setGalleryData(data);
-    setCurrentPage(1); // Reset to page 1 when data changes
-  }, [slug]);
+    if (postData && postData.content && postData.content.rendered) {
+      const images = parseImageData(postData.content.rendered);
+      setGalleryImages(images);
+    }
+  }, [postData]);
 
   const handleImageClick = (index) => {
     setPhotoIndex(index);
     setIsOpen(true);
   };
 
-  console.log("galleryData", galleryData);
   const handlePrevRequest = () => {
-    setPhotoIndex((photoIndex + galleryData.length - 1) % galleryData.length);
+    setPhotoIndex(
+      (photoIndex + galleryImages.length - 1) % galleryImages.length
+    );
   };
 
   const handleNextRequest = () => {
-    setPhotoIndex((photoIndex + 1) % galleryData.length);
+    setPhotoIndex((photoIndex + 1) % galleryImages.length);
   };
 
-  const totalPages = Math.ceil(galleryData.length / itemsPerPage);
+  const parseImageData = (htmlContent) => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(htmlContent, "text/html");
+    const figures = doc.querySelectorAll("figure.gallery-item");
 
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+    return Array.from(figures).map((figure) => {
+      const link = figure.querySelector("a");
+      const img = figure.querySelector("img");
+      return {
+        href: link.getAttribute("href"),
+        src: img.getAttribute("src"),
+        alt: img.getAttribute("alt"),
+        title: link.getAttribute("data-elementor-lightbox-title"),
+      };
+    });
   };
-
-  const startIndex = (currentPage - 1) * itemsPerPage;
-  const currentItems = galleryData.slice(startIndex, startIndex + itemsPerPage);
-  console.log("✌️currentItems --->", currentItems);
 
   return (
     <>
@@ -65,59 +63,50 @@ const SingleGalleryContent = () => {
         <div className="container">
           <h4
             className="course2-title text-align"
-            style={{ paddingBottom: "40px", fontSize: "30px" }}
-          >
-            Lorem ipsum dolor sit amet
-          </h4>
-          <div className="row course2-content">
-            {isOpen && galleryData.length > 0 && (
-              <Lightbox
-                mainSrc={galleryData[photoIndex].image}
-                prevSrc={
-                  galleryData[
-                    (photoIndex + galleryData.length - 1) % galleryData.length
-                  ].image
-                }
-                nextSrc={
-                  galleryData[(photoIndex + 1) % galleryData.length].image
-                }
-                onCloseRequest={() => setIsOpen(false)}
-                onMovePrevRequest={handlePrevRequest}
-                onMoveNextRequest={handleNextRequest}
-              />
-            )}
-            {currentItems.map((data, index) => (
+            style={{ paddingBottom: "20px", fontSize: "30px" }}
+            dangerouslySetInnerHTML={{ __html: postData.title.rendered }}
+          ></h4>
+          <div className="image-gallery row">
+            {galleryImages.map((image, index) => (
               <div
-                key={data.id}
-                className="col-lg-3 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                style={{ paddingBottom: "20px" }}
+                key={index}
+                className="gallery-item col-lg-3 col-md-3 col-6 pt-30"
               >
-                <div onClick={() => handleImageClick(startIndex + index)}>
-                  <img
-                    src={data.image}
-                    alt={`gallery ${data.id}`}
-                    style={{ cursor: "pointer", width: "100%" }}
-                  />
-                </div>
+                <img
+                  src={image.src}
+                  alt={image.alt || image.title}
+                  title={image.title}
+                  onClick={() => handleImageClick(index)}
+                  style={{ cursor: "pointer" }}
+                />
               </div>
             ))}
           </div>
-
-          <div
-            className="page-pagination-one pt-30"
-            style={{ display: "flex", justifyContent: "center" }}
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <Pagination
-              currentPage={currentPage}
-              totalPages={totalPages}
-              onPageChange={handlePageChange}
+          {isOpen && (
+            <Lightbox
+              mainSrc={galleryImages[photoIndex].href}
+              nextSrc={
+                galleryImages[(photoIndex + 1) % galleryImages.length].href
+              }
+              prevSrc={
+                galleryImages[
+                  (photoIndex + galleryImages.length - 1) % galleryImages.length
+                ].href
+              }
+              onCloseRequest={() => setIsOpen(false)}
+              onMovePrevRequest={handlePrevRequest}
+              onMoveNextRequest={handleNextRequest}
             />
+          )}
+
+          <div className="text-end pt-50">
+            <button
+              className="btn btn-primary "
+              onClick={() => window.history.go(-1)}
+              style={{ backgroundColor: "#f58635", borderColor: "#f58635" }}
+            >
+              back
+            </button>
           </div>
         </div>
       </div>

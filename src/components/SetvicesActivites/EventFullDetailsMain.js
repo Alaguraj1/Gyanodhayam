@@ -26,7 +26,7 @@ const EventsFullDetailsMain = ({ postData }) => {
             />
           ))}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
+        <div className="course2-content" dangerouslySetInnerHTML={{ __html: postData.content.rendered }} />
         <div className="text-end">
           <button
             className="btn btn-primary "
