@@ -64,18 +64,18 @@ import SecondSem from "../pages/courses/SecondSem";
 import Media from "../pages/media/Media";
 import SingleTestimonial from "../pages/testimonial/SingleTestimonial";
 import Gallery from "../pages/gallery/Gallery";
-import SingleGallery from '../pages/gallery/SingleGallery'
+import SingleGallery from "../pages/gallery/SingleGallery";
 import LifeGyanodhayam from "../pages/life/LifeGyanodhayam";
 import Teachers from "../pages/courses/Teachers";
 import Guru from "../pages/courses/Guru";
 import SpecialDays from "../pages/specialDays/SpecialDays";
 import GroupActivities from "../pages/group-activities/GroupActivities";
-import ServicesActivites from "../pages/services-activites/ServicesActivites"
+import ServicesActivites from "../pages/services-activites/ServicesActivites";
 import SearvicesActivitesEvents from "../pages/services-activites/SearvicesActivitesEvents";
 import EventsDetails from "../pages/services-activites/EventsDetails";
 import EventsFullDetails from "../pages/services-activites/EventsFullDetails";
 import Centers from "../pages/centers/Centers";
-
+import Annonunsment from "../pages/announsment/Annonunsment";
 const AllRoutes = () => {
   return (
     <>
@@ -91,15 +91,25 @@ const AllRoutes = () => {
         <Route path="/trust-course" element={<TrustCourse />} />
         <Route path="/first-sem" element={<FirstSem />} />
         <Route path="/second-sem" element={<SecondSem />} />
-        <Route path="/teachers-practice-course" element={< Teachers/>} />
-        <Route path="/guru-practice-course" element={<Guru/>} />
+        <Route path="/teachers-practice-course" element={<Teachers />} />
+        <Route path="/guru-practice-course" element={<Guru />} />
         <Route path="/special-days" element={<SpecialDays />} />
         <Route path="/group-activities" element={<GroupActivities />} />
         <Route path="/services-activites" element={<ServicesActivites />} />
-        <Route path='/services-activites-events' element={<SearvicesActivitesEvents />} />
-        <Route path='/services-activites-events/:slug' element={<EventsDetails />} />
-        <Route path='/services-activites-events-details/:slug' element={<EventsFullDetails />} />
+        <Route
+          path="/services-activites-events"
+          element={<SearvicesActivitesEvents />}
+        />
+        <Route
+          path="/services-activites-events/:slug"
+          element={<EventsDetails />}
+        />
+        <Route
+          path="/events/:slug"
+          element={<EventsFullDetails />}
+        />
         <Route path="/our-centers" element={<Centers />} />
+        <Route path="/announcements-events" element={<Annonunsment />} />
 
         {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />
@@ -160,7 +170,7 @@ const AllRoutes = () => {
         <Route path="/testimonials/:slug" element={<SingleTestimonial />} />
         <Route path="/media" element={<Media />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path='/gallery/:slug' element={<SingleGallery />} />
+        <Route path="/gallery/:slug" element={<SingleGallery />} />
         <Route path="/life-in-gyanodhayam" element={<LifeGyanodhayam />} />
       </Routes>
     </>

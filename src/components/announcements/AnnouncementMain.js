@@ -1,9 +1,16 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import FeatureMediaSingle from "./FeatureMediaSingle";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { sortContent, TestimonialData } from "../../utils/constant.utils";
+import axios from "axios";
+import FeatureMediaSingle from "../SetvicesActivites/FeatureMediaSingle";
 
-const EventDetailsMain = ({ slug }) => {
+const TestimonialContent = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS when the component mounts
+  }, []);
+
   const [posts, setPosts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -14,7 +21,7 @@ const EventDetailsMain = ({ slug }) => {
       try {
         // First, we need to get the category ID for the given slug
         const categoryResponse = await axios.get(
-          `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${slug}`
+          `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${"announcements-events"}`
         );
 
         if (categoryResponse.data.length === 0) {
@@ -37,13 +44,47 @@ const EventDetailsMain = ({ slug }) => {
     };
 
     fetchPosts();
-  }, [slug]);
+  }, []);
 
   if (isLoading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
 
+  console.log("testimonials", posts);
+
+  const truncateContent = (content, maxLength) => {
+    if (content.length > maxLength) {
+      return content.slice(0, maxLength) + "...";
+    } else {
+      return content;
+    }
+  };
+
   return (
     <>
+      <div>
+        <div className="row intro-main">
+          <div className="col-12 intro-header">
+            <div className="testimonial">
+              <h3 style={{ color: "white", paddingBottom: "20px" }}>
+                Annonunsment & Events
+              </h3>
+              {/* <p
+                className="testimonial-para"
+                style={{
+                  fontSize: "24px",
+                  lineHeight: "28px",
+                  color: "#f0ecec",
+                }}
+              >
+                lorem ippusom is simply dummy text of the printing and
+                typesetting
+                <br />
+                industry dummy industry dummy typesetting industry
+              </p> */}
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
         <div className="container">
           <div className="row  course2-content">
@@ -98,4 +139,4 @@ const EventDetailsMain = ({ slug }) => {
   );
 };
 
-export default EventDetailsMain;
+export default TestimonialContent;

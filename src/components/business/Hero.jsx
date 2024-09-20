@@ -230,7 +230,9 @@ const Hero = () => {
             style={{ backgroundImage: `url(${events})` }}
           >
             <div className="hover-effect">
-              <h3 className="event-title">Announcements & Events</h3>
+              <h3 className="event-title">
+                <Link to="/announcements-events">Announcements & Events</Link>
+              </h3>
               <p className="event-content">
                 Seeking the power of prayer throw events <br />
                 and programs.
