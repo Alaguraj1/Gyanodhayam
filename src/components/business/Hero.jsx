@@ -139,7 +139,9 @@ const Hero = () => {
                 and to reach the masses, our centre is available in India and
                 Singapore.
               </p>
-              <p className="guru-read-3">Know More</p>
+              <p className="guru-read-3">
+              <Link to="/our-centers" style={{ textDecoration: "underline" }}>Know More</Link></p>
+
               <div className="flower-image-outer-3">
                 <img
                   src={flower_3}

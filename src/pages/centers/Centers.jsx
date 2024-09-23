@@ -7,6 +7,8 @@ import homeBanner from "../../assets/images/Banner.jpg";
 import bannerLogo from "../../assets/images/BannerLogo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { OurCenters } from "../../utils/constant.utils";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   AOS.init();
@@ -46,200 +48,45 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50 text-align">
+      <div className="container mt-50 mb-100 lg-mt-50 lg-mb-50 text-align">
         <div className="row">
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">South Zone:</h3>
-                <ul className="first-sem-list">
-                  <li>
-                    <b>Karur</b> - 93612 12566
-                  </li>
-                  <li>
-                    <b>Madurai</b> - 96777 87500
-                  </li>
-                  <li>
-                    <b>Ramanathapuram</b> - 90928 00990
-                  </li>
-                  <li>
-                    <b>Virudhunagar</b> - 86952 99599
-                  </li>
-                  <li>
-                    <b>Tirunelveli</b> - 98655 76659
-                  </li>
-                  <li>
-                    <b>Palani</b> - 99526 44196
-                  </li>
-                  <li>
-                    <b>Kulithalai</b> - 99444 99507
-                  </li>
-                  <li>
-                    <b>Dindigul</b> - 93459 95555
-                  </li>
-                  <li>
-                    <b>Kamuthi</b> - 90928 00990
-                  </li>
-                  <li>
-                    <b>Gyana Guru Peedam (Anjur)</b> - 94420 1383
-                  </li>
-                </ul>
+          {OurCenters?.map((item, index) => (
+            <div
+              className="col-lg-4 pt-50"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <div style={{ display: "flex" }}>
+                <div>
+                  <h3 className="first-side-header ">{item.center}</h3>
+                  <ul className="first-sem-list" style={{ listStyle: "none" }}>
+                    <div style={{ display: "flex", alignItems: "start " }}>
+                      <i
+                        className="bi bi-geo-alt"
+                        style={{ marginRight: "5px", fontWeight: "bold" }}
+                      ></i>
+                      <li
+                        style={{ textTransform: "capitalize" }}
+                        dangerouslySetInnerHTML={{ __html: item.address }}
+                      ></li>
+                    </div>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <i
+                        className="bi bi-telephone"
+                        style={{ marginRight: "5px", fontWeight: "bold" }}
+                      ></i>
+                      <li>
+                        <Link to={`tel:${item.contactNumber}`}>
+                          {item.contactNumber}
+                        </Link>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">East Zone:</h3>
-                <ul className="first-sem-list">
-                  <li>
-                    <b>Trichy</b> - 96000 18154
-                  </li>
-                  <li>
-                    <b>Thanjavur</b> - 99524 33503
-                  </li>
-                  <li>
-                    <b>Kumbakonam</b> - 95005 65384
-                  </li>
-                  <li>
-                    <b>Mayavaram</b> - 95009 54563
-                  </li>
-                  <li>
-                    <b>Thiruvaiyar</b> - 97912 54346
-                  </li>
-                  <li>
-                    <b>Tiruvarur</b> - 73589 29886
-                  </li>
-                  <li>
-                    <b>Pattukottai</b> - 97503 58564
-                  </li>
-                  <li>
-                    <b>Pudukottai</b> - 99942 89195
-                  </li>
-                  <li>
-                    <b>Karanthai</b> - 87547 38366
-                  </li>
-                  <li>
-                    <b>Vishnupuram</b> - 88389 56740
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">West Zone:</h3>
-                <ul className="first-sem-list">
-                  <li>
-                    <b>Erode</b> - 99444 99508
-                  </li>
-                  <li>
-                    <b>Pollachi</b> - 97881 18819
-                  </li>
-                  <li>
-                    <b>Coimbatore</b> - 97914 50956
-                  </li>
-                  <li>
-                    <b>Tirupur</b> - 99449 21422
-                  </li>
-                  <li>
-                    <b>Avinasi</b> - 95009 89006
-                  </li>
-                  <li>
-                    <b>Bhavani</b> - 99444 99508.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="row mt-50 lg-mt-30">
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">North Zone:</h3>
-                <ul className="first-sem-list">
-                  <li>
-                    <b>Mogappair</b> - 90877 31973
-                  </li>
-                  <li>
-                    <b>Chitlapakkam</b> - 98403 14238
-                  </li>
-                  <li>
-                    <b>Mughalivakam</b> - 99401 75614
-                  </li>
-                  <li>
-                    <b>Thiruvallur</b> - 73585 95199
-                  </li>
-                  <li>
-                    <b>Cuddalore</b> - 89734 45087
-                  </li>
-                  <li>
-                    <b>Pondicherry</b> - 93454 50218
-                  </li>
-                  <li>
-                    <b>Thiruvannamalai</b> - 70106 22567
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">Singapore:</h3>
-                <ul className="first-sem-list">
-                  <li>+65 8430 7024</li>
-                  <li>+65 9451 0671</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="col-lg-4"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <div style={{ display: "flex" }}>
-              <div>
-                <h3 className="first-side-header">Malaysia:</h3>
-                <ul className="first-sem-list">
-                  <li>+65 8797 8623</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 

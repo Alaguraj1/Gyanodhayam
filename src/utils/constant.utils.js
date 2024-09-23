@@ -171,202 +171,208 @@ export const OurCenters = [
   {
     id: 1,
     center: "Karur",
-    address: "12-B4, Thinnappa Nagar east, Gandhigramam, Karur - 639004",
+    address:
+      "12-B4, Thinnappa Nagar east,<br/> Gandhigramam, <br/>Karur - 639004. ",
     contactNumber: "94898 16307",
   },
   {
     id: 2,
     center: "Madurai",
     address:
-      "C,178, Govindhasamy Street, Thirunagar (7th Stop), Near to Siva sakthi Training School, Madurai.",
+      "C,178, Govindhasamy Street,<br/> Thirunagar (7th Stop), Near to Siva sakthi Training School,<br/> Madurai - 625006.",
     contactNumber: "96777 87500",
   },
   {
     id: 3,
     center: "Sivakasi",
-    address: "4/678 B Kamarajapuram colony Sivakasi - 626189.",
+    address: "4/678 B Kamarajapuram colony,<br/>Sivakasi - 626189.",
     contactNumber: "94426 65634",
   },
   {
     id: 4,
     center: "Virudhunagar",
     address:
-      "2/798 - 4 V.0.C Nagar, Near E.B. Colony, Soolakkarai Medu, Virudhunagar",
+      "2/798 - 4 V.0.C Nagar, Near E.B. Colony,<br/> Soolakkarai Medu,<br/>Virudhunagar - 626003.",
     contactNumber: "90928 00990",
   },
   {
     id: 5,
     center: "Palani",
     address:
-      "P26E14/3, Naayakar Street, Opalaapuram, Aayakudi, Palani - 624613",
+      "P26E14/3, Naayakar Street,<br/> Opalaapuram, Aayakudi,<br/>Palani - 624613.",
     contactNumber: "89403 30296",
   },
   {
     id: 6,
     center: "Kulithalai",
-    address: "Kalaimagal School, Near Periya Paalam, Kulithalai",
+    address:
+      "Kalaimagal School,<br/> Near Periya Paalam,<br/>Kulithalai - 639104.",
     contactNumber: "99444 99507",
   },
   {
     id: 7,
     center: "Ishethra",
     address:
-      "Ishethra International Residential School, Pungambadi Village, Aravakurichi.",
+      "Ishethra International Residential School,<br/> Pungambadi Village,<br/> Aravakurichi - 639201.",
     contactNumber: "88386 23171",
   },
   {
     id: 8,
     center: "Mugalivakkam",
     address:
-      "2nd Floor, Plot No.6 Sekar Avenue, Main Road, Kumudam Nagar, Mugalivakkam, Chennai, Tamil Nadu 600125",
+      "2nd Floor, Plot No.6 Sekar Avenue,<br/> Main Road, Kumudam Nagar, Mugalivakkam,<br/>Chennai - 600125.",
     contactNumber: "99401 75614",
   },
   {
     id: 9,
     center: "Mogappeir",
     address:
-      "Jai Academy of fine arts No 175,Boppana Venkatarathnam street, Justice Rathna Pandiyan Road, Golden George Nagar, Mogappair East, Chennai-6000107",
+      "Jai Academy of fine arts No 175,<br/>Boppana Venkatarathnam street, Justice Rathna Pandiyan Road,<br/> Golden George Nagar, Mogappair East,<br/>Chennai - 6000107.",
     contactNumber: "79048 42529",
   },
   {
     id: 10,
     center: "Chitlapakkam",
-    address: "10 muthalamman koil street Chitlapakkam Chennai 600064",
+    address:
+      "10 muthalamman koil street,<br/> Chitlapakkam,<br/>Chennai - 600064.",
     contactNumber: "98403 14238",
   },
   {
     id: 11,
     center: "Thiruvallur",
-    address: "Plot.no.13A, Sri Krishna nagar, Mangadu, Thiruvallur",
+    address:
+      "Plot.no.13A,<br/> Sri Krishna nagar, Mangadu,<br/>Thiruvallur - 600077.",
     contactNumber: "87786 74283",
   },
   {
     id: 12,
     center: "Pondicherry",
     address:
-      "9A, PUNITHAVATHI ILLAM THIRUVALLUVAR SALAI MOOLAKADAI, VILLIANUR PONDICHERRY 605110",
+      "9A, Punithavathi Illam,<br/> Thiruvallur Salai Moolakadai, Villianur,<br/>Pondicherry - 605110.",
     contactNumber: "93454 50218",
   },
   {
     id: 13,
     center: "Cuddalore",
     address:
-      "68, Subburaya Chetti Street, Thirupathiripuliyur, Cuddalore - 607002",
+      "68, Subburaya Chetti Street,<br/> Thirupathiripuliyur,<br/>Cuddalore - 607002.",
     contactNumber: "89734 45087",
   },
   {
     id: 14,
     center: "Bangalore",
     address:
-      "3rd Floor, #4, Sharadha Nilaya, Balaji Layout, Gollahalli Electronic City Road, Electronic City Phase I, Bengaluru Karnataka 560100",
+      "3rd Floor, #4, Sharadha Nilaya,<br/> Balaji Layout, Gollahalli Electronic City Road,<br/> Electronic City Phase I,<br/>Bangalore - 560100.",
     contactNumber: "99624 02762",
   },
   {
     id: 15,
     center: "Tanjavur",
-    address: "19, Municipal Colony, 12th Cross, Medicl College Road, Tanjavur",
+    address:
+      "19, Municipal Colony,<br/> 12th Cross, Medicl College Road,<br/>Tanjavur - 613004.",
     contactNumber: "95974 30336",
   },
   {
     id: 16,
     center: "Trichy",
     address:
-      "Mango kids school Periyar nagar 1st Main road, Srirangam, Trichy 620005",
+      "Mango kids school Periyar nagar,<br/> 1st Main road, Srirangam,<br/>Trichy - 620005.",
     contactNumber: "96000 18154",
   },
   {
     id: 17,
     center: "Vishnupuram",
     address:
-      "Government Primary School, Vadugakudi, Kadagampadi (PO), Tiruvarur (DT)",
+      "Government Primary School, <br/>Vadugakudi, Kadagampadi (PO),<br/>Tiruvarur (DT) - 610102. ",
     contactNumber: "89403 54731",
   },
   {
     id: 18,
     center: "Pudukkottai",
-    address: "54/1 Thiruvalluvar nagar 2nd street, Puthukkottai",
+    address: "54/1 Thiruvalluvar nagar 2nd street,<br/>Pudukkottai - 622104.",
     contactNumber: "99942 89195",
   },
   {
     id: 19,
     center: "Orathanadu",
-    address: "No, 6, North Street, Ganaphy Nagar, M.C. Road, Thanjavur -7",
+    address:
+      "No, 6, North Street,<br/> Ganaphy Nagar, M.C. Road,<br/>Thanjavur(7) - 613007.",
     contactNumber: "99440 55483",
   },
   {
     id: 20,
     center: "Pattukottai",
-    address: "Froebel school, Near Bus stand, Pattokottai",
+    address: "Froebel school, Near Bus stand,<br/>Pattukottai - 614602.",
     contactNumber: "97503 58564",
   },
   {
     id: 21,
     center: "Kumbakonam",
     address:
-      "JRG Nursery Primary School, Kamarajar Nagar 1st street, Assor Road, Palakkarai, Kumbakonam",
+      "JRG Nursery Primary School,<vr/> Kamarajar Nagar 1st street, Assor Road, Palakkarai,<br/>Kumbakonam - 614201.",
     contactNumber: "95005 65384",
   },
   {
     id: 22,
     center: "Karandhai",
     address:
-      "Umamaheswaran Higher Secondary School, Karanthai Tamizh Sangam, Karanthandan Kudi, Tanjavur (DT)",
+      "Umamaheswaran Higher Secondary School,<br/> Karanthai Tamizh Sangam, Karanthandan Kudi,<br/>Tanjavur (DT) - 613002.",
     contactNumber: "94422 74525",
   },
   {
     id: 23,
     center: "Tiruvarur",
     address:
-      "Opposite to Vandampalai ITI, Tiruvarur to Mayiladudurai Main Road, Vandampalaiyam, Tiruvarur (DT)",
+      "Opposite to Vandampalai ITI,<br/> Tiruvarur to Mayiladudurai Main Road, Vandampalaiyam,<br/>Tiruvarur (DT) - 625007.",
     contactNumber: "88389 56740",
   },
   {
     id: 24,
     center: "Tiruvaiyar",
     address:
-      "Saraswathi Ammal Elementary School, Tamilar mettu street, Thiruvaiyaru - 613204",
+      "Saraswathi Ammal Elementary School,<br/> Tamilar mettu street, <br/>Tiruvaiyar - 613204.",
     contactNumber: "99760 92246",
   },
   {
     id: 25,
     center: "Tirupur Main",
     address:
-      "Arul suyambu maligai store Back side 4/337 pappa nagar, Old Cotton mill road, Near new busstand near Tirupur-641603",
+      "Arul suyambu maligai store Back side,<br/> 4/337 pappa nagar, Old Cotton mill road,<br/> Near new bus stand,<br/>Tirupur - 641603.",
     contactNumber: "99449 21422",
   },
   {
     id: 26,
     center: "Tirupur Vidhyalaya",
     address:
-      "SIDE NO:14 SELVA LAKSHMI NAGAR FIRST STREET VIDHYALAYA BUS STOP PALLADAM ROAD TIRUPUR-641605",
+      "Side No: 14 Selva Lakshmi nagar,<br/> First street Vidhyalaya Bus Stop, Palladam Road,<br/>Tirupur - 641605",
     contactNumber: "99408 22869",
   },
   {
     id: 27,
     center: "Pollachi",
     address:
-      "Appasamy Layout, Suppammal Street, Near to Om Sakthi Temple, Mahalingapuram, Pollachi",
+      "Appasamy Layout, Suppammal Street,<br/> Near to Om Sakthi Temple, Mahalingapuram,<br/>Pollachi - 642003.",
     contactNumber: "97881 18819",
   },
   {
     id: 28,
     center: "Avinashi",
     address:
-      "73/15,1st Floor, Mangalam Road, Near Avinashiappar temple, opposite of Rotary Arangam, Avinashi-641654",
+      "73/15,1st Floor, Mangalam Road,<br/> Near Avinashiappar temple, opposite of Rotary Arangam,<br/>Avinashi - 641654.",
     contactNumber: "95009 89006",
   },
   {
     id: 29,
     center: "Coimbatore",
     address:
-      "88/116 Old Weavers Colony, Raja Annamalai Rd, Saibaba Colony, Landmark: Near Bank Of Baroda ATM Coimbatore, Tamil Nadu 641011",
+      "88/116 Old Weavers Colony,<br/> Raja Annamalai Rd, Saibaba Colony, Near Bank Of Baroda ATM,<br/>Coimbatore - 641011.",
     contactNumber: "97914 50956",
   },
   {
     id: 30,
     center: "Komarapalayam",
     address:
-      "230B, Sunrise Academy, High School Rd, Perantharkadu, Komarapalayam, Namakkal dist, Tamil Nadu 638183",
+      "230B, Sunrise Academy, High School Rd,<br/> Perantharkadu, Komarapalayam,<br/>Namakkal - 638183",
     contactNumber: "6381499412",
-  }
+  },
 ];

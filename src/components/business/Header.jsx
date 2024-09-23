@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MegaMenuOne from "../common/header/mega-menu/MegaMenuOne";
 import MobileMenuContent from "../common/header/mega-menu/MobileMenuContent";
-import brandLogo from "../../assets/images/BannerLogo.png"
+import brandLogo from "../../assets/images/BannerLogo.png";
 
 const Header = ({ className = "" }) => {
   const [navbar, setNavbar] = useState(false);
@@ -19,25 +19,32 @@ const Header = ({ className = "" }) => {
 
   return (
     <header
-      className={`theme-main-menu sticky-menu theme-menu-one ${navbar ? "fixed " : ""
-        } ${className}`}
+      className={`theme-main-menu sticky-menu theme-menu-one ${
+        navbar ? "fixed " : ""
+      } ${className}`}
     >
       <div className="inner-content">
         <div>
           <div className="row">
             <div className="col-12">
-              <div className="header-row1" style={{ display: "flex", justifyContent: "space-between" }}>
+              <div
+                className="header-row1"
+                style={{ display: "flex", justifyContent: "space-between" }}
+              >
                 <div className="logo">
-                  <Link to="/" className="gyanodhayam-logo" >
-                    <img
-                      src={brandLogo}
-                      alt="brand"
-                      width="10%"
-                    />GYANODHAYAM
+                  <Link to="/" className="gyanodhayam-logo">
+                    <img src={brandLogo} alt="brand" width="10%" />
+                    GYANODHAYAM
                   </Link>
                 </div>
                 <div className="header-row1-col2">
-                  <p className="find-location" style={{margin:"0px", fontSize:"14px"}}>Willing to Participate | <span>Find our centre</span></p>
+                  <p
+                    className="find-location"
+                    style={{ margin: "0px", fontSize: "14px" }}
+                  >
+                    Willing to Participate |{" "}
+                    <Link to="/our-centers">Find our centre</Link>
+                  </p>
                 </div>
               </div>
             </div>
@@ -71,10 +78,6 @@ const Header = ({ className = "" }) => {
               {/* End .navbar */}
             </div>
           </div>
-
-
-
-
 
           {/* <!-- /.right-widget --> */}
         </div>
