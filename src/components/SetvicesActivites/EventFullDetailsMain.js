@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import FeatureMediaSingle from "./FeatureMediaSingle";
 import axios from "axios";
 import Loading from "../loader/Loading";

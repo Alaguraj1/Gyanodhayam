@@ -5,7 +5,6 @@ import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDeta
 import Header from "../../components/business/Header";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
-import EventsFullDetailsMain from "../../components/SetvicesActivites/EventFullDetailsMain";
 import AnnouncementDetailsMain from "../../components/announcements/AnnouncementDetailsMain";
 
 const AnnouncementDetails = () => {

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { sortContent, TestimonialData } from "../../utils/constant.utils";
 import axios from "axios";
 import FeatureMediaSingle from "../SetvicesActivites/FeatureMediaSingle";
 import Loading from "../loader/Loading";
@@ -48,13 +47,13 @@ const TestimonialContent = () => {
   }, []);
 
 
-  const truncateContent = (content, maxLength) => {
-    if (content.length > maxLength) {
-      return content.slice(0, maxLength) + "...";
-    } else {
-      return content;
-    }
-  };
+  // const truncateContent = (content, maxLength) => {
+  //   if (content.length > maxLength) {
+  //     return content.slice(0, maxLength) + "...";
+  //   } else {
+  //     return content;
+  //   }
+  // };
 
   return (
     <>
