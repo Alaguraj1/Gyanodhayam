@@ -76,6 +76,7 @@ import EventsDetails from "../pages/services-activites/EventsDetails";
 import EventsFullDetails from "../pages/services-activites/EventsFullDetails";
 import Centers from "../pages/centers/Centers";
 import Annonunsment from "../pages/announsment/Annonunsment";
+import AnnouncementDetails from "../pages/announsment/AnnounsmentDetails";
 const AllRoutes = () => {
   return (
     <>
@@ -110,6 +111,7 @@ const AllRoutes = () => {
         />
         <Route path="/our-centers" element={<Centers />} />
         <Route path="/announcements-events" element={<Annonunsment />} />
+        <Route path='/announcements-events/:slug' element={<AnnouncementDetails />} />
 
         {/* <Route path="/portfolio-v1" element={<PortfolioV1 />} />
         <Route path="/portfolio-v2" element={<PortfolioV2 />} />

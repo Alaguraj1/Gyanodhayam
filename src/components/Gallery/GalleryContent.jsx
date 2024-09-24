@@ -1,18 +1,15 @@
 import React, { useEffect, useState } from "react";
-import elementum from "../../assets/images/testimonial/img-1.jpg";
-import gravida from "../../assets/images/testimonial/img-2.jpg";
-import faucibus from "../../assets/images/testimonial/img-3.jpg";
-import Pagination from "../../pages/inner-pages/blog/Pagination";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Gallery_Data } from "../../utils/constant.utils";
 import axios from "axios";
 import FeatureMediaSingle from "../SetvicesActivites/FeatureMediaSingle";
+import Loading from "../loader/Loading";
 
 const GalleryContent = () => {
   useEffect(() => {
-    AOS.init(); // Initialize AOS when the component mounts
+    AOS.init();
   }, []);
 
   const galleryContent = Gallery_Data;
@@ -26,7 +23,6 @@ const GalleryContent = () => {
     const fetchPosts = async () => {
       setIsLoading(true);
       try {
-        // First, we need to get the category ID for the given slug
         const categoryResponse = await axios.get(
           `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${"gallery"}`
         );
@@ -37,7 +33,6 @@ const GalleryContent = () => {
 
         const categoryId = categoryResponse.data[0].id;
 
-        // Now we can fetch posts for this category
         const postsResponse = await axios.get(
           `https://file.gyanodhayam.org/wp-json/wp/v2/posts?categories=${categoryId}&per_page=100`
         );
@@ -55,62 +50,67 @@ const GalleryContent = () => {
 
   console.log("posts", posts);
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
-
   return (
     <>
       <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
         <div className="container">
           <div className="row  course2-content">
-            {posts.map((element) => {
-              return (
-                <div
-                  className="col-lg-4 col-md-6 col-lg-pb-50  pb-30 "
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <div>
-                    {element._links?.["wp:featuredmedia"]?.map((mediaLink) => (
-                      <FeatureMediaSingle
-                        key={mediaLink.href}
-                        mediaLink={mediaLink.href}
-                        className="js-img-single"
-                      />
-                    ))}
-                    {/* <img src={element.image} alt="blog post" /> */}
-                  </div>
-                  <div style={{ textAlign: "center" }}>
-                    <Link
-                      to={`/gallery/${element.slug}`}
-                      className="title gallery-title"
-                      dangerouslySetInnerHTML={{
-                        __html: element.title?.rendered,
-                      }}
-                    ></Link>
-                    <div className="post-info gallery-read-more">
+            {/* {isLoading && <Loading loading={isLoading} />}
+            {error && <div>Error: {error}</div>}
+            {posts?.length === 0 && <div>No posts found.</div>} */}
+            {isLoading ? (
+              <Loading loading={isLoading} />
+            ) : error ? (
+              <div className="alert alert-danger" role="alert">
+                {error}
+              </div>
+            ) : posts?.length === 0 ? (
+              <div className="alert alert-danger" role="alert">
+                No posts found
+              </div>
+            ) : posts?.length > 0 ? (
+              posts.map((element) => {
+                return (
+                  <div
+                    className="col-lg-4 col-md-6 col-lg-pb-50  pb-30 "
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                    data-aos-duration="1200"
+                  >
+                    <div>
+                      {element._links?.["wp:featuredmedia"]?.map(
+                        (mediaLink) => (
+                          <FeatureMediaSingle
+                            key={mediaLink.href}
+                            mediaLink={mediaLink.href}
+                            className="js-img-single"
+                          />
+                        )
+                      )}
+                      {/* <img src={element.image} alt="blog post" /> */}
+                    </div>
+                    <div style={{ textAlign: "center" }}>
                       <Link
                         to={`/gallery/${element.slug}`}
-                        style={{ textDecoration: "underline" }}
-                      >
-                        Read More
-                      </Link>
+                        className="title gallery-title"
+                        dangerouslySetInnerHTML={{
+                          __html: element.title?.rendered,
+                        }}
+                      ></Link>
+                      <div className="post-info gallery-read-more">
+                        <Link
+                          to={`/gallery/${element.slug}`}
+                          style={{ textDecoration: "underline" }}
+                        >
+                          Read More
+                        </Link>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })
+            ) : null}
           </div>
-          {/* <Blog /> */}
-          {/* <!-- /.blog-meta-wrapper --> */}
-
-          {/* <div
-            className="page-pagination-one"
-            style={{ display: "flex", justifyContent: "center" }}
-          >
-            <Pagination />
-          </div> */}
         </div>
       </div>
     </>

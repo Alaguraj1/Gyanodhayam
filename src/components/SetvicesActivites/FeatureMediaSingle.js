@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Logo from "../../assets/images/fav-icon/icon.png";
 
 const FeatureMediaSingle = ({ mediaLink }) => {
   const [mediaData, setMediaData] = useState(null);
@@ -18,7 +19,7 @@ const FeatureMediaSingle = ({ mediaLink }) => {
   return mediaData ? (
     <img src={mediaData.source_url} alt="images" className="js-img-single" />
   ) : (
-    <p>Loading image...</p>
+   <img src={Logo} alt="images" className="js-img-single" style={{ width: "100px", height: "100px" }} />
   );
 };
 
