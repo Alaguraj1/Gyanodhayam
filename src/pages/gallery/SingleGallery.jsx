@@ -4,8 +4,8 @@ import Header from "../../components/business/Header";
 import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
 import SingleGalleryContent from "../../components/Gallery/SingleGalleryContent";
-import SingleGalleryBanner from "../../components/Gallery/SingleGalleryBanner";
 import { useParams } from "react-router-dom";
+import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDetailsBannerMain";
 
 const Gallery = () => {
   const { slug } = useParams();
@@ -18,7 +18,7 @@ const Gallery = () => {
 
       <Header />
 
-      <SingleGalleryBanner />
+      <EventDetailsBannerMain title="Gallery" />
 
       <SingleGalleryContent slug={slug} />
       {/* footer section */}

@@ -7,7 +7,7 @@ import Seo from "../../components/common/seo/Seo";
 import Footer from "../../components/business/Footer";
 // import FounderContent from "../../components/Founder/FounderContent";
 import GalleryContent from "../../components/Gallery/GalleryContent";
-import GalleryBanner from "../../components/Gallery/GalleryBanner";
+import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDetailsBannerMain";
 
 const Gallery = () => {
   return (
@@ -18,7 +18,7 @@ const Gallery = () => {
 
       <Header />
 
-      <GalleryBanner />
+      <EventDetailsBannerMain title="Gallery" />
 
       <GalleryContent />
       {/* footer section */}
