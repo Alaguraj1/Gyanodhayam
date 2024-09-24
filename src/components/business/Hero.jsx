@@ -19,6 +19,13 @@ const Hero = () => {
 
   AOS.init();
 
+  const handleParticipateClick = () => {
+    window.open(
+      "https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true",
+      "_blank"
+    );
+  };
+
   return (
     <>
       <div className="container">
@@ -140,7 +147,10 @@ const Hero = () => {
                 Singapore.
               </p>
               <p className="guru-read-3">
-              <Link to="/our-centers" style={{ textDecoration: "underline" }}>Know More</Link></p>
+                <Link to="/our-centers" style={{ textDecoration: "underline" }}>
+                  Know More
+                </Link>
+              </p>
 
               <div className="flower-image-outer-3">
                 <img
@@ -240,7 +250,12 @@ const Hero = () => {
                 and programs.
               </p>
             </div>
-            <button className="event-participate">Participate With Us</button>
+            <button
+              className="event-participate"
+              onClick={handleParticipateClick}
+            >
+              Participate With Us
+            </button>
           </div>
         </div>
       </div>

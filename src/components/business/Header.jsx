@@ -42,8 +42,10 @@ const Header = ({ className = "" }) => {
                     className="find-location"
                     style={{ margin: "0px", fontSize: "14px" }}
                   >
-                    Willing to Participate |{" "}
-                    <Link to="/our-centers">Find our centre</Link>
+                    <Link to="https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true" target="_blank">
+                      Willing to Participate
+                    </Link>{" "}
+                    | <Link to="/our-centers">Find our centre</Link>
                   </p>
                 </div>
               </div>
