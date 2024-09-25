@@ -94,7 +94,7 @@ const LifeInGyanodhayamContent = () => {
                   >
                     {activeTab === "Service Activities" ? (
                       <i
-                        className="services-line"
+                        className="services-line-gyanodhayam"
                         style={{ backgroundColor: "#f58635" }}
                       ></i>
                     ) : null}

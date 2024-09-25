@@ -29,13 +29,13 @@ const Business = () => {
           }}
         >
           <div className="banner-content-outer">
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            {/* <div style={{ display: "flex", justifyContent: "center" }}>
               <img
                 src={bannerLogo}
                 alt="banner-logo"
                 style={{ width: "20%" }}
               />
-            </div>
+            </div> */}
             <h2 className="banner-header">
               {" "}
               "What do you live for? To love, to be<br/> ecstatic and to be spiritual "
