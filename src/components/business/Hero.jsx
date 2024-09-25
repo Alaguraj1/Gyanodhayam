@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import jai_guruji1 from "../../assets/images/home/gyanodham.jpg";
 import jai_guruji2 from "../../assets/images/home/courses.jpg";
-import jai_guruji3 from "../../assets/images/home/our-centers.jpg";
+import jai_guruji3 from "../../assets/images/home/our-centers.png";
 import jai_guruji4 from "../../assets/images/home/our-initivatie.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";

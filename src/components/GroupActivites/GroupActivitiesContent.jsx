@@ -1,19 +1,13 @@
 import React from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
-import udal_pathugapu from "../../assets/images/Courses/education/course-1st-sem/img-2.jpg";
-import unavu from "../../assets/images/Courses/education/course-1st-sem/img-3.jpg";
-import nalan from "../../assets/images/Courses/education/course-1st-sem/img-4.jpg";
-import exam from "../../assets/images/Courses/education/course-1st-sem/img-5.jpg";
-import kelvi from "../../assets/images/Courses/education/course-1st-sem/img-6.jpg";
-import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
-import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
-import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
+import jai_guruji1 from "../../assets/images/life-in-gyanodhayam/group-activites/banner.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import FamilyDay from "../../assets/images/life-in-gyanodhayam/group-activites/family.jpg";
+import Convocation from "../../assets/images/life-in-gyanodhayam/group-activites/convation.jpg";
+import FoundersDay from "../../assets/images/life-in-gyanodhayam/group-activites/founders.jpg";
 const GroupActivitiesContent = () => {
   // useEffect(() => {
   //   AOS.init(); // Initialize AOS when the component mounts
@@ -90,7 +84,7 @@ const GroupActivitiesContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img src={kelvi} alt="kelvi" className="width-100" />
+                <img src={FamilyDay} alt="family" className="width-100" />
               </div>
             </div>
 
@@ -116,7 +110,11 @@ const GroupActivitiesContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={kelvi} alt="kelvi" className="width-100" />
+                  <img
+                    src={Convocation}
+                    alt="convocation"
+                    className="width-100"
+                  />
                 </div>
               </div>
             </div>
@@ -154,7 +152,7 @@ const GroupActivitiesContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img src={kelvi} alt="kelvi" className="width-100" />
+                <img src={FoundersDay} alt="founders" className="width-100" />
               </div>
             </div>
           </div>

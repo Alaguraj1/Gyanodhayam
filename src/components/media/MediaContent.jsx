@@ -12,6 +12,9 @@ import social_media from "../../assets/images/media_press/social-media.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+import AudioGuru1 from "../../assets/images/media_press/chainthing-om.mp3";
+import AudioGuru2 from "../../assets/images/media_press/om-namasivaya.mp3";
+import AudioGuru3 from "../../assets/images/media_press/unakkum-kuraikal-uladho.mp3";
 const FounderContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Music");
@@ -21,6 +24,19 @@ const FounderContent = () => {
   // })
 
   AOS.init();
+
+  const audioRefs = useRef([]);
+  const [currentAudio, setCurrentAudio] = useState(null);
+
+  const handlePlay = (index) => {
+    // Stop the currently playing audio
+    if (currentAudio !== null && currentAudio !== index) {
+      audioRefs.current[currentAudio].pause();
+      audioRefs.current[currentAudio].currentTime = 0; // Reset time if needed
+    }
+
+    setCurrentAudio(index);
+  };
 
   const handleTabClick = (tabName) => {
     // Calculate the offset for the selected section
@@ -162,9 +178,12 @@ const FounderContent = () => {
                     }`}
                     style={{ marginBottom: "8px" }}
                   >
-                    {
-                    activeTab === "Contact Us" ? <i className="contact-line" style={{ backgroundColor: "#f58635" }}></i> : null
-                  }
+                    {activeTab === "Contact Us" ? (
+                      <i
+                        className="contact-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
                     <a href="#contact_us">Contact Us</a>
                   </li>
                 </ul>
@@ -241,14 +260,46 @@ const FounderContent = () => {
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
-
                 <div
                   style={{ margin: "20px 0px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={audio} alt="audio" />
+                  <div>
+                    <h6 style={{ fontWeight: "bold" }}>Chainthing Om</h6>
+                    <audio
+                      ref={(el) => (audioRefs.current[0] = el)}
+                      src={AudioGuru1}
+                      controls
+                      onPlay={() => handlePlay(0)}
+                      style={{ width: "100%" }}
+                    ></audio>
+                  </div>
+
+                  <div style={{ margin: "20px 0px" }}>
+                    <h6 style={{ fontWeight: "bold" }}>Om Namasivaya</h6>
+                    <audio
+                      ref={(el) => (audioRefs.current[1] = el)}
+                      src={AudioGuru2}
+                      controls
+                      onPlay={() => handlePlay(1)}
+                      style={{ width: "100%" }}
+                    ></audio>
+                  </div>
+
+                  <div style={{ margin: "20px 0px" }}>
+                    <h6 style={{ fontWeight: "bold" }}>
+                      Unakkum Kuraikal Uladho
+                    </h6>
+                    <audio
+                      ref={(el) => (audioRefs.current[2] = el)}
+                      src={AudioGuru3}
+                      controls
+                      onPlay={() => handlePlay(2)}
+                      style={{ width: "100%" }}
+                    ></audio>
+                  </div>
                 </div>
 
                 {/* <p className="guru-read-2">

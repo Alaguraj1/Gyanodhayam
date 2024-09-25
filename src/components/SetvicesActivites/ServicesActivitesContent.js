@@ -1,24 +1,27 @@
 import React, { useEffect, useState } from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
-import udal_pathugapu from "../../assets/images/Courses/education/course-1st-sem/img-2.jpg";
-import unavu from "../../assets/images/Courses/education/course-1st-sem/img-3.jpg";
-import nalan from "../../assets/images/Courses/education/course-1st-sem/img-4.jpg";
-import exam from "../../assets/images/Courses/education/course-1st-sem/img-5.jpg";
-import kelvi from "../../assets/images/Courses/education/course-1st-sem/img-6.jpg";
-import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
-import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
-import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
+import jai_guruji1 from "../../assets/images/life-in-gyanodhayam/services-activity/banner.jpg";
+// import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
+// import udal_pathugapu from "../../assets/images/Courses/education/course-1st-sem/img-2.jpg";
+// import unavu from "../../assets/images/Courses/education/course-1st-sem/img-3.jpg";
+// import nalan from "../../assets/images/Courses/education/course-1st-sem/img-4.jpg";
+// import exam from "../../assets/images/Courses/education/course-1st-sem/img-5.jpg";
+// import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
+// import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
+// import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ServicesActivities from "../../pages/services-activites/ServicesActivites";
+// import ServicesActivities from "../../pages/services-activites/ServicesActivites";
 import { Link } from "react-router-dom";
-import Year_2017 from "../../assets/pdf/2017.pdf";
-import Year_2018 from "../../assets/pdf/2018.pdf";
-import Year_2019 from "../../assets/pdf/2019.pdf";
+// import Year_2017 from "../../assets/pdf/2017.pdf";
+// import Year_2018 from "../../assets/pdf/2018.pdf";
+// import Year_2019 from "../../assets/pdf/2019.pdf";
 import axios from "axios";
+
+import ServiceActivity1 from "../../assets/images/life-in-gyanodhayam/services-activity/img-1.jpg";
+import ServiceActivity2 from "../../assets/images/life-in-gyanodhayam/services-activity/img-2.jpg";
+import ServiceActivity3 from "../../assets/images/life-in-gyanodhayam/services-activity/img-3.jpg";
 
 const ServicesActivitiesContent = () => {
   // useEffect(() => {
@@ -199,7 +202,17 @@ const ServicesActivitiesContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img src={kelvi} alt="kelvi" className="width-100" />
+                <div className="row">
+                  <div className="col-lg-4">
+                    <img src={ServiceActivity1} alt="ServiceActivity1" />
+                  </div>
+                  <div className="col-lg-4">
+                    <img src={ServiceActivity2} alt="ServiceActivity2" />
+                  </div>
+                  <div className="col-lg-4">
+                    <img src={ServiceActivity3} alt="ServiceActivity3" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

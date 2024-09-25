@@ -1,19 +1,17 @@
 import React from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
-import udal_pathugapu from "../../assets/images/Courses/education/course-1st-sem/img-2.jpg";
-import unavu from "../../assets/images/Courses/education/course-1st-sem/img-3.jpg";
-import nalan from "../../assets/images/Courses/education/course-1st-sem/img-4.jpg";
-import exam from "../../assets/images/Courses/education/course-1st-sem/img-5.jpg";
-import kelvi from "../../assets/images/Courses/education/course-1st-sem/img-6.jpg";
-import unmai from "../../assets/images/Courses/education/course-1st-sem/img-7.jpg";
-import nalam_vazha from "../../assets/images/Courses/education/course-1st-sem/img-8.jpg";
-import udal_payirchi from "../../assets/images/Courses/education/course-1st-sem/img-9.jpg";
+import jai_guruji1 from "../../assets/images/life-in-gyanodhayam/special-days/banner.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+import Ekadesi from "../../assets/images/life-in-gyanodhayam/special-days/Ekadesi.jpg";
+import Fruitsday from "../../assets/images/life-in-gyanodhayam/special-days/fruitsday.jpg";
+import GuruPoornima from "../../assets/images/life-in-gyanodhayam/special-days/guru-poornim.jpg";
+import BakthiYogam from "../../assets/images/life-in-gyanodhayam/special-days/bakthi-yogam.jpg";
+import GyanaYogam from "../../assets/images/life-in-gyanodhayam/special-days/gyana-yogam.jpg";
+import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
 
 const SpecialDaysContent = () => {
   // useEffect(() => {
@@ -87,8 +85,11 @@ const SpecialDaysContent = () => {
                 language and silence helps us to discover ourself.
               </li>
             </ul>
-            <h5 className="first-sem-exam " style={{ color: "#f58635", textAlign: "center" }}>
-              <b >
+            <h5
+              className="first-sem-exam "
+              style={{ color: "#f58635", textAlign: "center" }}
+            >
+              <b>
                 Not only Saturdays but we do celebrate the following special
                 days
               </b>
@@ -135,7 +136,7 @@ const SpecialDaysContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img src={kelvi} alt="kelvi" className="width-100" />
+                <img src={Ekadesi} alt="Ekadesi" className="width-100" />
               </div>
             </div>
 
@@ -162,7 +163,7 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={kelvi} alt="kelvi" className="width-100" />
+                  <img src={Fruitsday} alt="Fruitsday" className="width-100" />
                 </div>
               </div>
             </div>
@@ -195,7 +196,11 @@ const SpecialDaysContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img src={kelvi} alt="kelvi" className="width-100" />
+                <img
+                  src={GuruPoornima}
+                  alt="GuruPoornima"
+                  className="width-100"
+                />
               </div>
             </div>
             <div style={{ paddingBottom: "20px" }}>
@@ -207,15 +212,16 @@ const SpecialDaysContent = () => {
                   data-aos-duration="1200"
                 >
                   <h5 className="first-side-subHeader">Bakthi yogam day</h5>
-                  
+
                   <p className="first-sem-content text-align">
                     On the day that falls on the Jupiter transit, Bhakthi Yoga
                     day is observed every year. Brahma Thavam will be practiced
                     on this day between 6:00 PM and 6:30 PM in the evening.
-                    Between 6:30 PM and 7:30 PM, a brief speech on <b>&quot;Bhakthi
-                    Yogam&quot;</b> will be recited. Special pooja will be performed
-                    after 7:30 PM with devotional songs on our Guru and God will
-                    be performed at the end along with the Prasadh distribution.
+                    Between 6:30 PM and 7:30 PM, a brief speech on{" "}
+                    <b>&quot;Bhakthi Yogam&quot;</b> will be recited. Special
+                    pooja will be performed after 7:30 PM with devotional songs
+                    on our Guru and God will be performed at the end along with
+                    the Prasadh distribution.
                   </p>
                 </div>
                 <div
@@ -224,12 +230,11 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={nalan} alt="nalan" className="width-100" />
+                  <img src={BakthiYogam} alt="nalan" className="width-100" />
                 </div>
               </div>
             </div>
             <div style={{ paddingBottom: "20px" }}>
-         
               <div className="row">
                 <div
                   className="col-lg-9 order-lg-2  text-align"
@@ -237,22 +242,21 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                    
                   <h5 className="first-side-subHeader">Gyana yogam day</h5>
-                 
+
                   <p className="first-sem-content">
                     Every year, on the 21st of March, Gyana Yoga Day is
                     celebrated in Gyanodhayam Educational Trust. Brahma Thavam
                     will be practiced between 6:00 and 6:30 PM in the evening.
                   </p>
-                 
+
                   <p className="first-sem-content">
                     A brief discourse will be given after 6:30 PM until 7:30 PM
                     from one of our own published books called
-                    <b> &quot;Thavam&quot;</b>. Either the Guru mantra will be chanted
-                    1008 times, or the Invocation song of our Guru and the Guru
-                    mantra will be chanted 108 times each along with the Prasadh
-                    distribution
+                    <b> &quot;Thavam&quot;</b>. Either the Guru mantra will be
+                    chanted 1008 times, or the Invocation song of our Guru and
+                    the Guru mantra will be chanted 108 times each along with
+                    the Prasadh distribution
                   </p>
                   <img
                     src={flower_3}
@@ -266,7 +270,11 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={exam} alt="exam" className="width-100" />
+                  <img
+                    src={GyanaYogam}
+                    alt="gyanayogam"
+                    className="width-100"
+                  />
                 </div>
               </div>
             </div>
@@ -282,7 +290,7 @@ const SpecialDaysContent = () => {
                   <h5 className="first-side-subHeader">
                     Guru’s day, Wisdom day, Buddha Poornima:
                   </h5>
-                 
+
                   <p className="first-sem-content">
                     This auspicious day is observed in the tamizh month of
                     Vaikasi in Gyanodhayam Educational Trust. Brahma Thavam will
@@ -298,184 +306,19 @@ const SpecialDaysContent = () => {
                     mantra will be chanted 108 times each along with the Prasadh
                     distribution.
                   </p>
-
-           
-                 
                 </div>
-                
+
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                   
                   <img src={udal} alt="udal" className="width-100" />
                 </div>
               </div>
             </div>
-            {/* <div style={{ paddingBottom: "20px" }}>
-              <div className="row">
-                <div
-                  className="col-lg-9  order-lg-2  text-align"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <h5 className="first-side-subHeader">
-                    Guru’s day, Wisdom day, Buddha Poornima
-                  </h5>
-                  <p className="first-sem-content">
-                    This auspicious day is observed in the tamizh month of
-                    Vaikasi in Gyanodhayam Educational Trust. Brahma Thavam will
-                    be practiced between 6:00 and 6:30 PM in the evening. A
-                    brief discourse will be given after 6:30 PM until 7:30 PM
-                    from one of our own published books called "Kelvi Gyanam".
-                  </p>
-                  <p className="first-sem-content">
-                    After 7:30 PM either Guru mantra will be chanted for 1008
-                    times, or the Invocation song of our Guru and the Guru
-                    mantra will be chanted 108 times each along with the Prasadh
-                    distribution.
-                  </p>
-                </div>
-                <div
-                  className="col-lg-3 sem1-images order-lg-1"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <img src={unmai} alt="unmai" className="width-100" />
-                </div>
-              </div>
-            </div> */}
-            {/* <div style={{ paddingBottom: "20px" }}>
-              <div className="row">
-                <div
-                  className="col-lg-9 order-lg-2  text-align"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <h5 className="first-side-subHeader">Meditation day</h5>
-                  <p className="first-sem-content">
-                    Every year in the month of July on 23rd, a day especially
-                    for meditation will be observed. Brahma Thavam will be
-                    practiced between 6:00 and 6:30 PM in the evening. A brief
-                    discourse will be given after 6:30 PM until 7:30 PM from one
-                    of our own published books called "Thavam". 
-                  </p>
-                  <p className="first-sem-content">After 7:30 PM,
-                    meditation and kriya prescribed individually to each of us
-                    will be done along with the Prasadh distribution at the end.</p>
-                </div>
-                <div
-                  className="col-lg-3 sem1-images order-lg-1"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src={nalam_vazha}
-                    alt="nalam_vazha"
-                    className="width-100"
-                  />
-                </div>
-              </div>
-            </div> */}
-
-            {/* <div>
-              <div className="row">
-                <div
-                  className="col-lg-9 order-lg-2  text-align"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <div style={{ paddingBottom: "20px" }}>
-                    <h5 className="first-side-subHeader">Bhakthi Yoga day</h5>
-                    <p className="first-sem-content">
-                      On the day that falls on the Jupiter transit, Bhakthi Yoga
-                      day is observed every year. Brahma Thavam will be
-                      practiced on this day between 6:00 PM and 6:30 PM in the
-                      evening. Between 6:30 PM and 7:30 PM, a brief speech on
-                      "Bhakthi Yogam" will be recited. Special pooja will be
-                      performed after 7:30 PM with devotional songs on our Guru
-                      and God will be performed at the end along with the
-                      Prasadh distribution.
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className="col-lg-3 sem1-images order-lg-1"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200"
-                >
-                  <img
-                    src={udal_payirchi}
-                    alt="udal_payirchi"
-                    className="width-100"
-                  />
-                </div>
-              </div>
-            </div> */}
           </div>
-
-          {/* <div>
-            <img
-              src={flower_4}
-              alt="illustration"
-              className="sem1-flower-image-4"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="1200"
-            />
-            <div className="row">
-              <div
-                className="col-lg-8  text-align"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              >
-                <h4 className="first-side-header">
-                  Rules and Regulations for Students:
-                </h4>
-                <ol className="first-sem-list">
-                  <li>Course Duration: 24 Weeks.</li>
-                  <li>
-                    It is divided into two semesters. The First and second
-                    semester is for 12 weeks each.
-                  </li>
-                  <li>Classes will be held for 4 hours every Sunday.</li>
-                  <li>
-                    Qualification: Students who have completed the Gyanodhayam
-                    Certificate Course are eligible.
-                  </li>
-                  <li>Experienced teachers and Gurus will take the classes.</li>
-                  <li>
-                    Students will also be trained simultaneously to take
-                    classes.
-                  </li>
-                  <li>
-                    Exams will be held after the completion of each semester.
-                  </li>
-                  <li>
-                    Students who join this course should not smoke, drink, eat
-                    non-vegetarian food or use drugs. The above course is taught
-                    by well-experienced and qualified teachers. These should not
-                    be practiced or instructed to others without proper advice.
-                  </li>
-                </ol>
-              </div>
-              <div
-                className="col-lg-4"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              ></div>
-            </div>
-          </div> */}
         </div>
       </div>
     </>
