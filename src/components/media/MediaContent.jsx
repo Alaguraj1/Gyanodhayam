@@ -4,7 +4,7 @@ import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
 import music from "../../assets/images/media_press/music.jpg";
-import audio from "../../assets/images/media_press/audio.jpg";
+// import audio from "../../assets/images/media_press/audio.jpg";
 import video from "../../assets/images/media_press/video.jpg";
 import banner from "../../assets/images/media_press/banner.jpg";
 import calendar from "../../assets/images/media_press/calendar.jpg";

@@ -20,8 +20,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 
 import ServiceActivity1 from "../../assets/images/life-in-gyanodhayam/services-activity/img-1.jpg";
-import ServiceActivity2 from "../../assets/images/life-in-gyanodhayam/services-activity/img-2.jpg";
-import ServiceActivity3 from "../../assets/images/life-in-gyanodhayam/services-activity/img-3.jpg";
 
 const ServicesActivitiesContent = () => {
   // useEffect(() => {

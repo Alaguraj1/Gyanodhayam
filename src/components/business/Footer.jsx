@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import footerLogo from "../../assets/images/footer-logo.jpg";
 import facebook from "../../assets/images/facebook.svg";
 import instagram from "../../assets/images/instagram.svg";

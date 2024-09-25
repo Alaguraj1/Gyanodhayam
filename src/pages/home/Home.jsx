@@ -5,7 +5,7 @@ import Hero from "../../components/business/Hero";
 import Sidebar from "../../components/common/header/sidebar/Sidebar";
 import Seo from "../../components/common/seo/Seo";
 import homeBanner from "../../assets/images/home/banner.jpg";
-import bannerLogo from "../../assets/images/BannerLogo.png";
+// import bannerLogo from "../../assets/images/BannerLogo.png";
 import Footer from "../../components/business/Footer";
 
 const Business = () => {

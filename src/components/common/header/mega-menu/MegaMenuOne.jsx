@@ -67,7 +67,7 @@ const MegaMenuOne = () => {
                   <img
                     style={{ paddingRight: "20px" }}
                     src={NavbarImage1}
-                    alt="image"
+                    alt="Jai Guruji Autobiography"
                   />
                   <p
                     className="full-width-navbar-content"
@@ -87,7 +87,7 @@ const MegaMenuOne = () => {
                 </h4>
                 <img
                   src={NavbarImage2}
-                  alt="image"
+                  alt="A Graceful Journey Inward"
                   style={{ paddingBottom: "20px" }}
                 />
                 <p
@@ -223,7 +223,7 @@ const MegaMenuOne = () => {
               <div className="col-lg-4  menus-padding">
                 <img
                   src={courseMegaImage}
-                  alt="image"
+                  alt="Guru Practice Course"
                   style={{ paddingBottom: "20px" }}
                 />
               </div>
@@ -268,7 +268,7 @@ const MegaMenuOne = () => {
                 </h4> */}
                 <img
                   src={lifeGyanodhayam1}
-                  alt="image"
+                  alt="Life In Gyanodhayam"
                   style={{ paddingBottom: "20px" }}
                 />
                 {/* <div class="dotted-line"></div> */}
@@ -316,7 +316,7 @@ const MegaMenuOne = () => {
               <div className="col-lg-4  menus-padding">
                 <img
                   src={lifeGyanodhayam2}
-                  alt="image"
+                  alt="Life In Gyanodhayam"
                   style={{ paddingBottom: "20px" }}
                 />
               </div>

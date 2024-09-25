@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import qoutes_up from "../../assets/images/quotes-up.svg";
 import qoutes_down from "../../assets/images/quotes-down.svg";
 import footerImage from "../../assets/images/footer-bg.jpg";
-import testmonial from "../../assets/images/home/testimonials.jpg";
+// import testmonial from "../../assets/images/home/testimonials.jpg";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { sortContent, TestimonialData } from "../../utils/constant.utils";
+import {  TestimonialData } from "../../utils/constant.utils";
 import axios from "axios";
 import FeatureMediaSingle from "../SetvicesActivites/FeatureMediaSingle";
 
@@ -90,48 +90,48 @@ const CounterUp = () => {
     fetchPosts();
   }, []);
 
-  const truncateContent = (content, maxLength) => {
-    if (!content) return "";
+  // const truncateContent = (content, maxLength) => {
+  //   if (!content) return "";
 
-    // Create a temporary DOM element
-    const tempElement = document.createElement("div");
-    tempElement.innerHTML = content;
+  //   // Create a temporary DOM element
+  //   const tempElement = document.createElement("div");
+  //   tempElement.innerHTML = content;
 
-    let truncated = "";
-    let currentLength = 0;
+  //   let truncated = "";
+  //   let currentLength = 0;
 
-    // Recursive function to traverse DOM nodes
-    const traverseNodes = (node) => {
-      if (currentLength >= maxLength) return;
+  //   // Recursive function to traverse DOM nodes
+  //   const traverseNodes = (node) => {
+  //     if (currentLength >= maxLength) return;
 
-      if (node.nodeType === Node.TEXT_NODE) {
-        const remainingLength = maxLength - currentLength;
-        const text = node.textContent.slice(0, remainingLength);
-        truncated += text;
-        currentLength += text.length;
-      } else if (node.nodeType === Node.ELEMENT_NODE) {
-        truncated += `<${node.tagName.toLowerCase()}>`;
-        for (const childNode of node.childNodes) {
-          traverseNodes(childNode);
-        }
-        truncated += `</${node.tagName.toLowerCase()}>`;
-      }
-    };
+  //     if (node.nodeType === Node.TEXT_NODE) {
+  //       const remainingLength = maxLength - currentLength;
+  //       const text = node.textContent.slice(0, remainingLength);
+  //       truncated += text;
+  //       currentLength += text.length;
+  //     } else if (node.nodeType === Node.ELEMENT_NODE) {
+  //       truncated += `<${node.tagName.toLowerCase()}>`;
+  //       for (const childNode of node.childNodes) {
+  //         traverseNodes(childNode);
+  //       }
+  //       truncated += `</${node.tagName.toLowerCase()}>`;
+  //     }
+  //   };
 
-    // Start traversing from the root
-    for (const childNode of tempElement.childNodes) {
-      traverseNodes(childNode);
-      if (currentLength >= maxLength) {
-      }
-    }
+  //   // Start traversing from the root
+  //   for (const childNode of tempElement.childNodes) {
+  //     traverseNodes(childNode);
+  //     if (currentLength >= maxLength) {
+  //     }
+  //   }
 
-    // Add ellipsis if truncated
-    if (currentLength >= maxLength) {
-      truncated += "...";
-    }
+  //   // Add ellipsis if truncated
+  //   if (currentLength >= maxLength) {
+  //     truncated += "...";
+  //   }
 
-    return truncated;
-  };
+  //   return truncated;
+  // };
 
   const renderContent = (content,maxLength) => {
     if (!content) return "";
