@@ -4,6 +4,9 @@ import CustomLink from "./CustomLink";
 import logo from "../../../../assets/images/BannerLogo.png";
 import NavbarImage1 from "../../../../assets/images/menu-img-1.jpg";
 import NavbarImage2 from "../../../../assets/images/menu-img-2.jpg";
+import courseMegaImage from "../../../../assets/images/menu-img-course.jpg";
+import lifeGyanodhayam1 from "../../../../assets/images/menu-img-lifeGyanodhayam1.jpg";
+import lifeGyanodhayam2 from "../../../../assets/images/menu-img-lifeGyanodhayam2.jpg";
 
 const MegaMenuOne = () => {
   return (
@@ -219,7 +222,7 @@ const MegaMenuOne = () => {
               </div>
               <div className="col-lg-4  menus-padding">
                 <img
-                  src={NavbarImage2}
+                  src={courseMegaImage}
                   alt="image"
                   style={{ paddingBottom: "20px" }}
                 />
@@ -264,7 +267,7 @@ const MegaMenuOne = () => {
                   </Link>
                 </h4> */}
                 <img
-                  src={NavbarImage2}
+                  src={lifeGyanodhayam1}
                   alt="image"
                   style={{ paddingBottom: "20px" }}
                 />
@@ -312,7 +315,7 @@ const MegaMenuOne = () => {
               </div>
               <div className="col-lg-4  menus-padding">
                 <img
-                  src={NavbarImage2}
+                  src={lifeGyanodhayam2}
                   alt="image"
                   style={{ paddingBottom: "20px" }}
                 />
