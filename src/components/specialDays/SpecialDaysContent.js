@@ -11,7 +11,7 @@ import Fruitsday from "../../assets/images/life-in-gyanodhayam/special-days/frui
 import GuruPoornima from "../../assets/images/life-in-gyanodhayam/special-days/guru-poornim.jpg";
 import BakthiYogam from "../../assets/images/life-in-gyanodhayam/special-days/bakthi-yogam.jpg";
 import GyanaYogam from "../../assets/images/life-in-gyanodhayam/special-days/gyana-yogam.jpg";
-import udal from "../../assets/images/Courses/education/course-1st-sem/img-1.jpg";
+import GurusDay from "../../assets/images/life-in-gyanodhayam/special-days/gurus-day.jpg";
 
 const SpecialDaysContent = () => {
   // useEffect(() => {
@@ -314,7 +314,7 @@ const SpecialDaysContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={udal} alt="udal" className="width-100" />
+                  <img src={GurusDay} alt="GurusDay" className="width-100" />
                 </div>
               </div>
             </div>

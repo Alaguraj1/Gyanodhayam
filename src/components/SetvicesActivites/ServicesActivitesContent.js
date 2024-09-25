@@ -202,7 +202,9 @@ const ServicesActivitiesContent = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <div className="row">
+                {" "}
+                <img src={ServiceActivity1} alt="ServiceActivity1" />
+                {/* <div className="row">
                   <div className="col-lg-4">
                     <img src={ServiceActivity1} alt="ServiceActivity1" />
                   </div>
@@ -212,7 +214,7 @@ const ServicesActivitiesContent = () => {
                   <div className="col-lg-4">
                     <img src={ServiceActivity3} alt="ServiceActivity3" />
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

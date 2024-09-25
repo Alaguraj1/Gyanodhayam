@@ -1,9 +1,9 @@
 import React, {  useRef, useState } from "react";
-import nanneri from "../../assets/images/Courses/Imgs/img-1.jpg";
-import trust from "../../assets/images/Courses/Imgs/img-2.jpg";
-import motivation from "../../assets/images/Courses/Imgs/img-3.jpg";
-import teachers from "../../assets/images/Courses/Imgs/img-4.jpg";
-import guru from "../../assets/images/Courses/Imgs/img-5.jpg";
+import nanneri from "../../assets/images/Courses/nanneri.jpg";
+import trust from "../../assets/images/Courses/gyanodhayam-educational-trust-certificate-course.jpg";
+import motivation from "../../assets/images/Courses/gyanodhayam-educational-trust-motivation-class.jpg";
+import teachers from "../../assets/images/Courses/teachers-practice-course.jpg";
+import guru from "../../assets/images/Courses/guru-practice-course.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 // import flower_3 from "../../assets/images/flower-3.jpg";

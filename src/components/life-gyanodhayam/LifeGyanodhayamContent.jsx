@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import nanneri from "../../assets/images/Courses/Imgs/img-1.jpg";
-import trust from "../../assets/images/Courses/Imgs/img-2.jpg";
-import motivation from "../../assets/images/Courses/Imgs/img-3.jpg";
+import jai_guruji1 from "../../assets/images/life-in-gyanodhayam/banner.jpg";
+import nanneri from "../../assets/images/life-in-gyanodhayam/service-activities.jpg";
+import trust from "../../assets/images/life-in-gyanodhayam/special-days.jpg";
+import motivation from "../../assets/images/life-in-gyanodhayam/group-activities.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";

@@ -1,18 +1,18 @@
 import React, { useRef, useState } from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
-import body from "../../assets/images/Courses/education/trust-certificate-course/img-1.jpg";
-import yoga from "../../assets/images/Courses/education/trust-certificate-course/img-2.jpg";
-import food from "../../assets/images/Courses/education/trust-certificate-course/img-3.jpg";
-import mind from "../../assets/images/Courses/education/trust-certificate-course/img-4.jpg";
-import character from "../../assets/images/Courses/education/trust-certificate-course/img-5.jpg";
-import meditation from "../../assets/images/Courses/education/trust-certificate-course/img-6.jpg";
-import relationship from "../../assets/images/Courses/education/trust-certificate-course/img-7.jpg";
-import karma from "../../assets/images/Courses/education/trust-certificate-course/img-8.jpg";
-import soul from "../../assets/images/Courses/education/trust-certificate-course/img-9.jpg";
-import nobless from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
-import arts from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
-import services from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
-import mounam from "../../assets/images/Courses/education/trust-certificate-course/img-10.jpg";
+import jai_guruji1 from "../../assets/images/Courses/education/trust-certificate-course/banner.jpg";
+import body from "../../assets/images/Courses/education/trust-certificate-course/body.jpg";
+import yoga from "../../assets/images/Courses/education/trust-certificate-course/exercise.jpg";
+import food from "../../assets/images/Courses/education/trust-certificate-course/food.jpg";
+import mind from "../../assets/images/Courses/education/trust-certificate-course/mind.jpg";
+import character from "../../assets/images/Courses/education/trust-certificate-course/character.jpg";
+import meditation from "../../assets/images/Courses/education/trust-certificate-course/meditation.jpg";
+import relationship from "../../assets/images/Courses/education/trust-certificate-course/relationship.jpg";
+import karma from "../../assets/images/Courses/education/trust-certificate-course/karma.jpg";
+import soul from "../../assets/images/Courses/education/trust-certificate-course/soul.jpg";
+import nobless from "../../assets/images/Courses/education/trust-certificate-course/nobleness.jpg";
+import arts from "../../assets/images/Courses/education/trust-certificate-course/arts.jpg";
+import services from "../../assets/images/Courses/education/trust-certificate-course/services.jpg";
+import mounam from "../../assets/images/Courses/education/trust-certificate-course/mounam.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
@@ -726,7 +726,7 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={nobless} alt="nobless" />
+                  <img src={arts} alt="arts" />
                 </div>
               </div>
 
@@ -767,7 +767,7 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={nobless} alt="nobless" />
+                  <img src={services} alt="Services" />
                 </div>
               </div>
 
@@ -810,7 +810,7 @@ const Courses2 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={nobless} alt="nobless" />
+                  <img src={mounam} alt="mounam" />
                 </div>
               </div>
 

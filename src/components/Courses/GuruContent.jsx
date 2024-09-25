@@ -1,20 +1,18 @@
 import React from "react";
-import jai_guruji1 from "../../assets/images/sec-1.jpg";
+import jai_guruji1 from "../../assets/images/Courses/education/guru/banner.jpg";
 import flower_1 from "../../assets/images/flower-1.jpg";
 import flower_2 from "../../assets/images/flower-2.jpg";
-import guru from "../../assets/images/Courses/Imgs/img-5.jpg";
+import guru from "../../assets/images/Courses/education/guru/img.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const GuruContent = () => {
+  // useEffect(() => {
+  //     AOS.init(); // Initialize AOS when the component mounts
+  // })
 
-    
-    // useEffect(() => {
-    //     AOS.init(); // Initialize AOS when the component mounts
-    // })
+  AOS.init();
 
-    AOS.init();
-    
   return (
     <>
       <div>
@@ -42,26 +40,39 @@ const GuruContent = () => {
         <img
           src={flower_1}
           alt="illustration"
-          className="nanneri-flower-image-1" data-aos="fade-up"
+          className="nanneri-flower-image-1"
+          data-aos="fade-up"
           data-aos-delay="300"
           data-aos-duration="1200"
         />
         <div className="row pb-40 lg-pb-10">
-          <div className="col-12" data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200">
+          <div
+            className="col-12"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <h3 className="nanneri-header">Guru Practice Course</h3>
           </div>
         </div>
-        <div style={{display: 'flex', justifyContent: 'center'}} data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200">
-          <img src={guru} alt="teachers"  />
+        <div
+          style={{ display: "flex", justifyContent: "center" }}
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1200"
+        >
+          <img src={guru} alt="teachers" />
         </div>
-        <div className="pt-20 lg-pt-30" style={{display: 'flex', justifyContent: 'center'}}>
-          <div className="text-align  w-60-100" data-aos="fade-up"
-                  data-aos-delay="300"
-                  data-aos-duration="1200">
+        <div
+          className="pt-20 lg-pt-30"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <div
+            className="text-align  w-60-100"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
             <p className="course2-content">
               The aim of Gyanodhayam Educational Trust is to serve society by
               assisting spiritualy interested souls to become Gurus. In this
@@ -86,10 +97,11 @@ const GuruContent = () => {
             </p>
           </div>
 
-          <img 
+          <img
             src={flower_2}
             alt="illustration"
-            className="nanneri-flower-image-2" data-aos="fade-up"
+            className="nanneri-flower-image-2"
+            data-aos="fade-up"
             data-aos-delay="300"
             data-aos-duration="1200"
           />

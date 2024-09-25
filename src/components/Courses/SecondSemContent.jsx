@@ -8,7 +8,7 @@ import manam from "../../assets/images/Courses/education/course-2nd-sem/img-1.pn
 import guru from "../../assets/images/Courses/education/course-2nd-sem/img-2.jpg";
 import thavam from "../../assets/images/Courses/education/course-2nd-sem/img-3.jpg";
 import karma from "../../assets/images/Courses/education/course-2nd-sem/img-4.jpg";
-import viva from "../../assets/images/Courses/education/course-2nd-sem/img-5.jpg";
+import viva from "../../assets/images/Courses/education/course-2nd-sem/viva-ora-exam.jpg";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
