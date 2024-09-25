@@ -230,7 +230,7 @@ const Courses3 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={unavu} alt="unavu" className="width-100" />
+                  <img src={unavu} alt="unavu" className="width-100" style={{height:"400px"}} />
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
