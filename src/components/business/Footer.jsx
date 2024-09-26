@@ -93,14 +93,14 @@ const Footer = () => {
           data-aos-duration="1200"
         >
           <div className="footer-newsletter-outer">
-            <h5 className="footer-title">Subscripe to newsletter</h5>
+            <h5 className="footer-title">Subscribe to newsletter</h5>
             <div className="footer-email-outer">
               <input
                 type="email"
                 placeholder="EMail"
                 className="footer-email"
               />
-              <p className="footer-submit">Submit</p>
+              <p className="footer-submit" style={{cursor:"pointer"}}>Submit</p>
             </div>
           </div>
         </div>

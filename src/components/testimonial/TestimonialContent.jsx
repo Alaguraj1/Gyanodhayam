@@ -111,7 +111,7 @@ const TestimonialContent = () => {
                       }}
                     ></div>
 
-                    <p>
+                    <p style={{marginBottom: 0}}>
                       <Link
                         to={`/testimonials/${element.slug}`}
                         className="testimonial-read-more"

@@ -127,12 +127,7 @@ const Courses4 = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img
-                  src={manam}
-                  alt="manam"
-                  className="width-100"
-                  style={{ height: "140px" }}
-                />
+                <img src={manam} alt="manam" className="width-100" />
               </div>
             </div>
             <div className="row">
@@ -169,12 +164,7 @@ const Courses4 = () => {
                 data-aos-delay="300"
                 data-aos-duration="1200"
               >
-                <img
-                  src={Gunam}
-                  alt="Gunam"
-                  className="width-100"
-                  style={{ height: "175px" }}
-                />
+                <img src={Gunam} alt="Gunam" className="width-100" />
               </div>
             </div>
             <div className="row">
@@ -275,12 +265,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img
-                    src={guru}
-                    alt="guru"
-                    className="width-100"
-                    style={{ height: "300px" }}
-                  />
+                  <img src={guru} alt="guru" className="width-100" />
                 </div>
               </div>
 
@@ -307,12 +292,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img
-                    src={Kailaagai}
-                    alt="guru"
-                    className="width-100"
-                    style={{ height: "100px" }}
-                  />
+                  <img src={Kailaagai} alt="guru" className="width-100" />
                 </div>
               </div>
               <div className="row">
@@ -337,12 +317,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img
-                    src={guruvasam}
-                    alt="guru"
-                    className="width-100"
-                    style={{ height: "80px" }}
-                  />
+                  <img src={guruvasam} alt="guru" className="width-100" />
                 </div>
               </div>
               <div className="row">
@@ -372,7 +347,6 @@ const Courses4 = () => {
                     src={ariyamugam}
                     alt="ariyamugam"
                     className="width-100"
-                    style={{ height: "90px" }}
                   />
                 </div>
               </div>
@@ -438,12 +412,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img
-                    src={thavam}
-                    alt="thavam"
-                    className="width-100"
-                    style={{ height: "100px" }}
-                  />
+                  <img src={thavam} alt="thavam" className="width-100" />
                 </div>
               </div>
 
@@ -518,7 +487,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={karma} alt="karma" className="width-100" style={{height:"90px"}} />
+                  <img src={karma} alt="karma" className="width-100" />
                 </div>
               </div>
 
@@ -553,7 +522,7 @@ const Courses4 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={Ozhukam} alt="Ozhukam" className="width-100" style={{height:"170px"}} />
+                  <img src={Ozhukam} alt="Ozhukam" className="width-100" />
                 </div>
               </div>
               <div className="row">
