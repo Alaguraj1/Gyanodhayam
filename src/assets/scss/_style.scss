@@ -13784,6 +13784,13 @@ body .theme-btn-eighteen:hover:before {
   .media-audio-guru {
     height: 35px;
   }
+
+  .media-music-guru {
+    height: 35px;
+  }
+  .media-music-title {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -13800,6 +13807,10 @@ body .theme-btn-eighteen:hover:before {
   }
 
   .media-audio-guru {
+    height: 30px;
+  }
+
+  .media-music-guru {
     height: 30px;
   }
 }

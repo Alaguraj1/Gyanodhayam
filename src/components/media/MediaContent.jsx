@@ -252,7 +252,7 @@ const FounderContent = () => {
                     <h4 className="course2-title media-music-title">
                       Unakkum Kuraikal Uladho
                     </h4>
-                    <audio
+                    <audio className="media-music-guru"
                       ref={(el) => (audioRefs.current[2] = el)}
                       src={AudioGuru3}
                       controls
