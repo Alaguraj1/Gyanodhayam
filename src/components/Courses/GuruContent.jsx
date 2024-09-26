@@ -36,7 +36,7 @@ const GuruContent = () => {
         </div>
       </div>
 
-      <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50 relative">
+      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-50 md-mt-30 md-mb-30 relative">
         <img
           src={flower_1}
           alt="illustration"

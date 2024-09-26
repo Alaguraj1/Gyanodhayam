@@ -48,7 +48,7 @@ const Courses4 = () => {
         </div>
       </div>
 
-      <div className="container relative mt-100 mb-100 lg-mt-50 lg-mb-50">
+      <div className="container relative mt-50 mb-50 lg-mt-50 lg-mb-50 md-mt-30 md-mb-30">
         <div>
           <img
             src={flower_1}

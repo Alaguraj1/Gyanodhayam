@@ -47,7 +47,7 @@ const LifeInGyanodhayamContent = () => {
         </div>
       </div>
 
-      <div className="container mt-100 mb-50 lg-mt-50 lg-mb-20">
+      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-20 md-mt-30 md-mb-20">
         <div className="relative">
           <div className="row mt-50 sticky-container">
             <div
