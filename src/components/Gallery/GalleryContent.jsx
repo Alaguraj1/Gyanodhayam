@@ -72,7 +72,7 @@ const GalleryContent = () => {
               posts.map((element) => {
                 return (
                   <div
-                    className="col-lg-4 col-md-6 col-lg-pb-50  pb-30 "
+                    className="col-lg-3 col-md-6 col-lg-pb-50  pb-30 "
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
