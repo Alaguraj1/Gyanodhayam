@@ -58,7 +58,7 @@ const TestimonialContent = () => {
 
   return (
     <>
-      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-0">
+      <div className="container md-mt-30 mt-50 ">
         {isLoading ? (
           <Loading loading={isLoading} />
         ) : error ? (
@@ -73,7 +73,7 @@ const TestimonialContent = () => {
           posts.length > 0 &&
           posts.map((element) => {
             return (
-              <div className="row pb-50 lg-pb-50" key={element.slug}>
+              <div className="row pb-50 mt-pb-30" key={element.slug}>
                 <div
                   className="col-lg-6"
                   data-aos="fade-up"

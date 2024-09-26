@@ -61,7 +61,7 @@ const CourseContent = () => {
         </div>
       </div>
 
-      <div className="container mt-100 mb-50 lg-mt-50 lg-mb-20">
+      <div className="container mt-50  lg-mt-50 ">
         <div className="relative">
           <div className="row mt-50 sticky-container">
             <div className="col-lg-3 course2-syllabus">
