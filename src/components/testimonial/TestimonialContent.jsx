@@ -58,7 +58,7 @@ const TestimonialContent = () => {
 
   return (
     <>
-      <div className="container mt-100 mb-50 lg-mt-50 lg-mb-0">
+      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-0">
         {isLoading ? (
           <Loading loading={isLoading} />
         ) : error ? (

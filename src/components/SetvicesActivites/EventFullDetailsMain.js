@@ -42,7 +42,7 @@ const EventsFullDetailsMain = ({ slug }) => {
   if (!postData) return <div>No data found for this post.</div>;
   return (
     <>
-      <div className="container mt-50 mb-100">
+      <div className="container mt-50 mb-50">
         {/* <div
           className="text-end"
           style={{
@@ -72,12 +72,12 @@ const EventsFullDetailsMain = ({ slug }) => {
         </div> */}
         <div className="pb-20 text-center">
           <h3 className="mb-10 course2-title">{postData.title.rendered}</h3>{" "}
-          <span
+          {/* <span
             className="course2-content"
             style={{ fontSize: "20px", color: "gray" }}
           >
             Date: {new Date(postData.date).toLocaleDateString()}
-          </span>
+          </span> */}
         </div>
 
         <div

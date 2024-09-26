@@ -11,7 +11,7 @@ const SingleTestimonial = () => {
 
   return (
     <div className="main-page-wrapper">
-      <Seo title="Single Testimonial" />
+      <Seo title={`${slug}`} />
 
       <Sidebar />
 

@@ -60,12 +60,12 @@ const AnnouncementDetailsMain = ({ slug }) => {
                 justifyContent: "end",
               }}
             >
-              <span
+              {/* <span
                 className="course2-content pb-0"
                 style={{ fontSize: "20px", color: "gray" }}
               >
                 Date: {new Date(postData.date).toLocaleDateString()}
-              </span>
+              </span> */}
               <Link
                 to="https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true"
                 className="btn btn-primary"
@@ -79,7 +79,7 @@ const AnnouncementDetailsMain = ({ slug }) => {
                 participate with us
               </Link>
             </div>
-            <div className="pb-20">
+            <div className="pb-20 text-center">
               <h3 className="mb-10 course2-title">{postData.title.rendered}</h3>{" "}
             </div>
 
