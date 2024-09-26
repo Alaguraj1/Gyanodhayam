@@ -14,7 +14,7 @@ const ServiceActivityPost = () => {
   return (
     <>
       <div className="main-page-wrapper">
-        <Seo title="Events" />
+        <Seo title={`${slug}`} />
 
         <Sidebar />
 

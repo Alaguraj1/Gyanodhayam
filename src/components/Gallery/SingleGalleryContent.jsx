@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import axios from "axios";
 import Loading from "../loader/Loading";
+import { Link } from "react-router-dom";
 
 const SingleGalleryContent = ({ slug }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -84,7 +85,7 @@ const SingleGalleryContent = ({ slug }) => {
 
   return (
     <>
-      <div className="blog-section-four mt-100 mb-100 lg-mt-50 lg-mb-50">
+      <div className="blog-section-four mt-50 mb-50 lg-mt-50 lg-mb-50">
         <div className="container">
           {loading ? (
             <Loading loading={loading} />
@@ -98,11 +99,25 @@ const SingleGalleryContent = ({ slug }) => {
             </div>
           ) : (
             <div>
-              <h4
-                className="course2-title text-align"
-                style={{ paddingBottom: "20px", fontSize: "30px" }}
-                dangerouslySetInnerHTML={{ __html: postData.title.rendered }}
-              ></h4>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
+                <h4
+                  className="course2-title text-align pb-0"
+                  style={{  paddingRight: "10px" }}
+                >
+                  <Link to="/gallery">Gallery</Link>
+                </h4>
+                <h4 className="course2-title text-align pb-0">&gt;</h4>
+                <h4
+                  className="course2-title text-align pb-0"
+                  style={{paddingLeft: "10px" }}
+                  dangerouslySetInnerHTML={{ __html: postData.title.rendered }}
+                ></h4>
+              </div>
               <div className="image-gallery row">
                 {galleryImages.map((image, index) => (
                   <div

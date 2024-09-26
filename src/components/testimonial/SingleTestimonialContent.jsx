@@ -59,7 +59,7 @@ const SingleTestimonialContent = ({ slug }) => {
           </div>
         </div>
       </div>
-      <div className="container mt-100 mb-100">
+      <div className="container mt-50 mb-50">
         {loading ? (
           <Loading loading={loading} />
         ) : error ? (

@@ -52,9 +52,9 @@ const GalleryContent = () => {
 
   return (
     <>
-      <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
+      <div className="blog-section-four mt-50 mb-50  lg-mt-50 lg-mb-50">
         <div className="container">
-          <div className="row  course2-content">
+          <div className="row  course2-content pb-0">
             {/* {isLoading && <Loading loading={isLoading} />}
             {error && <div>Error: {error}</div>}
             {posts?.length === 0 && <div>No posts found.</div>} */}
@@ -80,11 +80,13 @@ const GalleryContent = () => {
                     <div>
                       {element._links?.["wp:featuredmedia"]?.map(
                         (mediaLink) => (
-                          <FeatureMediaSingle
-                            key={mediaLink.href}
-                            mediaLink={mediaLink.href}
-                            className="js-img-single"
-                          />
+                          <Link to={`/gallery/${element.slug}`}>
+                            <FeatureMediaSingle
+                              key={mediaLink.href}
+                              mediaLink={mediaLink.href}
+                              className="js-img-single"
+                            />
+                          </Link>
                         )
                       )}
                       {/* <img src={element.image} alt="blog post" /> */}

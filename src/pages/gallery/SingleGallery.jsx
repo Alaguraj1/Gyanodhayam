@@ -12,13 +12,13 @@ const Gallery = () => {
 
   return (
     <div className="main-page-wrapper">
-      <Seo title="Gallery Details" />
+      <Seo title={`Gallery - ${slug}`} />
 
       <Sidebar />
 
       <Header />
 
-      <EventDetailsBannerMain title="Gallery" />
+      <EventDetailsBannerMain title="Gallery"  />
 
       <SingleGalleryContent slug={slug} />
       {/* footer section */}
