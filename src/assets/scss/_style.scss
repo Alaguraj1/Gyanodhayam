@@ -13834,7 +13834,10 @@ h2.wp-block-post-title {
       padding-top: 25px;
       font-family: "archerpromedium";
       font-size: 18px;}
-    .elementor-element{background: #f9f9f9; }
-    .elementor-widget-container{margin:15px 0px; }
-    .elementor-widget-container h3{margin-top:25px; padding: 0px; border-bottom: 3px solid #fff6f0; }
+    .elementor-element{background: #fff; }
+   /*  .elementor-widget-container{margin:15px 0px; }
+*/
     .gallery-item img{border-radius: 5px; border:1px solid #f58635; padding: 3px;}
+    .elementor-widget-container h3{font-size:24px;padding-bottom: 20px;
+      color: #525252;border-bottom: 3px solid #fff6f0; 
+      font-family: "archerpromedium";}
