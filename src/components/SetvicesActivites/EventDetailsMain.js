@@ -40,16 +40,19 @@ const EventDetailsMain = ({ slug }) => {
     fetchPosts();
   }, [slug]);
 
+  console.log("posts", posts);
+
   return (
     <>
-      <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
+      <div className="blog-section-four mt-50 lg-mt-50">
         <div className="container">
+          <div className="text-center pb-20">
+            <h4 className="nanneri-header-1" style={{fontWeight: "bold"}}>Year - {slug}</h4>
+          </div>
           <div className="row course2-content">
-            {
-            isLoading ? (
+            {isLoading ? (
               <Loading loading={isLoading} />
-            ) : 
-            error ? (
+            ) : error ? (
               <div className="alert alert-danger" role="alert">
                 {error}
               </div>
@@ -70,29 +73,32 @@ const EventDetailsMain = ({ slug }) => {
                     data-aos-delay="300"
                     data-aos-duration="1200"
                     key={element.id} // Ensure to add a key prop for each mapped element
+                    style={{position: "relative"}} // Ensure the image is positioned relatively
                   >
                     <div>
                       {element._links?.["wp:featuredmedia"]?.map(
                         (mediaLink) => (
-                          <FeatureMediaSingle
-                            key={mediaLink.href}
-                            mediaLink={mediaLink.href}
-                            className="js-img-single"
-                          />
+                          <Link to={`/events/${element.slug}`}>
+                            <FeatureMediaSingle
+                              key={mediaLink.href}
+                              mediaLink={mediaLink.href}
+                              className="js-img-single"
+                            />
+                          </Link>
                         )
                       )}
                     </div>
-                    <div style={{ textAlign: "center" }}>
+                    <div  style={{ textAlign: "center", position:"absolute", top: "40%", left: "50%", transform: "translate(-50%, -50%)", padding: "10px", borderRadius: "10px", backgroundColor: "rgb(110 126 150 / 35%)" }}>
                       <Link
                         to={`/events/${element.slug}`}
-                        className="title gallery-title"
+                        className="title gallery-title pt-0" style={{color: "white"}}
                       >
                         {element.title.rendered}
                       </Link>
-                      <div className="post-info gallery-read-more">
-                        <Link
+                      <div className="post-info gallery-read-more pt-0">
+                        <Link className="pt-0"
                           to={`/events/${element.slug}`}
-                          style={{ textDecoration: "underline" }}
+                          style={{ textDecoration: "underline", color: "white" }}
                         >
                           Read More
                         </Link>
