@@ -65,7 +65,7 @@ const FounderContent = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-100 mb-100 lg-mt-50 lg-mb-50">
+      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-50 md-mt-30 md-mb-30">
         <div className="relative">
           <div className="row mt-50 sticky-container">
             <div className="col-lg-3 course2-syllabus">
@@ -252,7 +252,8 @@ const FounderContent = () => {
                     <h4 className="course2-title media-music-title">
                       Unakkum Kuraikal Uladho
                     </h4>
-                    <audio className="media-music-guru"
+                    <audio
+                      className="media-music-guru"
                       ref={(el) => (audioRefs.current[2] = el)}
                       src={AudioGuru3}
                       controls
@@ -286,7 +287,6 @@ const FounderContent = () => {
                 </h4>
                 <p
                   className="course2-content text-align"
-                  style={{ paddingBottom: "8px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
@@ -309,7 +309,8 @@ const FounderContent = () => {
                       <h4 className="course2-title media-audio-title">
                         Chainthing Om
                       </h4>
-                      <audio className="media-audio-guru"
+                      <audio
+                        className="media-audio-guru"
                         ref={(el) => (audioRefs.current[0] = el)}
                         src={AudioGuru1}
                         controls
@@ -321,7 +322,8 @@ const FounderContent = () => {
                       <h4 className="course2-title media-audio-title">
                         Om Namasivaya
                       </h4>
-                      <audio className="media-audio-guru"
+                      <audio
+                        className="media-audio-guru"
                         ref={(el) => (audioRefs.current[1] = el)}
                         src={AudioGuru2}
                         controls
