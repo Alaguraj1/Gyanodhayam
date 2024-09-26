@@ -4,11 +4,14 @@ import flower_2 from "../../assets/images/flower-2.jpg";
 import flower_3 from "../../assets/images/flower-3.jpg";
 import flower_4 from "../../assets/images/flower-4.jpg";
 import music from "../../assets/images/media_press/music.jpg";
-// import audio from "../../assets/images/media_press/audio.jpg";
+import audio from "../../assets/images/media_press/audio.jpg";
 import video from "../../assets/images/media_press/video.jpg";
 import banner from "../../assets/images/media_press/banner.jpg";
-import calendar from "../../assets/images/media_press/calendar.jpg";
+import calendar1 from "../../assets/images/media_press/calendar-1.jpg";
+import calendar2 from "../../assets/images/media_press/calendar-2.jpg";
+import calendar3 from "../../assets/images/media_press/calendar-3.jpg";
 import social_media from "../../assets/images/media_press/social-media.jpg";
+import press from "../../assets/images/media_press/newsletters.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -170,6 +173,24 @@ const FounderContent = () => {
                   </li>
 
                   <li
+                    onClick={() => handleTabClick("Press")}
+                    className={`course2-list ${
+                      activeTab === "Press"
+                        ? "active-tab course2-list"
+                        : "course2-list"
+                    }`}
+                    style={{ marginBottom: "8px" }}
+                  >
+                    {activeTab === "Press" ? (
+                      <i
+                        className="press-line"
+                        style={{ backgroundColor: "#f58635" }}
+                      ></i>
+                    ) : null}
+                    <a href="#press">Press</a>
+                  </li>
+
+                  <li
                     onClick={() => handleTabClick("Contact Us")}
                     className={`course2-list ${
                       activeTab === "Contact Us"
@@ -223,8 +244,22 @@ const FounderContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ position: "relative" }}
                 >
                   <img src={music} alt="music" />
+
+                  <div className="media-music-content">
+                    <h4 className="course2-title media-music-title">
+                      Unakkum Kuraikal Uladho
+                    </h4>
+                    <audio className="media-music-guru"
+                      ref={(el) => (audioRefs.current[2] = el)}
+                      src={AudioGuru3}
+                      controls
+                      onPlay={() => handlePlay(2)}
+                      style={{ width: "100%" }}
+                    ></audio>
+                  </div>
                 </div>
                 {/* <p className="guru-read">
                   <Link to="/introduction">Learn More</Link>
@@ -260,19 +295,56 @@ const FounderContent = () => {
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
                 </p>
+
                 <div
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                  style={{ position: "relative" }}
+                >
+                  <img src={audio} alt="audio" />
+
+                  <div className="media-audio-content">
+                    <div>
+                      <h4 className="course2-title media-audio-title">
+                        Chainthing Om
+                      </h4>
+                      <audio className="media-audio-guru"
+                        ref={(el) => (audioRefs.current[0] = el)}
+                        src={AudioGuru1}
+                        controls
+                        onPlay={() => handlePlay(0)}
+                        style={{ width: "100%" }}
+                      ></audio>
+                    </div>
+                    <div>
+                      <h4 className="course2-title media-audio-title">
+                        Om Namasivaya
+                      </h4>
+                      <audio className="media-audio-guru"
+                        ref={(el) => (audioRefs.current[1] = el)}
+                        src={AudioGuru2}
+                        controls
+                        onPlay={() => handlePlay(1)}
+                        style={{ width: "100%" }}
+                      ></audio>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <div
                   style={{ margin: "20px 0px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
-                >
-                  <div>
+                > */}
+                {/* <div>
                     <h6 style={{ fontWeight: "bold" }}>Chainthing Om</h6>
                     <audio
-                      ref={(el) => (audioRefs.current[0] = el)}
-                      src={AudioGuru1}
+                      ref={(el) => (audioRefs.current[1] = el)}
+                      src={AudioGuru2}
                       controls
-                      onPlay={() => handlePlay(0)}
+                      onPlay={() => handlePlay(1)}
                       style={{ width: "100%" }}
                     ></audio>
                   </div>
@@ -286,9 +358,9 @@ const FounderContent = () => {
                       onPlay={() => handlePlay(1)}
                       style={{ width: "100%" }}
                     ></audio>
-                  </div>
+                  </div> */}
 
-                  <div style={{ margin: "20px 0px" }}>
+                {/* <div style={{ margin: "20px 0px" }}>
                     <h6 style={{ fontWeight: "bold" }}>
                       Unakkum Kuraikal Uladho
                     </h6>
@@ -299,8 +371,8 @@ const FounderContent = () => {
                       onPlay={() => handlePlay(2)}
                       style={{ width: "100%" }}
                     ></audio>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
 
                 {/* <p className="guru-read-2">
                   <Link to="/founders">Learn More</Link>
@@ -385,7 +457,9 @@ const FounderContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={calendar} alt="calendar" />
+                  <img src={calendar1} alt="calendar" />
+                  <img src={calendar2} alt="calendar" />
+                  <img src={calendar3} alt="calendar" />
                 </div>
 
                 {/* <p className="guru-read-2">
@@ -429,6 +503,53 @@ const FounderContent = () => {
                   data-aos-duration="1200"
                 >
                   <img src={social_media} alt="calendar" />
+                </div>
+
+                {/* <p className="guru-read-2">
+                  <Link to="/founders">Learn More</Link>
+                </p> */}
+              </div>
+
+              <div id="press"></div>
+              <div className="course2-outer">
+                <img
+                  src={flower_1}
+                  alt="illustration"
+                  className="media-flower-image-5"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                />
+
+                <h4
+                  className="course2-title text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  Press
+                </h4>
+                <p
+                  className="course2-content text-align"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text
+                </p>
+                <div
+                  style={{
+                    margin: "20px 0px",
+                    display: "flex",
+                    justifyContent: "center",
+                  }}
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={press} alt="press" />
                 </div>
 
                 {/* <p className="guru-read-2">
