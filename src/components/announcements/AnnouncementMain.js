@@ -46,7 +46,6 @@ const TestimonialContent = () => {
     fetchPosts();
   }, []);
 
-
   // const truncateContent = (content, maxLength) => {
   //   if (content.length > maxLength) {
   //     return content.slice(0, maxLength) + "...";
@@ -110,11 +109,13 @@ const TestimonialContent = () => {
                     <div>
                       {element._links?.["wp:featuredmedia"]?.map(
                         (mediaLink) => (
-                          <FeatureMediaSingle
-                            key={mediaLink.href}
-                            mediaLink={mediaLink.href}
-                            className="js-img-single"
-                          />
+                          <Link to={`/events/${element.slug}`}>
+                            <FeatureMediaSingle
+                              key={mediaLink.href}
+                              mediaLink={mediaLink.href}
+                              className="js-img-single"
+                            />
+                          </Link>
                         )
                       )}
                       {/* <img

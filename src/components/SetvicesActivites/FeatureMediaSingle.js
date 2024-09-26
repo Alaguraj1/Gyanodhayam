@@ -19,7 +19,9 @@ const FeatureMediaSingle = ({ mediaLink }) => {
   return mediaData ? (
     <img src={mediaData.source_url} alt="images" className="js-img-single" />
   ) : (
+    <div style={{ display:'flex', justifyContent:'center', alignItems:'center', }}>
    <img src={Logo} alt="images" className="js-img-single" style={{ width: "100px", height: "100px" }} />
+   </div>
   );
 };
 
