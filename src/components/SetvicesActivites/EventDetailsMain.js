@@ -78,11 +78,11 @@ const EventDetailsMain = ({ slug }) => {
                     <div>
                       {element._links?.["wp:featuredmedia"]?.map(
                         (mediaLink) => (
-                          <Link to={`/events/${element.slug}`}>
+                          <Link to={`/events/${element.slug}`} style={{backgroundColor: "black"}}>
                             <FeatureMediaSingle
                               key={mediaLink.href}
-                              mediaLink={mediaLink.href}
-                              className="js-img-single"
+                              mediaLink={mediaLink.href} opacity={0.4}
+                              className="js-img-single" 
                             />
                           </Link>
                         )
