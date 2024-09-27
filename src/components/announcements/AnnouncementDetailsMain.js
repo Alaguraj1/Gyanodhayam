@@ -39,7 +39,7 @@ const AnnouncementDetailsMain = ({ slug }) => {
 
   return (
     <>
-      <div className="container mt-50 mb-100">
+      <div className="container mt-50 mb-50 lg-mt-50 lg-mb-50 md-mt-30 md-mb-30">
         {loading ? (
           <Loading loading={loading} />
         ) : error ? (

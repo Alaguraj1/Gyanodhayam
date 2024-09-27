@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <div
       className="container-fluid"
-      style={{ backgroundColor: "rgb(248 225 207 / 15%)", paddingTop: "20px" }}
+      style={{ backgroundColor: "rgb(248 225 207 / 15%)", paddingTop: "20px", position: "relative" }}
     >
       <div className="container mt-30 ">
         <div className="row footer-row">
