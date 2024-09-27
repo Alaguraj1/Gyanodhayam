@@ -46,8 +46,11 @@ const EventDetailsMain = ({ slug }) => {
     <>
       <div className="blog-section-four mt-50 lg-mt-50">
         <div className="container">
-          <div className="text-center pb-20">
-            <h4 className="nanneri-header-1" style={{fontWeight: "bold"}}>Year - {slug}</h4>
+          <div className="text-center pb-20" style={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+            <h4 className="nanneri-header-1 mb-0" style={{fontWeight: "bold"}}>Year - {slug}</h4>
+            <div>
+              <Link to="/services-activites" className="post-info gallery-read-more pt-0"  style={{textDecoration:"underline", fontSize: "16px"}}> Back to Services Activities</Link>
+            </div>
           </div>
           <div className="row course2-content">
             {isLoading ? (

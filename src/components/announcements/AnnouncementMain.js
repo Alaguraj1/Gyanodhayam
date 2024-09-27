@@ -80,7 +80,7 @@ const TestimonialContent = () => {
           </div>
         </div>
       </div>
-      <div className="blog-section-four mt-100 mb-50  lg-mt-50 lg-mb-50">
+      <div className="blog-section-four mt-50  lg-mt-50 md-mt-30">
         <div className="container">
           <div className="row  course2-content">
             {isLoading ? (

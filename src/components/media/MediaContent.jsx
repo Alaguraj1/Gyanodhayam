@@ -18,6 +18,7 @@ import "aos/dist/aos.css";
 import AudioGuru1 from "../../assets/images/media_press/chainthing-om.mp3";
 import AudioGuru2 from "../../assets/images/media_press/om-namasivaya.mp3";
 import AudioGuru3 from "../../assets/images/media_press/unakkum-kuraikal-uladho.mp3";
+import { Link } from "react-router-dom";
 const FounderContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Music");
@@ -584,7 +585,13 @@ const FounderContent = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  Registration Form
+                  <Link
+                    to="https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true"
+                    target="_blank"
+                    style={{ textDecoration: "underline" }}
+                  >
+                    Click Here To Register
+                  </Link>
                 </p>
               </div>
             </div>
