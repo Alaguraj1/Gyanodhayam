@@ -170,7 +170,7 @@ const MegaMenuOne = () => {
               </div>
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
-                  <li className="dropdown-item font-style">
+                  <li className="font-style" style={{lineHeight:"22px", fontSize:"16px"}}>
                     {/* <CustomLink to="#" className="dropdown-item font-style"> */}
                     Gyanodhayam Educational Trust Motivation Class (Degree)
                     {/* </CustomLink> */}
@@ -233,6 +233,18 @@ const MegaMenuOne = () => {
       </li>
 
       {/* End course mega menu */}
+
+      <li className="nav-item dropdown mega-dropdown-md">
+        <NavLink
+          exact
+          to="/our-centers"
+          className="nav-link"
+          activeClassName="active"
+        >
+          Centers
+        </NavLink>
+      </li>
+
 
       <li className="nav-item dropdown mega-dropdown-md">
         <NavLink

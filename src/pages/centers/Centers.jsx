@@ -9,6 +9,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { OurCenters } from "../../utils/constant.utils";
 import { Link } from "react-router-dom";
+import EventDetailsBannerMain from "../../components/SetvicesActivites/EventDetailsBannerMain";
 
 const Contact = () => {
   AOS.init();
@@ -21,32 +22,7 @@ const Contact = () => {
 
       <Header />
 
-      <div>
-        <div
-          style={{
-            backgroundImage: `url(${homeBanner})`,
-            height: "60vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          <div className="banner-content-outer">
-            {/* <div style={{ display: "flex", justifyContent: "center" }}>
-              <img
-                src={bannerLogo}
-                alt="banner-logo"
-                style={{ width: "20%" }}
-              />
-            </div>
-            <h2 className="banner-header">
-              {" "}
-              "Faith on Guru never goes in vain"
-            </h2>
-            <h4 className="banner-subHeader">- Jai Guruji </h4> */}
-          </div>
-        </div>
-      </div>
+      <EventDetailsBannerMain title="Our Centers" />
 
       <div className="container mt-50 mb-100 lg-mt-50 lg-mb-50 text-align">
         <div className="row">
