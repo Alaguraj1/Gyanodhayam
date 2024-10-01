@@ -13137,6 +13137,16 @@ body .theme-btn-eighteen:hover:before {
   position: relative;
 }
 
+.home-page-main-banner {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 75px;
+}
+
 .home-testimonial-content p {
   font-size: 30px;
   color: rgb(245 134 53);
@@ -13744,6 +13754,12 @@ body .theme-btn-eighteen:hover:before {
   }
 }
 
+@media (max-width: 768px) {
+  .home-page-main-banner {
+    height: 50vh;
+  }
+}
+
 @media (max-width: 500px) {
   .founder-menu-autobiography {
     display: flex;
@@ -13791,6 +13807,10 @@ body .theme-btn-eighteen:hover:before {
   .media-music-title {
     font-size: 20px;
   }
+
+  .home-page-main-banner {
+    height: 30vh;
+  }
 }
 
 @media (max-width: 350px) {
@@ -13823,19 +13843,36 @@ h2.wp-block-post-title {
   padding-bottom: 20px;
   color: #525252;
   font-family: "archerpromedium";
-  margin: 0px;}
-  .wp-block-post-excerpt p{color: #525252;
-    font-weight: 500;
-    font-family: "archerpromedium";
-    margin: 0px;
-    font-size: 18px;
-    padding-bottom: 30px;}
-    .elementor-testimonial-name{margin: 0px;
-      padding-top: 25px;
-      font-family: "archerpromedium";
-      font-size: 18px;}
-     .elementor-widget-container{margin:15px 0px; }
-    .gallery-item img{border-radius: 5px; border:1px solid #f58635; padding: 3px;}
-    .elementor-widget-container h3{font-size:24px;padding-bottom: 5px;
-      color: #525252;border-bottom: 3px solid #fff6f0; font-style: normal;
-      font-family: "archerpromedium"; margin-top:20px;}
+  margin: 0px;
+}
+.wp-block-post-excerpt p {
+  color: #525252;
+  font-weight: 500;
+  font-family: "archerpromedium";
+  margin: 0px;
+  font-size: 18px;
+  padding-bottom: 30px;
+}
+.elementor-testimonial-name {
+  margin: 0px;
+  padding-top: 25px;
+  font-family: "archerpromedium";
+  font-size: 18px;
+}
+.elementor-widget-container {
+  margin: 15px 0px;
+}
+.gallery-item img {
+  border-radius: 5px;
+  border: 1px solid #f58635;
+  padding: 3px;
+}
+.elementor-widget-container h3 {
+  font-size: 24px;
+  padding-bottom: 5px;
+  color: #525252;
+  border-bottom: 3px solid #fff6f0;
+  font-style: normal;
+  font-family: "archerpromedium";
+  margin-top: 20px;
+}

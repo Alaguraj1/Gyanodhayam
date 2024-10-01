@@ -2017,6 +2017,9 @@ li {
     padding-left: 12px;
   }
 
+  .banner-header {
+    font-size: 26px;
+  }
   .social-title-outer {
     display: block;
   }
@@ -2292,5 +2295,11 @@ li {
 
   .year-services {
     text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-header {
+    font-size: 20px;
   }
 }

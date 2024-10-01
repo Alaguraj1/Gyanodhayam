@@ -18,14 +18,9 @@ const Business = () => {
 
       <div>
         <div
+          className="home-page-main-banner"
           style={{
             backgroundImage: `url(${homeBanner})`,
-            height: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center", 
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
           }}
         >
           <div className="banner-content-outer">
@@ -38,7 +33,8 @@ const Business = () => {
             </div> */}
             <h2 className="banner-header">
               {" "}
-              "What do you live for? To love, to be<br/> ecstatic and to be spiritual "
+              "What do you live for? To love, to be
+              <br /> ecstatic and to be spiritual "
             </h2>
             <h4 className="banner-subHeader">- Jai Guruji </h4>
           </div>
