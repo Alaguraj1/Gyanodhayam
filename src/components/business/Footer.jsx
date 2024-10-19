@@ -83,7 +83,7 @@ const Footer = () => {
               <ul className="footer-list">
                 <li>About Us</li>
                 <li>
-                  <Link to="/contact">Contact Us</Link>
+                  <Link to="/our-centers">Contact Us</Link>
                 </li>
                 <li>Free Literature</li>
                 <li>FAQ</li>

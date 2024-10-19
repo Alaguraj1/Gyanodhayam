@@ -33,17 +33,26 @@ const MegaMenuOne = () => {
       </li>
       {/* End Home dropdown */}
 
+
       <li className="nav-item dropdown mega-dropdown-founder">
-        <button
+      <NavLink
+          exact
+          to="/founder"
+          className="nav-link"
+          activeClassName="active"
+        >
+          Founder
+        </NavLink>
+        {/* <button
           className="nav-link dropdown-toggle"
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
           aria-expanded="false"
         >
-          {/* <Link to='/founder'  className="nav-link">Founder</Link> */}
+        
           Founder
-        </button>
-        <ul className="dropdown-menu">
+        </button> */}
+        {/* <ul className="dropdown-menu">
           <li>
             <div className="row">
               <div className="col-lg-4 menus-padding">
@@ -98,28 +107,10 @@ const MegaMenuOne = () => {
                 </p>
               </div>
 
-              {/* {pagesMegaMenuData.map((item) => (
-                <div className="col-lg-4" key={item.id}>
-                  <div className="menu-column">
-                    <h6 className="mega-menu-title">{item.title}</h6>
-                    <ul className="style-none mega-dropdown-list">
-                      {item.menuList.map((list, i) => (
-                        <li key={i}>
-                          <CustomLink
-                            to={list.routeLink}
-                            className="dropdown-item"
-                          >
-                            <span>{list.name}</span>
-                          </CustomLink>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              ))} */}
+         
             </div>
           </li>
-        </ul>
+        </ul> */}
       </li>
       {/* End about dropdown */}
 

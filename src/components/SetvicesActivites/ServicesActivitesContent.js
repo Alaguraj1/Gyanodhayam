@@ -144,8 +144,9 @@ const ServicesActivitiesContent = () => {
                   className="services-flower-image-2"
                 />
                 <div>
-                  <ul className="first-sem-list tick-icon">
+                  <ul className="first-sem-list tick-icon linkyear">
                     <h3 className="services-title">Service Activities</h3>
+                    <p>Gyanodhayam has a history of dedicated service from 2007, with impactful initiatives spanning multiple years. Explore some of our recent activities and discover the difference we've made.</p>
                     {category &&
                       category.map((childCategory) => (
                         <div key={childCategory.id}>

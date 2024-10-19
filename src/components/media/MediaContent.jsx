@@ -53,11 +53,11 @@ const FounderContent = () => {
           <div className="col-lg-6 intro-header">
             <div className="intro-outer">
               <h3 className="intro-title">Media & Press</h3>
-              <p className="intro-content">
+              {/* <p className="intro-content">
                 lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -231,7 +231,7 @@ const FounderContent = () => {
                 >
                   Music
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -240,7 +240,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
                 <div
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -286,7 +286,7 @@ const FounderContent = () => {
                 >
                   Audio
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -295,7 +295,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
 
                 <div
                   data-aos="fade-up"
@@ -308,7 +308,7 @@ const FounderContent = () => {
                   <div className="media-audio-content">
                     <div>
                       <h4 className="course2-title media-audio-title">
-                        Chainthing Om
+                      Chanting Om
                       </h4>
                       <audio
                         className="media-audio-guru"
@@ -401,7 +401,7 @@ const FounderContent = () => {
                 >
                   Video
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -410,7 +410,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
                 <div
                   style={{ margin: "20px 0px" }}
                   data-aos="fade-up"
@@ -444,7 +444,7 @@ const FounderContent = () => {
                 >
                   Calendar
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -453,7 +453,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
                 <div
                   style={{ margin: "20px 0px" }}
                   data-aos="fade-up"
@@ -489,7 +489,7 @@ const FounderContent = () => {
                 >
                   Social Media
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -498,7 +498,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
                 <div
                   style={{ margin: "20px 0px" }}
                   data-aos="fade-up"
@@ -532,7 +532,7 @@ const FounderContent = () => {
                 >
                   Press
                 </h4>
-                <p
+                {/* <p
                   className="course2-content text-align"
                   data-aos="fade-up"
                   data-aos-delay="300"
@@ -541,7 +541,7 @@ const FounderContent = () => {
                   lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text
-                </p>
+                </p> */}
                 <div
                   style={{
                     margin: "20px 0px",
