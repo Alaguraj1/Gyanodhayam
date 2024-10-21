@@ -33,21 +33,15 @@ const Footer = () => {
               <div className="quick-link-outer">
                 <h5 className="footer-title">Quick Links</h5>
                 <ul className="footer-list">
-                  <li>
-                    <Link to="/">Home </Link>
-                  </li>
+                
                   <li>
                     <Link to="/founder">Founder - Guru</Link>
                   </li>
                   <li>
                     <Link to="/course">Courses</Link>
                   </li>
-                  <li>
-                    <Link to="/testimonial">Testimonial</Link>
-                  </li>
-                  <li>
-                    <Link to="/life-in-gyanodhayam">Life in Gyanodhayam</Link>
-                  </li>
+                 
+                
                   <li>
                     <Link to={"/gallery"}>Gallery</Link>
                   </li>

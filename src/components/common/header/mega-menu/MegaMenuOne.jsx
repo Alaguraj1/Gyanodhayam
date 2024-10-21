@@ -135,7 +135,7 @@ const MegaMenuOne = () => {
                       to="/course"
                       className="dropdown-item font-style"
                     >
-                      Courses
+                      Overview
                     </CustomLink>
                   </li>
                   <div class="dotted-line"></div>
@@ -283,7 +283,7 @@ const MegaMenuOne = () => {
                       to="/life-in-gyanodhayam"
                       className="dropdown-item font-style"
                     >
-                      Life In Gyanodhayam
+                      Overview
                     </CustomLink>
                   </li>
                   <div class="dotted-line"></div>
