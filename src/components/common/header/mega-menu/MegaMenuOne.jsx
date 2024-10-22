@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom"; // Updated import
 import CustomLink from "./CustomLink";
 import logo from "../../../../assets/images/BannerLogo.png";
 import NavbarImage1 from "../../../../assets/images/menu-img-1.jpg";
@@ -9,6 +9,8 @@ import lifeGyanodhayam1 from "../../../../assets/images/menu-img-lifeGyanodhayam
 import lifeGyanodhayam2 from "../../../../assets/images/menu-img-lifeGyanodhayam2.jpg";
 
 const MegaMenuOne = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
   return (
     <ul className="navbar-nav">
       <li className="d-block d-lg-none">
@@ -18,9 +20,9 @@ const MegaMenuOne = () => {
           </Link>
         </div>
       </li>
-      {/* End Brnad */}
+      {/* End Brand */}
 
-      <li className="nav-item  dropdown mega-dropdown">
+      <li className="nav-item dropdown mega-dropdown">
         <NavLink
           exact
           to="/"
@@ -33,9 +35,8 @@ const MegaMenuOne = () => {
       </li>
       {/* End Home dropdown */}
 
-
       <li className="nav-item dropdown mega-dropdown-founder">
-      <NavLink
+        <NavLink
           exact
           to="/founder"
           className="nav-link"
@@ -43,74 +44,6 @@ const MegaMenuOne = () => {
         >
           Founder
         </NavLink>
-        {/* <button
-          className="nav-link dropdown-toggle"
-          data-bs-toggle="dropdown"
-          data-bs-auto-close="outside"
-          aria-expanded="false"
-        >
-        
-          Founder
-        </button> */}
-        {/* <ul className="dropdown-menu">
-          <li>
-            <div className="row">
-              <div className="col-lg-4 menus-padding">
-                <h4 className="full-width-navbar-header">
-                  Entire Life to Serving Mankind
-                </h4>
-                <p
-                  className="full-width-navbar-content"
-                  style={{ fontWeight: "bold" }}
-                >
-                  {" "}
-                  <Link to="/founder">Detail About Guru</Link>
-                </p>
-                <div className="dotted-line"></div>
-              </div>
-              <div className="col-lg-4  menus-padding">
-                <h4 className="full-width-navbar-header">
-                  Autobiography of a Jai Guruji
-                </h4>
-                <div className="founder-menu-autobiography">
-                  <img
-                    style={{ paddingRight: "20px" }}
-                    src={NavbarImage1}
-                    alt="Jai Guruji Autobiography"
-                  />
-                  <p
-                    className="full-width-navbar-content"
-                    style={{ fontSize: "14px" }}
-                  >
-                    The book that changed the lives of millions! Available in
-                    our 50 languages{" "}
-                  </p>
-                </div>
-                <button className="full-width-navbar-button">
-                  Order your copy today
-                </button>
-              </div>
-              <div className="col-lg-4  menus-padding">
-                <h4 className="full-width-navbar-header">
-                  Yoga: a Graceful Journey Inward
-                </h4>
-                <img
-                  src={NavbarImage2}
-                  alt="A Graceful Journey Inward"
-                  style={{ paddingBottom: "20px" }}
-                />
-                <p
-                  className="full-width-navbar-content"
-                  style={{ fontSize: "14px" }}
-                >
-                  Watch the video of jai Gurugi{" "}
-                </p>
-              </div>
-
-         
-            </div>
-          </li>
-        </ul> */}
       </li>
       {/* End about dropdown */}
 
@@ -122,6 +55,7 @@ const MegaMenuOne = () => {
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
           aria-expanded="false"
+          onClick={() => navigate('/course')} 
         >
           Courses
         </button>
@@ -138,7 +72,7 @@ const MegaMenuOne = () => {
                       Overview
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/nanneri"
@@ -147,7 +81,7 @@ const MegaMenuOne = () => {
                       Nanneri
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/trust-course"
@@ -156,15 +90,13 @@ const MegaMenuOne = () => {
                       Gyanodhayam Educational Trust Certificate Course
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                 </ul>
               </div>
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
                   <li className="font-style" style={{lineHeight:"22px", fontSize:"16px"}}>
-                    {/* <CustomLink to="#" className="dropdown-item font-style"> */}
                     Gyanodhayam Educational Trust Motivation Class (Degree)
-                    {/* </CustomLink> */}
                     <ul
                       className="style-none mega-dropdown-list"
                       style={{ paddingLeft: "20px" }}
@@ -187,10 +119,7 @@ const MegaMenuOne = () => {
                       </li>
                     </ul>
                   </li>
-
-                  {/* <div class="dotted-line"></div> */}
-
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/teachers-practice-course"
@@ -199,7 +128,7 @@ const MegaMenuOne = () => {
                       Teachers Practice Course
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/guru-practice-course"
@@ -208,7 +137,7 @@ const MegaMenuOne = () => {
                       Guru Practice Course
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                 </ul>
               </div>
               <div className="col-lg-4  menus-padding">
@@ -236,7 +165,6 @@ const MegaMenuOne = () => {
         </NavLink>
       </li>
 
-
       <li className="nav-item dropdown mega-dropdown-md">
         <NavLink
           exact
@@ -256,25 +184,19 @@ const MegaMenuOne = () => {
           data-bs-toggle="dropdown"
           data-bs-auto-close="outside"
           aria-expanded="false"
+          onClick={() => navigate('/life-in-gyanodhayam')} // Use navigate here
         >
-          {/* <Link to='/founder'  className="nav-link">Founder</Link> */}
           Life in Gyanodhayam
         </button>
         <ul className="dropdown-menu">
           <li>
             <div className="row">
               <div className="col-lg-4 menus-padding">
-                {/* <h4 className="full-width-navbar-header">
-                <Link to='/life-in-gyanodhayam' >
-                  Life In Gyanodhayam
-                  </Link>
-                </h4> */}
                 <img
                   src={lifeGyanodhayam1}
                   alt="Life In Gyanodhayam"
                   style={{ paddingBottom: "20px" }}
                 />
-                {/* <div class="dotted-line"></div> */}
               </div>
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
@@ -286,7 +208,7 @@ const MegaMenuOne = () => {
                       Overview
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/services-activites"
@@ -295,7 +217,7 @@ const MegaMenuOne = () => {
                       Service Activities
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/special-days"
@@ -304,7 +226,7 @@ const MegaMenuOne = () => {
                       Special Days
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                   <li>
                     <CustomLink
                       to="/group-activities"
@@ -313,7 +235,7 @@ const MegaMenuOne = () => {
                       Group Activities
                     </CustomLink>
                   </li>
-                  <div class="dotted-line"></div>
+                  <div className="dotted-line"></div>
                 </ul>
               </div>
               <div className="col-lg-4  menus-padding">
@@ -328,7 +250,7 @@ const MegaMenuOne = () => {
         </ul>
       </li>
 
-      {/* life in gyanodhatam mega menu end */}
+      {/* life in gyanodhayam mega menu end */}
 
       <li className="nav-item dropdown mega-dropdown-md">
         <NavLink
