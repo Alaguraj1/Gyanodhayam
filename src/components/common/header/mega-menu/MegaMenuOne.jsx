@@ -200,15 +200,15 @@ const MegaMenuOne = () => {
               </div>
               <div className="col-lg-4  menus-padding">
                 <ul className="style-none mega-dropdown-list">
-                  <li>
+                  {/* <li>
                     <CustomLink
                       to="/life-in-gyanodhayam"
                       className="dropdown-item font-style"
                     >
                       Overview
                     </CustomLink>
-                  </li>
-                  <div className="dotted-line"></div>
+                  </li> 
+                  <div className="dotted-line"></div>*/}
                   <li>
                     <CustomLink
                       to="/services-activites"
