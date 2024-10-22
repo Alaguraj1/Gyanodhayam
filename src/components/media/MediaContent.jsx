@@ -7,22 +7,35 @@ import music from "../../assets/images/media_press/music.jpg";
 import audio from "../../assets/images/media_press/audio.jpg";
 import video from "../../assets/images/media_press/video.jpg";
 import banner from "../../assets/images/media_press/banner.jpg";
-import calendar1 from "../../assets/images/media_press/calendar-1.jpg";
-import calendar2 from "../../assets/images/media_press/calendar-2.jpg";
-import calendar3 from "../../assets/images/media_press/calendar-3.jpg";
+import calendar1 from "../../assets/images/media_press/Calender/7.jpg";
+import calendar2 from "../../assets/images/media_press/Calender/8.jpg";
+import calendar3 from "../../assets/images/media_press/Calender/9.jpg";
+import calendar4 from "../../assets/images/media_press/Calender/10.jpg";
+import calendar5 from "../../assets/images/media_press/Calender/11.jpg";
+import calendar6 from "../../assets/images/media_press/Calender/12.jpg";
+import July from "../../assets/pdf/July-2024.pdf";
+import Auguest from "../../assets/pdf/August-2024.pdf";
+import September from "../../assets/pdf/September-2024.pdf";
+import October from "../../assets/pdf/October-2024.pdf";
+import November from "../../assets/pdf/November-2024.pdf";
+import December from "../../assets/pdf/December-2024.pdf";
+import pdf from "../../assets/images/media_press/pdf.jpg";
 import social_media from "../../assets/images/media_press/social-media.jpg";
 import press from "../../assets/images/media_press/newsletters.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Slider from "react-slick";
 import AudioGuru1 from "../../assets/images/media_press/chainthing-om.mp3";
 import AudioGuru2 from "../../assets/images/media_press/om-namasivaya.mp3";
 import AudioGuru3 from "../../assets/images/media_press/unakkum-kuraikal-uladho.mp3";
 import { Link } from "react-router-dom";
+import { jsPDF } from "jspdf";
+import html2canvas from "html2canvas";
+
 const FounderContent = () => {
   const contentRef = useRef(null);
   const [activeTab, setActiveTab] = useState("Music");
-
+  const [activeIndex, setActiveIndex] = useState(0);
   // useEffect(() => {
   //     AOS.init(); // Initialize AOS when the component mounts
   // })
@@ -33,19 +46,84 @@ const FounderContent = () => {
   const [currentAudio, setCurrentAudio] = useState(null);
 
   const handlePlay = (index) => {
-    // Stop the currently playing audio
     if (currentAudio !== null && currentAudio !== index) {
       audioRefs.current[currentAudio].pause();
-      audioRefs.current[currentAudio].currentTime = 0; // Reset time if needed
+      audioRefs.current[currentAudio].currentTime = 0;
     }
 
     setCurrentAudio(index);
   };
 
   const handleTabClick = (tabName) => {
-    // Calculate the offset for the selected section
     setActiveTab(tabName);
   };
+
+  const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} custom-arrow`}
+        style={{ ...style, display: "block", right: "10px", zIndex: 1 }}
+        onClick={onClick}
+      >
+        &#10095;
+      </div>
+    );
+  };
+
+  const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${className} custom-arrow`}
+        style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
+        onClick={onClick}
+      >
+        &#10094;
+      </div>
+    );
+  };
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    afterChange: (current) => setActiveIndex(current),
+  };
+
+  const images = [
+    calendar1,
+    calendar2,
+    calendar3,
+    calendar4,
+    calendar5,
+    calendar6,
+  ];
+
+  const downloadPdf = () => {
+    const pdfs = [
+      { file: July, name: "July-2024.pdf" },
+      { file: Auguest, name: "August-2024.pdf" },
+      { file: September, name: "September-2024.pdf" },
+      { file: October, name: "October-2024.pdf" },
+      { file: November, name: "November-2024.pdf" },
+      { file: December, name: "December-2024.pdf" },
+    ];
+
+    const link = document.createElement("a");
+    link.href = pdfs[activeIndex].file; // Use the file URL
+    link.download = pdfs[activeIndex].name; // Set the desired filename for download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <>
       <div>
@@ -251,7 +329,7 @@ const FounderContent = () => {
 
                   <div className="media-music-content">
                     <h4 className="course2-title media-music-title">
-                    Unakum Kuraigal Uladho
+                      Unakkum Kuraikal Uladho
                     </h4>
                     <audio
                       className="media-music-guru"
@@ -308,7 +386,7 @@ const FounderContent = () => {
                   <div className="media-audio-content">
                     <div>
                       <h4 className="course2-title media-audio-title">
-                      Chanting Om
+                        Chanting Om
                       </h4>
                       <audio
                         className="media-audio-guru"
@@ -455,14 +533,68 @@ const FounderContent = () => {
                   standard dummy text
                 </p> */}
                 <div
-                  style={{ margin: "20px 0px" }}
+                  style={{ margin: "0px 20px 0px 20px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={calendar1} alt="calendar" />
-                  <img src={calendar2} alt="calendar" />
-                  <img src={calendar3} alt="calendar" />
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "flex-end",
+                      paddingBottom: "5px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        color: "#f58635",
+                        gap: 5,
+                      }}
+                    >
+                      <div
+                        className="first-sem-list cursor-pointer"
+                        onClick={() => downloadPdf()}
+                      >
+                        Download
+                      </div>
+                      <img src={pdf} onClick={() => downloadPdf()} />
+                    </div>
+                  </div>
+                  <Slider {...settings}>
+                    {images.map((image, index) => (
+                      <div key={index} style={{ position: "relative" }}>
+                        <img
+                          id={`image-${activeIndex}`}
+                          src={image}
+                          alt={`calendar ${index + 1}`}
+                          crossOrigin="anonymous"
+                          style={{
+                            width: "100%",
+                            height: "auto",
+                            opacity: 1,
+                          }} // Highlight active image
+                        />
+                        {activeIndex === index && (
+                          <div
+                            className="active-indicator"
+                            style={{
+                              position: "absolute",
+                              top: 10,
+                              left: 10,
+                              backgroundColor: "rgba(255, 255, 255, 0.8)",
+                              padding: "5px",
+                              borderRadius: "5px",
+                              fontWeight: "bold",
+                            }}
+                          >
+                            Active
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </Slider>
                 </div>
 
                 {/* <p className="guru-read-2">
