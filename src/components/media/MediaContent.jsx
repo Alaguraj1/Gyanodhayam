@@ -329,7 +329,7 @@ const FounderContent = () => {
 
                   <div className="media-music-content">
                     <h4 className="course2-title media-music-title">
-                      Unakkum Kuraikal Uladho
+                      Unakum Kuraigal Uladho
                     </h4>
                     <audio
                       className="media-music-guru"

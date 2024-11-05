@@ -110,6 +110,7 @@ const SpecialDaysContent = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
+                style={{ display: "flex", alignItems: "center" }}
               >
                 {/* <h4 className="first-side-header text-align">
                   Udal Gyanam (Body)
@@ -119,7 +120,7 @@ const SpecialDaysContent = () => {
                   Udal + Udal Pathugapu
                 </p> */}
                 <div className="text-align" style={{ paddingBottom: "20px" }}>
-                  <h5 className="first-side-subHeader">Ekadesi</h5>
+                  <h5 className="first-side-subHeader">Ekadesi:</h5>
                   <p className="first-sem-exam text-align">
                     Fasting is a phenomenon of purifying one’s mind body and
                     soul is not merely restricted to spirituality but finds its
@@ -147,15 +148,18 @@ const SpecialDaysContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">Fruits day:</h5>
-                  <p className="first-sem-exam text-align">
-                    The day next to Ekadasi fasting, we consume only fruits till
-                    evening, post sunset we consume porridge to break the
-                    fasting and end our day with a bowl of homemade
-                    panjamritham. This helps us to energize our body post
-                    ekadesi fasting.
-                  </p>
+                  <div>
+                    <h5 className="first-side-subHeader">Fruits day:</h5>
+                    <p className="first-sem-exam text-align">
+                      The day next to Ekadasi fasting, we consume only fruits
+                      till evening, post sunset we consume porridge to break the
+                      fasting and end our day with a bowl of homemade
+                      panjamritham. This helps us to energize our body post
+                      ekadesi fasting.
+                    </p>
+                  </div>
                 </div>
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
@@ -174,10 +178,11 @@ const SpecialDaysContent = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
+                style={{ display: "flex", alignItems: "center" }}
               >
                 <div>
                   <h5 className="first-side-subHeader">
-                    Guru Poornima &amp; Karma yogam day
+                    Guru Poornima &amp; Karma yogam day:
                   </h5>
                   <img
                     src={flower_2}
@@ -210,19 +215,22 @@ const SpecialDaysContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">Bakthi yogam day</h5>
+                  <div>
+                    <h5 className="first-side-subHeader">Bakthi yogam day:</h5>
 
-                  <p className="first-sem-content text-align">
-                    On the day that falls on the Jupiter transit, Bhakthi Yoga
-                    day is observed every year. Brahma Thavam will be practiced
-                    on this day between 6:00 PM and 6:30 PM in the evening.
-                    Between 6:30 PM and 7:30 PM, a brief speech on{" "}
-                    <b>&quot;Bhakthi Yogam&quot;</b> will be recited. Special
-                    pooja will be performed after 7:30 PM with devotional songs
-                    on our Guru and God will be performed at the end along with
-                    the Prasadh distribution.
-                  </p>
+                    <p className="first-sem-content text-align">
+                      On the day that falls on the Jupiter transit, Bhakthi Yoga
+                      day is observed every year. Brahma Thavam will be
+                      practiced on this day between 6:00 PM and 6:30 PM in the
+                      evening. Between 6:30 PM and 7:30 PM, a brief speech on{" "}
+                      <b>&quot;Bhakthi Yogam&quot;</b> will be recited. Special
+                      pooja will be performed after 7:30 PM with devotional
+                      songs on our Guru and God will be performed at the end
+                      along with the Prasadh distribution.
+                    </p>
+                  </div>
                 </div>
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
@@ -241,23 +249,26 @@ const SpecialDaysContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">Gyana yogam day</h5>
+                  <div>
+                    <h5 className="first-side-subHeader">Gyana yogam day</h5>
 
-                  <p className="first-sem-content">
-                    Every year, on the 21st of March, Gyana Yoga Day is
-                    celebrated in Gyanodhayam Educational Trust. Brahma Thavam
-                    will be practiced between 6:00 and 6:30 PM in the evening.
-                  </p>
+                    <p className="first-sem-content">
+                      Every year, on the 21st of March, Gyana Yoga Day is
+                      celebrated in Gyanodhayam Educational Trust. Brahma Thavam
+                      will be practiced between 6:00 and 6:30 PM in the evening.
+                    </p>
 
-                  <p className="first-sem-content">
-                    A brief discourse will be given after 6:30 PM until 7:30 PM
-                    from one of our own published books called
-                    <b> &quot;Thavam&quot;</b>. Either the Guru mantra will be
-                    chanted 1008 times, or the Invocation song of our Guru and
-                    the Guru mantra will be chanted 108 times each along with
-                    the Prasadh distribution
-                  </p>
+                    <p className="first-sem-content">
+                      A brief discourse will be given after 6:30 PM until 7:30
+                      PM from one of our own published books called
+                      <b> &quot;Thavam&quot;</b>. Either the Guru mantra will be
+                      chanted 1008 times, or the Invocation song of our Guru and
+                      the Guru mantra will be chanted 108 times each along with
+                      the Prasadh distribution
+                    </p>
+                  </div>
                   <img
                     src={flower_3}
                     alt="illustration"
@@ -286,26 +297,31 @@ const SpecialDaysContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">
-                    Guru’s day, Wisdom day, Buddha Poornima:
-                  </h5>
+                  <div>
+                    <h5 className="first-side-subHeader">
+                      Guru’s day, Wisdom day, Buddha Poornima:
+                    </h5>
 
-                  <p className="first-sem-content">
-                    This auspicious day is observed in the tamizh month of
-                    Vaikasi in Gyanodhayam Educational Trust. Brahma Thavam will
-                    be practiced between 6:00 and 6:30 PM in the evening. A
-                    brief discourse will be given after 6:30 PM until 7:30 PM
-                    from one of our own published books called{" "}
-                    <b> &quot;Kelvi Gyanam&quot;</b>.
-                  </p>
+                    <p className="first-sem-content">
+                      This auspicious day is observed in the tamizh month of
+                      Vaikasi in Gyanodhayam Educational Trust. Brahma Thavam
+                      will be practiced between 6:00 and 6:30 PM in the evening.
+                    </p>
+                    <p className="first-sem-content">
+                      A brief discourse will be given after 6:30 PM until 7:30
+                      PM from one of our own published books called{" "}
+                      <b> &quot;Kelvi Gyanam&quot;</b>.
+                    </p>
 
-                  <p className="first-sem-content">
-                    After 7:30 PM either Guru mantra will be chanted for 1008
-                    times, or the Invocation song of our Guru and the Guru
-                    mantra will be chanted 108 times each along with the Prasadh
-                    distribution.
-                  </p>
+                    <p className="first-sem-content">
+                      After 7:30 PM either Guru mantra will be chanted for 1008
+                      times, or the Invocation song of our Guru and the Guru
+                      mantra will be chanted 108 times each along with the
+                      Prasadh distribution.
+                    </p>
+                  </div>
                 </div>
 
                 <div

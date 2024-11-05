@@ -61,6 +61,7 @@ const GroupActivitiesContent = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
+                style={{ display: "flex", alignItems: "center" }}
               >
                 {/* <h4 className="first-side-header text-align">
                   Udal Gyanam (Body)
@@ -70,7 +71,7 @@ const GroupActivitiesContent = () => {
                   Udal + Udal Pathugapu
                 </p> */}
                 <div className="text-align" style={{ paddingBottom: "20px" }}>
-                  <h5 className="first-side-subHeader">Family Day</h5>
+                  <h5 className="first-side-subHeader">Family Day:</h5>
                   <p className="first-sem-exam text-align">
                     The members of gyanodhayam along with their family members
                     celebrate the day with fun filled activities and games along
@@ -95,14 +96,17 @@ const GroupActivitiesContent = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">Convocation Day</h5>
-                  <p className="first-sem-exam text-align">
-                    At the end of each gyanodhayam batch, all the students who
-                    have finished the classes are taken to trekking to give them
-                    an experience which tests both their mental and physical
-                    strengths.
-                  </p>
+                  <div>
+                    <h5 className="first-side-subHeader">Convocation Day:</h5>
+                    <p className="first-sem-exam text-align">
+                      At the end of each gyanodhayam batch, all the students who
+                      have finished the classes are taken to trekking to give
+                      them an experience which tests both their mental and
+                      physical strengths.
+                    </p>
+                  </div>
                 </div>
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
@@ -125,9 +129,10 @@ const GroupActivitiesContent = () => {
                 data-aos="fade-up"
                 data-aos-delay="300"
                 data-aos-duration="1200"
+                style={{display:"flex", alignItems:"center"}}
               >
                 <div>
-                  <h5 className="first-side-subHeader">Founders Day</h5>
+                  <h5 className="first-side-subHeader">Founders Day:</h5>
                   <img
                     src={flower_2}
                     alt="illustration"
