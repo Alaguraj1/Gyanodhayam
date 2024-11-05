@@ -80,50 +80,57 @@ const Courses3 = () => {
             First Semester (12 Weeks)
           </h3>
           <div>
-            <div className="row">
-              <div
-                className="col-lg-9 order-lg-2"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              >
-                <h4 className="first-side-header text-align">
-                  Udal Gyanam (Body)
-                </h4>
-                <p className="first-sem-exam text-align">
-                  <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
-                  Udal + Udal Pathugapu
-                </p>
-                <div className="text-align" style={{ paddingBottom: "20px" }}>
-                  <h5 className="first-side-subHeader">Udal</h5>
-                  <ol className="first-sem-list">
-                    <li>The origin of five elements</li>
-                    <li>Evolution of senses</li>
-                    <li>
-                      Philosophies of the body (body portals, psychic
-                      philosophies, Thathukkal, Kosangal, Gunangal, Malangal,
-                      Pinigal, Aatharangal, Mandalangal, Nadigal, Vayukkal,
-                      avathaigal)
-                    </li>
-                    <li>
-                      Functioning of body parts (It includes cells,
-                      panjenthiriyangal, respiratory system, skeletal system,
-                      nervous system, circulatory system, reproductive system,
-                      etc.)
-                    </li>
-                  </ol>
+            <div style={{ paddingBottom: "20px" }}>
+              <div className="row">
+                <div
+                  className="col-lg-9 order-lg-2"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>
+                    <h4 className="first-side-header text-align">
+                      Udal Gyanam (Body)
+                    </h4>
+                    <p className="first-sem-exam text-align">
+                      <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
+                      Udal + Udal Pathugapu
+                    </p>
+                    <div
+                      className="text-align"
+                      style={{ paddingBottom: "20px" }}
+                    >
+                      <h5 className="first-side-subHeader">Udal:</h5>
+                      <ol className="first-sem-list">
+                        <li>The origin of five elements</li>
+                        <li>Evolution of senses</li>
+                        <li>
+                          Philosophies of the body (body portals, psychic
+                          philosophies, Thathukkal, Kosangal, Gunangal,
+                          Malangal, Pinigal, Aatharangal, Mandalangal, Nadigal,
+                          Vayukkal, avathaigal)
+                        </li>
+                        <li>
+                          Functioning of body parts (It includes cells,
+                          panjenthiriyangal, respiratory system, skeletal
+                          system, nervous system, circulatory system,
+                          reproductive system, etc.)
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-lg-3 order-lg-1 sem1-images"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={udal} alt="udal" className="width-100" />
                 </div>
               </div>
-              <div
-                className="col-lg-3 order-lg-1 sem1-images"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-              >
-                <img src={udal} alt="udal" className="width-100" />
-              </div>
             </div>
-
             <div style={{ paddingBottom: "20px" }}>
               <div className="row">
                 <div
@@ -131,39 +138,43 @@ const Courses3 = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h5 className="first-side-subHeader">Udal Pathugapu</h5>
-                  <ol className="first-sem-list">
-                    <li>
-                      Routines to protect our body (It includes the importance
-                      of waking up earlier, bathing habits, sleeping habits and
-                      food habits)
-                    </li>
-                    <li>
-                      Self-Defence (Man, other human beings, society and nature)
-                    </li>
-                    <li>
-                      How do we suffer from the effects of pollution? (Water
-                      pollution, land pollution, air pollution, noise pollution
-                      and radiation)
-                    </li>
-                    <li>
-                      How to protect ourselves from natural disasters? (Sea
-                      turbulence, heavy rainfall, earthquakes, cyclone and
-                      snowfall, etc.).
-                    </li>
-                    <li>
-                      First Aid (Animal bites, insect bites, snake bites, first
-                      aid for fractures, first aid for burns, first aid for
-                      electric shock victims, first aid for sports injuries and
-                      respiratory problems, etc.).
-                    </li>
-                    <li>
-                      Diseases and its remedy (Blood pressure, heart disease,
-                      diabetes, nerve disorders, infertility, peptic ulcer,
-                      etc.).
-                    </li>
-                  </ol>
+                  <div>
+                    <h5 className="first-side-subHeader">Udal Pathugapu:</h5>
+                    <ol className="first-sem-list">
+                      <li>
+                        Routines to protect our body (It includes the importance
+                        of waking up earlier, bathing habits, sleeping habits
+                        and food habits)
+                      </li>
+                      <li>
+                        Self-Defence (Man, other human beings, society and
+                        nature)
+                      </li>
+                      <li>
+                        How do we suffer from the effects of pollution? (Water
+                        pollution, land pollution, air pollution, noise
+                        pollution and radiation)
+                      </li>
+                      <li>
+                        How to protect ourselves from natural disasters? (Sea
+                        turbulence, heavy rainfall, earthquakes, cyclone and
+                        snowfall, etc.).
+                      </li>
+                      <li>
+                        First Aid (Animal bites, insect bites, snake bites,
+                        first aid for fractures, first aid for burns, first aid
+                        for electric shock victims, first aid for sports
+                        injuries and respiratory problems, etc.).
+                      </li>
+                      <li>
+                        Diseases and its remedy (Blood pressure, heart disease,
+                        diabetes, nerve disorders, infertility, peptic ulcer,
+                        etc.).
+                      </li>
+                    </ol>
+                  </div>
                 </div>
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
@@ -187,41 +198,44 @@ const Courses3 = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h4 className="first-side-header">Unavu Gyanam (Food)</h4>
-                  <p className="first-sem-exam">
-                    <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
-                    Unave Marunthu + Nalan Murai Sei
-                  </p>
+                  <div>
+                    <h4 className="first-side-header">Unavu Gyanam (Food)</h4>
+                    <p className="first-sem-exam">
+                      <span style={{ fontWeight: "bold" }}>Written Exam :</span>{" "}
+                      Unave Marunthu + Nalan Murai Sei
+                    </p>
 
-                  <div style={{ paddingBottom: "20px" }}>
-                    <h5 className="first-side-subHeader">Unave Marunthu</h5>
-                    <img
-                      src={flower_2}
-                      alt="illustration"
-                      className="sem1-flower-image-2"
-                    />
-                    <ol className="first-sem-list">
-                      <li>
-                        The proper way of consuming food, proper manner and
-                        standard timing to eat food, the daily intake and
-                        quantity of nutrients our body needs in order to remain
-                        healthy.
-                      </li>
-                      <li>
-                        Rules and regulations to be followed while cooking.
-                      </li>
-                      <li>Fasting.</li>
-                      <li>Seasonal food.</li>
-                      <li>Natural foods.</li>
-                      <li>
-                        Types of food items (vegetables, greens, tubers, fruits,
-                        whole grains, cereals, legumes, oil products)
-                      </li>
-                      <li>Vitamins and mineral salts.</li>
-                      <li>Foods to be avoided.</li>
-                      <li>Diet plan for different diseases.</li>
-                    </ol>
+                    <div style={{ paddingBottom: "20px" }}>
+                      <h5 className="first-side-subHeader">Unave Marunthu:</h5>
+                      <img
+                        src={flower_2}
+                        alt="illustration"
+                        className="sem1-flower-image-2"
+                      />
+                      <ol className="first-sem-list">
+                        <li>
+                          The proper way of consuming food, proper manner and
+                          standard timing to eat food, the daily intake and
+                          quantity of nutrients our body needs in order to
+                          remain healthy.
+                        </li>
+                        <li>
+                          Rules and regulations to be followed while cooking.
+                        </li>
+                        <li>Fasting.</li>
+                        <li>Seasonal food.</li>
+                        <li>Natural foods.</li>
+                        <li>
+                          Types of food items (vegetables, greens, tubers,
+                          fruits, whole grains, cereals, legumes, oil products)
+                        </li>
+                        <li>Vitamins and mineral salts.</li>
+                        <li>Foods to be avoided.</li>
+                        <li>Diet plan for different diseases.</li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -230,7 +244,12 @@ const Courses3 = () => {
                   data-aos-delay="300"
                   data-aos-duration="1200"
                 >
-                  <img src={unavu} alt="unavu" className="width-100" style={{height:"400px"}} />
+                  <img
+                    src={unavu}
+                    alt="unavu"
+                    className="width-100"
+                    style={{ height: "400px" }}
+                  />
                 </div>
               </div>
               <div style={{ paddingBottom: "20px" }}>
@@ -240,16 +259,19 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <h5 className="first-side-subHeader">Nalan Murai Sei</h5>
-                    <p className="first-sem-content">
-                      Man differs from an animal in having the sixth
-                      intellectual. Although he does many things rationally, one
-                      of the most important and significant action he does is
-                      cooking. It includes concepts like recipes, the
-                      consistency of food, Taste, nutritious cooking, and recipe
-                      description.
-                    </p>
+                    <div>
+                      <h5 className="first-side-subHeader">Nalan Murai Sei:</h5>
+                      <p className="first-sem-content">
+                        Man differs from an animal in having the sixth
+                        intellectual. Although he does many things rationally,
+                        one of the most important and significant action he does
+                        is cooking. It includes concepts like recipes, the
+                        consistency of food, Taste, nutritious cooking, and
+                        recipe description.
+                      </p>
+                    </div>
                   </div>
                   <div
                     className="col-lg-3 sem1-images order-lg-1"
@@ -268,18 +290,21 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <h5 className="first-side-subHeader">Practical Exam</h5>
-                    <p className="first-sem-content">
-                      Cooking is about minimizing grievances and replenishing
-                      benefits. To get rid of the flaws in the food we eat and
-                      change it according to our body need, we need the
-                      knowledge of cooking.
-                    </p>
-                    <p className="first-sem-content">
-                      Students are required to prepare the type of food provided
-                      to them during the exam.
-                    </p>
+                    <div>
+                      <h5 className="first-side-subHeader">Practical Exam:</h5>
+                      <p className="first-sem-content">
+                        Cooking is about minimizing grievances and replenishing
+                        benefits. To get rid of the flaws in the food we eat and
+                        change it according to our body need, we need the
+                        knowledge of cooking.
+                      </p>
+                      <p className="first-sem-content">
+                        Students are required to prepare the type of food
+                        provided to them during the exam.
+                      </p>
+                    </div>
                   </div>
                   <div
                     className="col-lg-3 sem1-images order-lg-1"
@@ -301,18 +326,21 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <h4 className="first-side-header">
-                      Pothu Gyanam (General Knowledge)
-                    </h4>
-                    <h5 className="first-side-subHeader">
-                      Kelvi Gyanam Part 1 and Kelvi Gyanam Part 2
-                    </h5>
-                    <p className="first-sem-content">
-                      A collection of general knowledge, Science, rituals,
-                      customs, arts, things encountered in normal life,
-                      knowledge and interpretation of natural life.
-                    </p>
+                    <div>
+                      <h4 className="first-side-header">
+                        Pothu Gyanam (General Knowledge)
+                      </h4>
+                      <h5 className="first-side-subHeader">
+                        Kelvi Gyanam Part 1 and Kelvi Gyanam Part 2
+                      </h5>
+                      <p className="first-sem-content">
+                        A collection of general knowledge, Science, rituals,
+                        customs, arts, things encountered in normal life,
+                        knowledge and interpretation of natural life.
+                      </p>
+                    </div>
                   </div>
 
                   <div
@@ -332,15 +360,21 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                    }}
                   >
-                    <h5 className="first-side-subHeader">Unmei Virumbhi</h5>
-                    <p className="first-sem-content">
-                      Reading and discussing spiritual places, biographies of
-                      spiritualists, world famous places, articles of world
-                      celebrities, articles written by our Gurus and art forms
-                      of the Modern Age (astrology, culinary arts,
-                      fingerprinting, medicine, etc.).
-                    </p>
+                    <div>
+                      <h5 className="first-side-subHeader">Unmei Virumbhi:</h5>
+                      <p className="first-sem-content">
+                        Reading and discussing spiritual places, biographies of
+                        spiritualists, world famous places, articles of world
+                        celebrities, articles written by our Gurus and art forms
+                        of the Modern Age (astrology, culinary arts,
+                        fingerprinting, medicine, etc.).
+                      </p>
+                    </div>
                   </div>
                   <div
                     className="col-lg-3 sem1-images order-lg-1"
@@ -359,12 +393,18 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                    }}
                   >
-                    <h5 className="first-side-subHeader">Nalam Vazha</h5>
-                    <p className="first-sem-content">
-                      This is a collection of simple information for us to know
-                      and follow, to lead a healthy and happy life.
-                    </p>
+                    <div>
+                      <h5 className="first-side-subHeader">Nalam Vazha:</h5>
+                      <p className="first-sem-content">
+                        This is a collection of simple information for us to
+                        know and follow, to lead a healthy and happy life.
+                      </p>
+                    </div>
                   </div>
                   <div
                     className="col-lg-3 sem1-images order-lg-1"
@@ -383,28 +423,36 @@ const Courses3 = () => {
             </div>
 
             <div style={{ paddingBottom: "30px" }}>
-              <div>
+              <div style={{ paddingBottom: "20px" }}>
                 <div className="row">
                   <div
                     className="col-lg-9 order-lg-2  text-align"
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <h4 className="first-side-header">Aasana Gyanam (Yoga)</h4>
-                    <p className="first-sem-content">
-                      <span style={{ fontWeight: "bold" }}>Written Exam:</span>{" "}
-                      Udal Payirchi + Muthiraigal
-                    </p>
-                    <div style={{ paddingBottom: "20px" }}>
-                      <h5 className="first-side-subHeader"> Udal Payirchi</h5>
+                    <div>
+                      <h4 className="first-side-header">
+                        Aasana Gyanam (Yoga)
+                      </h4>
                       <p className="first-sem-content">
-                        Simple exercises, body relaxation techniques, surya
-                        namaskaram, asanas and their alter asanas, simple and
-                        advanced asanas, norms and restrictions of yoga,
-                        pranayama and their types, cleansing techniques (neti,
-                        dauti, nauli, trataka) and asanas to cure body problems.
+                        <span style={{ fontWeight: "bold" }}>
+                          Written Exam:
+                        </span>{" "}
+                        Udal Payirchi + Muthiraigal
                       </p>
+                      <div style={{ paddingBottom: "20px" }}>
+                        <h5 className="first-side-subHeader"> Udal Payirchi</h5>
+                        <p className="first-sem-content">
+                          Simple exercises, body relaxation techniques, surya
+                          namaskaram, asanas and their alter asanas, simple and
+                          advanced asanas, norms and restrictions of yoga,
+                          pranayama and their types, cleansing techniques (neti,
+                          dauti, nauli, trataka) and asanas to cure body
+                          problems.
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div
@@ -436,31 +484,35 @@ const Courses3 = () => {
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
+                    style={{ display: "flex", alignItems: "center" }}
                   >
-                    <h5 className="first-side-subHeader">Muthiraigal</h5>
-                    <p className="first-sem-content">
-                      Mudras are used to increase our strengths, to fulfill
-                      future plans, to achieve good qualities, to prevail peace
-                      in the family, to improve relationships, to liberate from
-                      old memories, to attain divine blessing, etc.Mudras are
-                      used to increase our strengths, to fulfill future plans,
-                      to achieve good qualities, to prevail peace in the family,
-                      to improve relationships, to liberate from old memories,
-                      to attain divine blessing, etc.
-                    </p>
-                    <ol className="first-sem-list">
-                      <li>
-                        Philosophy of fingers (The five elements residing in our
-                        fingers, acupressure points of body organs on hands, the
-                        relation between planets and fingers, relation between
-                        mind and fingers)
-                      </li>
-                      <li>
-                        Important Instructions to be followed while practicing
-                        mudras.
-                      </li>
-                      <li>Benefits of Mudras.</li>
-                    </ol>
+                    <div>
+                      <h5 className="first-side-subHeader">Muthiraigal:</h5>
+                      <p className="first-sem-content">
+                        Mudras are used to increase our strengths, to fulfill
+                        future plans, to achieve good qualities, to prevail
+                        peace in the family, to improve relationships, to
+                        liberate from old memories, to attain divine blessing,
+                        etc.Mudras are used to increase our strengths, to
+                        fulfill future plans, to achieve good qualities, to
+                        prevail peace in the family, to improve relationships,
+                        to liberate from old memories, to attain divine
+                        blessing, etc.
+                      </p>
+                      <ol className="first-sem-list">
+                        <li>
+                          Philosophy of fingers (The five elements residing in
+                          our fingers, acupressure points of body organs on
+                          hands, the relation between planets and fingers,
+                          relation between mind and fingers)
+                        </li>
+                        <li>
+                          Important Instructions to be followed while practicing
+                          mudras.
+                        </li>
+                        <li>Benefits of Mudras.</li>
+                      </ol>
+                    </div>
                   </div>
                   <div
                     className="col-lg-3 sem1-images order-lg-1"
@@ -485,17 +537,20 @@ const Courses3 = () => {
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <h4 className="first-side-header">
-                    Aasana Gyanam (Practical Exam)
-                  </h4>
-                  <p className="first-sem-content">
-                    Students are required to properly demonstrate a mudra, an
-                    asana and it’s alter asana that is given to them during the
-                    examination. Then they have to write the procedure,
-                    conditions and warning to be considered, physical benefits
-                    and their spiritual benefit respectively and submit them.
-                  </p>
+                  <div>
+                    <h4 className="first-side-header">
+                      Aasana Gyanam (Practical Exam)
+                    </h4>
+                    <p className="first-sem-content">
+                      Students are required to properly demonstrate a mudra, an
+                      asana and it’s alter asana that is given to them during
+                      the examination. Then they have to write the procedure,
+                      conditions and warning to be considered, physical benefits
+                      and their spiritual benefit respectively and submit them.
+                    </p>
+                  </div>
                 </div>
                 <div
                   className="col-lg-3 sem1-images order-lg-1"
