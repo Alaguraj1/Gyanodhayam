@@ -33,8 +33,8 @@ const Header = ({ className = "" }) => {
               >
                 <div className="logo">
                   <Link to="/" className="gyanodhayam-logo">
-                    <img src={brandLogo} alt="brand" width="10%" />
                     GYANODHAYAM
+                    <img src={brandLogo} alt="brand" width="10%" style={{paddingLeft:"3px"}} />
                   </Link>
                 </div>
                 <div className="header-row1-col2">
@@ -42,7 +42,10 @@ const Header = ({ className = "" }) => {
                     className="find-location"
                     style={{ margin: "0px", fontSize: "14px" }}
                   >
-                    <Link to="https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true" target="_blank">
+                    <Link
+                      to="https://docs.google.com/forms/d/1oFh8-Fa5J48bpAL-Ebet3PqNtV85H4DzJxLCEXHzuUE/viewform?pli=1&pli=1&edit_requested=true"
+                      target="_blank"
+                    >
                       Willing to Participate
                     </Link>{" "}
                     | <Link to="/our-centers">Find our centre</Link>

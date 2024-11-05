@@ -14,7 +14,7 @@ import thavam from "../../assets/images/Courses/education/course-2nd-sem/thava-g
 import karma from "../../assets/images/Courses/education/course-2nd-sem/karma-gyanam.jpg";
 import Ozhukam from "../../assets/images/Courses/education/course-2nd-sem/ozhukam.jpg";
 import viva from "../../assets/images/Courses/education/course-2nd-sem/viva-ora-exam.jpg";
-
+import VanavanVazhi from "../../assets/images/Courses/education/course-2nd-sem/vanavan-vazhi.jpg"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -101,10 +101,12 @@ const Courses4 = () => {
                 </p>
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-9 text-align order-lg-2">
+            <div className="row" style={{ paddingBottom: "20px" }}>
+              <div
+                className="col-lg-9 text-align order-lg-2"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <div
-                  style={{ paddingBottom: "20px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
@@ -130,10 +132,12 @@ const Courses4 = () => {
                 <img src={manam} alt="manam" className="width-100" />
               </div>
             </div>
-            <div className="row">
-              <div className="col-lg-9 text-align order-lg-2">
+            <div className="row" style={{ paddingBottom: "20px" }}>
+              <div
+                className="col-lg-9 text-align order-lg-2"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <div
-                  style={{ paddingBottom: "20px" }}
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
@@ -214,49 +218,41 @@ const Courses4 = () => {
                   </p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
-                  <div
-                    style={{ paddingBottom: "20px" }}
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="1200"
-                  >
-                    <h5 className="second-side-subHeader">Guru</h5>
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      data-aos-duration="1200"
+                    >
+                      <h5 className="second-side-subHeader">Guru</h5>
 
-                    <p className="second-sem-content">
-                      Who is Guru? Guru - the mirror? What is the Guru going to
-                      be like? Guru &#39;s duty, How to select a Guru? The
-                      condition of a real Guru, Guru- The messenger of God,
-                      relationship between Guru and disciple, Guru who make us
-                      to realize divinity, ways of approaching Guru, honouring
-                      Guru, sincere devotion to Guru, simplicity of Guru,
-                      lineage of Guru, education system of Guru, Betraying Guru,
-                      offering to Guru, renunciation of Guru, Eminence of Guru,
-                      Surrendering to Guru, Grace of Guru is the Grace of God
-                    </p>
-                  </div>
-                  <img
-                    src={flower_2}
-                    alt="illustration"
-                    className="sem1-flower-image-2"
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="1200"
-                  />
-                  <div
-                    style={{ paddingBottom: "20px" }}
-                    data-aos="fade-up"
-                    data-aos-delay="300"
-                    data-aos-duration="1200"
-                  >
-                    <h5 className="second-side-subHeader">Steps towards God</h5>
-                    <p className="second-sem-content">
-                      It is the compilation of 365 thoughts on Physique, Mind,
-                      Society, Soul, Guru and God written by our Guruji. These
-                      thoughts are meant to open ones mind and help one to
-                      experience God in life.
-                    </p>
+                      <p className="second-sem-content">
+                        Who is Guru? Guru - the mirror? What is the Guru going
+                        to be like? Guru &#39;s duty, How to select a Guru? The
+                        condition of a real Guru, Guru- The messenger of God,
+                        relationship between Guru and disciple, Guru who make us
+                        to realize divinity, ways of approaching Guru, honouring
+                        Guru, sincere devotion to Guru, simplicity of Guru,
+                        lineage of Guru, education system of Guru, Betraying
+                        Guru, offering to Guru, renunciation of Guru, Eminence
+                        of Guru, Surrendering to Guru, Grace of Guru is the
+                        Grace of God
+                      </p>
+                    </div>
+                    <img
+                      src={flower_2}
+                      alt="illustration"
+                      className="sem1-flower-image-2"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      data-aos-duration="1200"
+                    />
+                   
                   </div>
                 </div>
                 <div
@@ -269,15 +265,52 @@ const Courses4 = () => {
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
+                  <div>
+                  
+                    <div
+                      style={{ paddingBottom: "20px" }}
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                      data-aos-duration="1200"
+                    >
+                      <h5 className="second-side-subHeader">
+                        Steps towards God
+                      </h5>
+                      <p className="second-sem-content">
+                        It is the compilation of 365 thoughts on Physique, Mind,
+                        Society, Soul, Guru and God written by our Guruji. These
+                        thoughts are meant to open ones mind and help one to
+                        experience God in life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="col-lg-3 sem1-images order-lg-1"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
+                  <img src={VanavanVazhi} alt="guru" className="width-100" />
+                </div>
+              </div>
+
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <div
-                    style={{ paddingBottom: "20px" }}
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
                   >
-                    <h5 className="second-side-subHeader">Kailaagai</h5>
+                    <h5 className="second-side-subHeader">Kailaagai:</h5>
                     <p className="second-sem-content">
                       This is a handy guide. It is the collection of our
                       Guruji’s 108 thoughts that are given in a simple one-line
@@ -295,15 +328,17 @@ const Courses4 = () => {
                   <img src={Kailaagai} alt="guru" className="width-100" />
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <div
-                    style={{ paddingBottom: "20px" }}
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
                   >
-                    <h5 className="second-side-subHeader">Guru Vaasam</h5>
+                    <h5 className="second-side-subHeader">Guru Vaasam:</h5>
                     <p className="second-sem-content">
                       It is the collection of valuable lessons from our Guruji.
                       A collection of advice given by Guruji to approach life in
@@ -320,15 +355,17 @@ const Courses4 = () => {
                   <img src={guruvasam} alt="guru" className="width-100" />
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <div
-                    style={{ paddingBottom: "20px" }}
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
                   >
-                    <h5 className="second-side-subHeader">Ariyamugam</h5>
+                    <h5 className="second-side-subHeader">Ariyamugam:</h5>
                     <p className="second-sem-content">
                       A collection of experiences of the disciples who travelled
                       in the spiritual path with our Guruji. A synopsis that may
@@ -389,15 +426,16 @@ const Courses4 = () => {
                   </p>
                 </div>
               </div>
-              <div className="row">
+              <div className="row" style={{ paddingBottom: "20px" }}>
                 <div
                   className="col-lg-9 text-align order-lg-2"
                   data-aos="fade-up"
                   data-aos-delay="300"
                   data-aos-duration="1200"
+                  style={{ display: "flex", alignItems: "center" }}
                 >
-                  <div style={{ paddingBottom: "20px" }}>
-                    <h5 className="second-side-subHeader">Thavam</h5>
+                  <div>
+                    <h5 className="second-side-subHeader">Thavam:</h5>
                     <p className="second-sem-content">
                       Why meditation? the necessity and benefits of meditation,
                       types of meditation, procedures of meditation, and its
@@ -457,15 +495,17 @@ const Courses4 = () => {
                   </p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+              <div className="row" style={{ paddingBottom: "20px" }}>
+                <div
+                  className="col-lg-9 text-align order-lg-2"
+                  style={{ display: "flex", alignItems: "center" }}
+                >
                   <div
-                    style={{ paddingBottom: "20px" }}
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
                   >
-                    <h5 className="second-side-subHeader">Karma</h5>
+                    <h5 className="second-side-subHeader">Karma:</h5>
                     <p className="second-sem-content">
                       What is Karma? Its types, how is it stored? , thought and
                       action, action and its effect, Vinaiyai Theerka, analysis
@@ -491,15 +531,15 @@ const Courses4 = () => {
                 </div>
               </div>
 
-              <div className="row">
-                <div className="col-lg-9 text-align order-lg-2">
+              <div className="row"  style={{ paddingBottom: "20px" }}>
+                <div className="col-lg-9 text-align order-lg-2" style={{display: "flex", alignItems: "center"}}>
                   <div
-                    style={{ paddingBottom: "20px" }}
+                   
                     data-aos="fade-up"
                     data-aos-delay="300"
                     data-aos-duration="1200"
                   >
-                    <h5 className="second-side-subHeader">Ozhukkam</h5>
+                    <h5 className="second-side-subHeader">Ozhukkam:</h5>
                     <p className="second-sem-content">
                       A set of methods and ethics for a man to live physically
                       and mentally without harming himself and others in the

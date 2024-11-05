@@ -13141,7 +13141,7 @@ body .theme-btn-eighteen:hover:before {
   height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 75px;
@@ -13757,6 +13757,7 @@ body .theme-btn-eighteen:hover:before {
 @media (max-width: 768px) {
   .home-page-main-banner {
     height: 50vh;
+    align-items: end;
   }
 }
 

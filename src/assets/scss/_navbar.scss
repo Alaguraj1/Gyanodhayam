@@ -1257,12 +1257,13 @@ li {
 .banner-header {
   color: white;
   font-family: "archerpromedium_italic";
+  font-size: 40px;
 }
 
 .banner-subHeader {
   color: white;
   font-family: "archerpromedium_italic";
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .qoutes-outer {
@@ -1576,8 +1577,7 @@ li {
 }
 
 .banner-content-outer {
-  text-align: center;
-}
+padding:0px 30px;}
 
 // founder
 
@@ -1850,6 +1850,11 @@ li {
   width: 100%;
 }
 
+.founder-booksec-subhead{
+  font-family: "archerpromedium";
+  font-size: 20px;
+  color: #f58f44;
+}
 @media (max-width: 1024px) {
   .flower-image-outer {
     left: 125px;
@@ -1867,6 +1872,10 @@ li {
 
   .flower-image-outer-4 {
     opacity: 0.3;
+  }
+
+  .banner-header {
+    font-size: 36px;
   }
 }
 
@@ -1904,7 +1913,7 @@ li {
   }
 
   .banner-header {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .qoutes-outer {

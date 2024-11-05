@@ -167,7 +167,6 @@ export const sortContent = (content) => {
     : content;
 };
 
-
 export const OurCenters = {
   south: [
     {
@@ -396,10 +395,71 @@ export const OurCenters = {
   ],
 };
 
-
-export const capitalizeFLetter = (string = '') => {
+export const capitalizeFLetter = (string = "") => {
   if (string.length > 0) {
-      return string.charAt(0).toUpperCase() + string.slice(1);
+    return string.charAt(0).toUpperCase() + string.slice(1);
   }
   return string;
 };
+
+export const FounderListTamilBook = [
+  { id: 1, title: "Udal" },
+  { id: 2, title: "Udal Padhukappu" },
+  { id: 3, title: "Udal Payirchi" },
+  { id: 4, title: "Mudras" },
+  { id: 5, title: "Nalan Muraisei" },
+  { id: 6, title: "Uyirai kakkum unave marundhu" },
+  { id: 7, title: "Guru" },
+  { id: 8, title: "Guruvasam - part 1" },
+  { id: 9, title: "Guruvasam - part 2" },
+  { id: 10, title: "Kelvi Gyanam - part 1" },
+  { id: 11, title: "Kelvi Gyanam - part 2" },
+  {
+    id: 12,
+    title: "Ariyamugam (Experience with Guruji - shared by Guruji's Disciples)",
+  },
+  { id: 13, title: "Vanavan Vazhi (Written in Tamil & English)" },
+  { id: 14, title: "Kailaagai" },
+  { id: 15, title: "Thavam" },
+  { id: 16, title: "Gunam" },
+  { id: 17, title: "Manam" },
+  { id: 18, title: "Karma" },
+  { id: 19, title: "Nalam Vazha" },
+  { id: 20, title: "Asareeri" },
+  { id: 21, title: "Olukkam" },
+  { id: 22, title: "Unmei Virumbhi Malar" },
+];
+
+export const FounderListOfTamilSpeach = [
+  { id: 1, title: "Amaidhi" },
+  { id: 2, title: "Ooivu" },
+  { id: 3, title: "Puthunarchi" },
+  { id: 4, title: "Noi Thavirka" },
+  { id: 5, title: "Maghilchi" },
+  { id: 6, title: "Sahasraharam" },
+  { id: 7, title: "Kailaagai" },
+  { id: 8, title: "Kobam" },
+  { id: 9, title: "Thavam" },
+  { id: 10, title: "Karma" },
+  { id: 11, title: "Thai thandhai mariyadhai" },
+  { id: 12, title: "Unmei Aridhal" },
+];
+
+export const FounderListOfEnglishSpeach = [
+  { id: 1, title: "Present" },
+  { id: 2, title: "Relationship" },
+  { id: 3, title: "Identify Yourself" },
+  { id: 4, title: "Be Healthy" },
+  { id: 5, title: "Respect" },
+];
+
+export const FounderListOfMusicCD = [
+  { id: 1, title: "Om" },
+  { id: 2, title: "Om Namashivaya" },
+  { id: 3, title: "Iraicel 1" },
+  { id: 4, title: "Iraicel 2" },
+  { id: 5, title: "Surabhi" },
+  { id: 6, title: "Guru Saran" },
+  { id: 7, title: "Guru Bhajan" },
+  { id: 8, title: "Music to mute sick" },
+];
