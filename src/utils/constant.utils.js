@@ -414,12 +414,10 @@ export const FounderListTamilBook = [
   { id: 9, title: "Guruvasam - part 2" },
   { id: 10, title: "Kelvi Gyanam - part 1" },
   { id: 11, title: "Kelvi Gyanam - part 2" },
-  {
-    id: 12,
-    title: "Ariyamugam (Experience with Guruji - shared by Guruji's Disciples)",
-  },
-  { id: 13, title: "Vanavan Vazhi (Written in Tamil & English)" },
-  { id: 14, title: "Kailaagai" },
+  { id: 12, title: "Kailaagai" },
+  { id: 13, title: "Ariyamugam (Experience with Guruji - shared by Guruji's Disciples)" },
+  { id: 14, title: "Vanavan Vazhi (Written in Tamil & English)" },
+
   { id: 15, title: "Thavam" },
   { id: 16, title: "Gunam" },
   { id: 17, title: "Manam" },
