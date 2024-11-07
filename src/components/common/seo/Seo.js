@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet-async";
 const Seo = ({ title }) => {
   return (
     <Helmet>
-      <title>{title} - GYANODHAYAM</title>
+      <title>{title} - Gyanodhayam Educational Trust</title>
       <meta
         name="description"
         content="Web site created using create-react-app"

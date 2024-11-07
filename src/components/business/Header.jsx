@@ -33,8 +33,26 @@ const Header = ({ className = "" }) => {
               >
                 <div className="logo">
                   <Link to="/" className="gyanodhayam-logo">
-                    GYANODHAYAM
-                    <img src={brandLogo} alt="brand" width="10%" style={{paddingLeft:"3px"}} />
+                    <img
+                      src={brandLogo}
+                      alt="brand"
+                      width="12%"
+                      style={{ paddingLeft: "3px" }}
+                    />
+                    <div style={{ display: "flex", flexDirection: "column", paddingLeft:"3px" }}>
+                      <p style={{ marginBottom: "0px", lineHeight: "15px" }}>
+                        GYANODHAYAM
+                      </p>
+
+                      <span
+                        style={{
+                          fontSize: "14px",
+                          lineHeight: "12px",letterSpacing:"1.3px"
+                        }}
+                      >
+                        Educational Trust
+                      </span>
+                    </div>
                   </Link>
                 </div>
                 <div className="header-row1-col2">

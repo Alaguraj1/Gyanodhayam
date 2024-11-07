@@ -68,7 +68,7 @@ const ServicesActivitiesContent = () => {
               <h3 className="intro-title">Service Activities</h3>
               <p className="intro-content">
                 Service plays a major part in spiritual practice and it is an
-                integral culture of Gyanodhayam.
+                integral culture of Gyanodhayam Educational Trust.
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ const ServicesActivitiesContent = () => {
           >
             <p className="first-sem-top " style={{ textAlign: "center" }}>
               Service plays a major part in spiritual practice and it is an
-              integral culture of Gyanodhayam. we derive lot of things from our
+              integral culture of Gyanodhayam Educational Trust. we derive lot of things from our
               society and it is our responsibility to give it back and thank
               them through our service activities.
             </p>
@@ -146,7 +146,7 @@ const ServicesActivitiesContent = () => {
                 <div>
                   <ul className="first-sem-list tick-icon linkyear">
                     <h3 className="services-title">Service Activities</h3>
-                    <p>Gyanodhayam has a history of dedicated service from 2007, with impactful initiatives spanning multiple years. Explore some of our recent activities and discover the difference we've made.</p>
+                    <p>Gyanodhayam Educational Trust has a history of dedicated service from 2007, with impactful initiatives spanning multiple years. Explore some of our recent activities and discover the difference we've made.</p>
                     {category &&
                       category.map((childCategory) => (
                         <div key={childCategory.id}>

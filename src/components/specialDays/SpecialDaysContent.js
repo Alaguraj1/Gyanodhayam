@@ -28,8 +28,9 @@ const SpecialDaysContent = () => {
             <div className="intro-outer">
               <h3 className="intro-title">Special Days</h3>
               <p className="intro-content">
-                In Gyanodhayam, we dedicate each Saturday for a special purpose
-                to improve and equip our self against all possibilities.
+                In Gyanodhayam Educational Trust, we dedicate each Saturday for
+                a special purpose to improve and equip our self against all
+                possibilities.
               </p>
             </div>
           </div>
@@ -61,11 +62,11 @@ const SpecialDaysContent = () => {
             }}
           >
             <p className="first-sem-top " style={{ textAlign: "center" }}>
-              The Gyanodhayam Educational Trust syllabus is systematically
-              divided into 10 subjects with their set of practical’s and is
-              combined into a graduation course. The students who clear this
-              exam are qualified to become a Gyanodhayam Educational Trust
-              teacher.
+              The Gyanodhayam Educational Trust Educational Trust syllabus is
+              systematically divided into 10 subjects with their set of
+              practical’s and is combined into a graduation course. The students
+              who clear this exam are qualified to become a Gyanodhayam
+              Educational Trust Educational Trust teacher.
             </p>
             <ul className="first-sem-list tick-icon">
               <li>

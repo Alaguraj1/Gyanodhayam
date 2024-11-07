@@ -63,7 +63,7 @@ const LifeInGyanodhayamContent = () => {
               </h3>
 
               <p className="course2-content" style={{ textAlign: "center" }}>
-                As part of Gyanodhayam society, we not only get to practice
+                As part of Gyanodhayam Educational Trust society, we not only get to practice
                 disciplined life style every day but also get lot of chances to
                 involve in variety of activities to serve the mankind and help
                 them to lead a healthy and happier life.
@@ -159,7 +159,7 @@ const LifeInGyanodhayamContent = () => {
                   <h4 className="course2-title">Service Activities</h4>
                   <p className="course2-content">
                     Service plays a major part in spiritual practice and it is
-                    an integral culture of Gyanodhayam. we derive lot of things
+                    an integral culture of Gyanodhayam Educational Trust. we derive lot of things
                     from our society and it is our responsibility to give it
                     back and thank them through our service activities.
                   </p>
@@ -197,7 +197,7 @@ const LifeInGyanodhayamContent = () => {
                   />
                   <h4 className="course2-title">Special Days</h4>
                   <p className="course2-content">
-                    In Gyanodhayam, we dedicate each Saturday for a special
+                    In Gyanodhayam Educational Trust, we dedicate each Saturday for a special
                     purpose to improve and equip our self against all
                     possibilities.
                   </p>
@@ -236,7 +236,7 @@ const LifeInGyanodhayamContent = () => {
                   />
                   <h4 className="course2-title">Group Activities</h4>
                   <p className="course2-content">
-                    The members of gyanodhayam along with their family members
+                    The members of Gyanodhayam Educational Trust along with their family members
                     celebrate the day with fun filled activities and games along
                     with a spiritual touch.
                   </p>

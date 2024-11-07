@@ -449,7 +449,7 @@ const Courses2 = () => {
                   data-aos-duration="1200"
                 >
                   For humans, the mind is a mystery that is still beyond our
-                  understanding. Gyanodhayam advises us not to run outside to
+                  understanding. Gyanodhayam Educational Trust advises us not to run outside to
                   control one&#39;s minds, but instead to sit and bloom within
                   oneself. Many of our lessons have been well-focused
                   on-introduction to the mind; what the mind is all about; the
@@ -569,7 +569,7 @@ const Courses2 = () => {
                   become our relatives. Our classes focus on building good
                   relationships, emphasize their needs, problems that occur in
                   relationships, and its solution, ways to build good
-                  relationships. Gyanodhayam emphasizes the goodness of adapting
+                  relationships. Gyanodhayam Educational Trust emphasizes the goodness of adapting
                   spirituality while being in the family.
                 </p>
 

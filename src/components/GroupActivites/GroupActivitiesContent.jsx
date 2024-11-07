@@ -23,7 +23,7 @@ const GroupActivitiesContent = () => {
             <div className="intro-outer">
               <h3 className="intro-title">Group Activities</h3>
               <p className="intro-content">
-                In Gyanodhayam, we dedicate each Saturday for a special purpose
+                In Gyanodhayam Educational Trust, we dedicate each Saturday for a special purpose
                 to improve and equip our self against all possibilities.
               </p>
             </div>
@@ -73,7 +73,7 @@ const GroupActivitiesContent = () => {
                 <div className="text-align" style={{ paddingBottom: "20px" }}>
                   <h5 className="first-side-subHeader">Family Day:</h5>
                   <p className="first-sem-exam text-align">
-                    The members of gyanodhayam along with their family members
+                    The members of Gyanodhayam Educational Trust along with their family members
                     celebrate the day with fun filled activities and games along
                     with a spiritual touch.
                   </p>
@@ -101,7 +101,7 @@ const GroupActivitiesContent = () => {
                   <div>
                     <h5 className="first-side-subHeader">Convocation Day:</h5>
                     <p className="first-sem-exam text-align">
-                      At the end of each gyanodhayam batch, all the students who
+                      At the end of each Gyanodhayam Educational Trust batch, all the students who
                       have finished the classes are taken to trekking to give
                       them an experience which tests both their mental and
                       physical strengths.
