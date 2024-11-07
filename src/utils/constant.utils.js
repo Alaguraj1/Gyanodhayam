@@ -14,9 +14,7 @@ import Third3 from "../assets/images/photos/img-1.jpg";
 // testimonial Images
 import elementum from "../assets/images/testimonial/img-1.jpg";
 import gravida from "../assets/images/testimonial/img-2.jpg";
-import faucibus from "../assets/images/testimonial/img-3.jpg";
-import turpis from "../assets/images/testimonial/img-4.jpg";
-import faucibus_nisl from "../assets/images/testimonial/img-5.jpg";
+
 
 export const Gallery_Data = [
   {
