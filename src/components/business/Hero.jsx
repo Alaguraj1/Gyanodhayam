@@ -39,7 +39,7 @@ const Hero = () => {
             data-aos-duration="1200"
           >
             <div className="jai-guru-1">
-              <h3 className="hero-heading-1  theme-mb-0">Gyanodhayam</h3>
+              <h3 className="hero-heading-1  theme-mb-0">Gyanodhayam Educational Trust</h3>
               <p className="hero-sub-heading-1">
                 “By Understanding the Ultimate Truth by realizing the Soul, We
                 will attain the Ultimate Joy in Life”. Gyanodhayam Educational
