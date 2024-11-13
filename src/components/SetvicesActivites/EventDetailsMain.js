@@ -77,10 +77,10 @@ const EventDetailsMain = ({ slug, categorys }) => {
       <div className="blog-section-four mt-50 lg-mt-50">
         <div className="container">
           <div className="row">
-            <div className="col-lg-3 col-md-4 col-sm-12 col-12">
+            <div className="col-lg-3 col-md-4 col-sm-12 col-12 service-left-content">
               <div
                 className="sticky"
-                style={{ background: "#f6d9c5", padding: "20px" }}
+                style={{ background: "rgb(255 250 247)", padding: "20px" }}
               >
                 <h4 className="mb-10 course2-title">Events</h4>
                 <ul
@@ -240,8 +240,8 @@ const EventDetailsMain = ({ slug, categorys }) => {
                       }} // Navigate to the previous post
                       className="btn btn-secondary me-2"
                       style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
+                        backgroundColor: "#606060",
+                        borderColor: "#606060",
                         fontSize: "14px",
                       }}
                       data-toggle="tooltip"
@@ -262,8 +262,8 @@ const EventDetailsMain = ({ slug, categorys }) => {
                       }} // Navigate to the next post
                       className="btn btn-secondary ms-2"
                       style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
+                        backgroundColor: "#606060",
+                        borderColor: "#606060",
                         fontSize: "14px",
                       }}
                       data-toggle="tooltip"

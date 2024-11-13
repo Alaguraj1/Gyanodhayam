@@ -149,8 +149,8 @@ const TestimonialContent = () => {
           disabled={currentPage === 1}
           className="page-button"
           style={{
-            backgroundColor: "black",
-            borderColor: "black",
+            backgroundColor: "#606060",
+            borderColor: "#606060",
             fontSize: "14px",
             padding: "5px 12px",
             margin: "0 5px",
@@ -196,8 +196,8 @@ const TestimonialContent = () => {
           disabled={currentPage === totalPages}
           className="page-button"
           style={{
-            backgroundColor: "black",
-            borderColor: "black",
+            backgroundColor: "#606060",
+            borderColor: "#606060",
             fontSize: "14px",
             padding: "5px 12px",
             margin: "0 5px",

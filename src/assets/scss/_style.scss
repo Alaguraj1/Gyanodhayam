@@ -13877,13 +13877,18 @@ h2.wp-block-post-title {
   font-family: "archerpromedium";
   margin-top: 20px;
 }
-ul.linkyear li a{color:#f58635 !important; border-bottom:1px solid #fff6f6 !important;}
-ul.linkyear li a:hover{color:#000; border-bottom:0px solid #fff6f6;}
+ul.linkyear li a {
+  color: #f58635 !important;
+  border-bottom: 1px solid #fff6f6 !important;
+}
+ul.linkyear li a:hover {
+  color: #000;
+  border-bottom: 0px solid #fff6f6;
+}
 
-
-.center-input{
+.center-input {
   display: block;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -13893,22 +13898,25 @@ ul.linkyear li a:hover{color:#000; border-bottom:0px solid #fff6f6;}
   background-clip: padding-box;
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .custom-arrow {
- /* font-size: 30px;*/
+  /* font-size: 30px;*/
   color: white; /* Change this color to whatever suits your design */
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Background for better visibility */
-  border-radius:100%; 
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: Background for better visibility */
+  border-radius: 100%;
 }
-
-
 
 .slick-prev {
   left: 10px; /* Adjust position as needed */
@@ -13930,4 +13938,22 @@ img {
   text-decoration-thickness: 2px; /* Adjust thickness of the underline */
   text-underline-offset: 3px; /* Adjust space between the text and underline */
   padding-top: 20px;
+}
+
+.anouncement-right-content {
+  padding-left: 50px;
+}
+
+.service-left-content{
+  padding-right:50px
+}
+
+@media (max-width: 768px) {
+  .anouncement-right-content {
+    padding-left: 0px;
+  }
+
+  .service-left-content{
+    padding-right:0px
+  }
 }

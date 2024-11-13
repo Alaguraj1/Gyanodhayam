@@ -16,7 +16,7 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
 
   const [parentSlugName, setParentSlugName] = useState("");
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPostData = async () => {
@@ -50,10 +50,12 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
       const parentCategory = postData.categories.find((catId) =>
         categories.some((category) => category.id === catId)
       );
-      
+
       // If a matching category is found, set its name
       if (parentCategory) {
-        const parentCategoryData = categories.find((category) => category.id === parentCategory);
+        const parentCategoryData = categories.find(
+          (category) => category.id === parentCategory
+        );
         setParentSlugName(parentCategoryData?.slug); // Set the parentSlugName
       }
     }
@@ -61,7 +63,8 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
 
   // Second useEffect: Fetch posts when parentSlugName is set
   useEffect(() => {
-    if (parentSlugName) { // Only fetch posts if parentSlugName is defined
+    if (parentSlugName) {
+      // Only fetch posts if parentSlugName is defined
       const fetchPosts = async () => {
         try {
           // First, we need to get the category ID for the given slug
@@ -126,14 +129,14 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
     <>
       <div className="container mt-50 mb-50">
         <div className="row">
-          <div className="col-lg-3 col-md-4 col-sm-12">
+          <div className="col-lg-3 col-md-4 col-sm-12 service-left-content">
             {" "}
             <div
               className="sticky"
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1200"
-              style={{ background: "#f6d9c5", padding: "20px" }}
+              style={{ background: "rgb(255 250 247)", padding: "20px" }}
             >
               <h4 className="mb-10 course2-title">Events</h4>
               <ul className="founder-nav-list" style={{ marginBottom: "0px" }}>
@@ -192,7 +195,7 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
           </Link>
         </div> */}
 
-            <div >
+            <div>
               <h3 className="mb-10 course2-title">{postData.title.rendered}</h3>{" "}
               {/* <span
             className="course2-content"
@@ -219,59 +222,58 @@ const EventsFullDetailsMain = ({ slug, categories }) => {
               dangerouslySetInnerHTML={{ __html: postData.content.rendered }}
             />
 
-
-<div
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="300"
-                  style={{ display: "flex", justifyContent: "space-between" }}
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-delay="300"
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
+              {/* Previous and Next buttons */}
+              {getPreviousPost() && (
+                <button
+                  onClick={() => {
+                    const prevSlug = getPreviousPost(); // Get the previous post slug
+                    if (prevSlug) {
+                      setActiveTab(prevSlug); // Update the active tab state
+                      navigate(`/events/${prevSlug}`); // Navigate to the previous post
+                    }
+                  }} // Navigate to the previous post
+                  className="btn btn-secondary me-2"
+                  style={{
+                    backgroundColor: "#606060",
+                    borderColor: "#606060",
+                    fontSize: "14px",
+                  }}
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Previous"
                 >
-                  {/* Previous and Next buttons */}
-                  {getPreviousPost() && (
-                    <button
-                      onClick={() => {
-                        const prevSlug = getPreviousPost(); // Get the previous post slug
-                        if (prevSlug) {
-                          setActiveTab(prevSlug); // Update the active tab state
-                          navigate(`/events/${prevSlug}`); // Navigate to the previous post
-                        }
-                      }} // Navigate to the previous post
-                      className="btn btn-secondary me-2"
-                      style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
-                        fontSize: "14px",
-                      }}
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Previous"
-                    >
-                      <i className="fa fa-arrow-left"></i>
-                    </button>
-                  )}
-                  {getNextPost() && (
-                    <button
-                      onClick={() => {
-                        const nextSlug = getNextPost(); // Get the next post slug
-                        if (nextSlug) {
-                          setActiveTab(nextSlug); // Update the active tab state
-                          navigate(`/events/${nextSlug}`); // Navigate to the next post
-                        }
-                      }} // Navigate to the next post
-                      className="btn btn-secondary ms-2"
-                      style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
-                        fontSize: "14px",
-                      }}
-                      data-toggle="tooltip"
-                      data-placement="top"
-                      title="Next"
-                    >
-                      <i className="fa fa-arrow-right" />
-                    </button>
-                  )}
-                </div>
+                  <i className="fa fa-arrow-left"></i>
+                </button>
+              )}
+              {getNextPost() && (
+                <button
+                  onClick={() => {
+                    const nextSlug = getNextPost(); // Get the next post slug
+                    if (nextSlug) {
+                      setActiveTab(nextSlug); // Update the active tab state
+                      navigate(`/events/${nextSlug}`); // Navigate to the next post
+                    }
+                  }} // Navigate to the next post
+                  className="btn btn-secondary ms-2"
+                  style={{
+                    backgroundColor: "#606060",
+                    borderColor: "#606060",
+                    fontSize: "14px",
+                  }}
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Next"
+                >
+                  <i className="fa fa-arrow-right" />
+                </button>
+              )}
+            </div>
             {/* <div className="text-end">
               <button
                 className="btn btn-primary "

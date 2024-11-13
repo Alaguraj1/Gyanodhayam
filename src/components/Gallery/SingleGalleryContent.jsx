@@ -159,8 +159,8 @@ const SingleGalleryContent = ({ slug, posts }) => {
           disabled={currentPage === 1}
           className="page-button"
           style={{
-            backgroundColor: "black",
-            borderColor: "black",
+            backgroundColor: "#606060",
+            borderColor: "#606060",
             fontSize: "14px",
             padding: "5px 12px",
             margin: "0 5px",
@@ -206,8 +206,8 @@ const SingleGalleryContent = ({ slug, posts }) => {
           disabled={currentPage === totalPages}
           className="page-button"
           style={{
-            backgroundColor: "black",
-            borderColor: "black",
+            backgroundColor: "#606060",
+            borderColor: "#606060",
             fontSize: "14px",
             padding: "5px 12px",
             margin: "0 5px",
@@ -231,7 +231,7 @@ const SingleGalleryContent = ({ slug, posts }) => {
             <div className="col-lg-3 col-md-4 col-sm-12 col-12">
               <div
                 className="sticky"
-                style={{ background: "#f6d9c5", padding: "20px" }}
+                style={{ background: "rgb(255 250 247)", padding: "20px" }}
               >
                 <h4 className="mb-10 course2-title">Gallery</h4>
                 <ul className="founder-nav-list">
@@ -253,7 +253,7 @@ const SingleGalleryContent = ({ slug, posts }) => {
                 </ul>
               </div>
             </div>
-            <div className="col-lg-9 col-md-8 col-sm-12 col-12">
+            <div className="col-lg-9 col-md-8 col-sm-12 col-12 anouncement-right-content">
               {loading ? (
                 <Loading loading={loading} />
               ) : error ? (

@@ -91,9 +91,9 @@ const SingleTestimonialContent = ({ slug, posts }) => {
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="1200"
-              style={{ background: "#f6d9c5", padding: "20px" }}
+              style={{ background: "rgb(255 250 247)", padding: "20px" }}
             >
-              <h4 className="mb-10 course2-title">Announcement & Events</h4>
+              <h4 className="mb-10 course2-title">Testimonials</h4>
               <ul className="founder-nav-list" style={{ marginBottom: "0px" }}>
                 {posts?.map((post) => (
                   <li
@@ -121,7 +121,7 @@ const SingleTestimonialContent = ({ slug, posts }) => {
               </ul>
             </div>
           </div>
-          <div className="col-lg-9 col-md-8 col-sm-12 col-12">
+          <div className="col-lg-9 col-md-8 col-sm-12 col-12 anouncement-right-content">
             {loading ? (
               <Loading loading={loading} />
             ) : error ? (
@@ -191,8 +191,8 @@ const SingleTestimonialContent = ({ slug, posts }) => {
                       }} // Navigate to the previous post
                       className="btn btn-secondary me-2"
                       style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
+                        backgroundColor: "#606060",
+                        borderColor: "#606060",
                         fontSize: "14px",
                       }}
                       data-toggle="tooltip"
@@ -213,8 +213,8 @@ const SingleTestimonialContent = ({ slug, posts }) => {
                       }} // Navigate to the next post
                       className="btn btn-secondary ms-2"
                       style={{
-                        backgroundColor: "#f58635",
-                        borderColor: "#f58635",
+                        backgroundColor: "#606060",
+                        borderColor: "#606060",
                         fontSize: "14px",
                       }}
                       data-toggle="tooltip"
