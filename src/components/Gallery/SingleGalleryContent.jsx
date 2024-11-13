@@ -19,7 +19,7 @@ const SingleGalleryContent = ({ slug, posts }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
 
-  const imagesPerPage = 20;
+  const imagesPerPage = 50;
 
   useEffect(() => {
     const fetchPostData = async () => {
