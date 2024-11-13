@@ -55,7 +55,6 @@ const GalleryContent = () => {
     fetchPosts();
   }, [currentPage]); // Re-fetch posts when currentPage changes
 
-
   // Handle page navigation
   const handlePrevPage = () => {
     if (currentPage > 1) {
@@ -236,6 +235,7 @@ const GalleryContent = () => {
                             <FeatureMediaSingle
                               mediaLink={mediaLink.href}
                               className="js-img-single"
+                              borderRadius="50px 5px"
                             />
                           </Link>
                         )
@@ -248,8 +248,12 @@ const GalleryContent = () => {
                         dangerouslySetInnerHTML={{
                           __html: element.title?.rendered,
                         }}
+                        style={{ paddingTop: "0px" }}
                       ></Link>
-                      <div className="post-info gallery-read-more">
+                      <div
+                        className="post-info gallery-read-more"
+                        style={{ paddingTop: "0px" }}
+                      >
                         <Link
                           to={`/gallery/${element.slug}`}
                           style={{ textDecoration: "underline" }}

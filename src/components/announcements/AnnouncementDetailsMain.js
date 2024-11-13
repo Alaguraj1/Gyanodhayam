@@ -61,14 +61,15 @@ const AnnouncementDetailsMain = ({ slug, posts }) => {
         <div className="col-lg-3 col-md-4 col-sm-12 col-12">
           <div
             className="sticky"
+          
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
             style={{ background: "#f6d9c5", padding: "20px" }}
           >
             <h4 className="mb-10 course2-title">Announcement & Events</h4>
             <ul
-              className="founder-nav-list"
-              data-aos="fade-up"
-              data-aos-delay="300"
-              data-aos-duration="1200"
+               className="founder-nav-list"
               style={{ marginBottom: "0px" }}
             >
               {posts?.map((post) => (
@@ -125,13 +126,13 @@ const AnnouncementDetailsMain = ({ slug, posts }) => {
                   style={{
                     backgroundColor: "rgb(245, 134, 53)",
                     borderColor: "rgb(245, 134, 53)",
-                    marginLeft: "10px",
+                    marginLeft: "10px", fontSize:"14px", lineHeight:"16px"
                   }}
                 >
                   Participate with us
                 </Link>
               </div>
-              <div className="pb-20 text-center">
+              <div>
                 <h3 className="mb-10 course2-title">
                   {postData.title.rendered}
                 </h3>

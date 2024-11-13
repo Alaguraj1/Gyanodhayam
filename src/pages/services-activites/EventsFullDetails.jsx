@@ -11,43 +11,38 @@ import axios from "axios";
 const ServiceActivityPost = () => {
 
   const {slug} = useParams();
+console.log('✌️slug --->', slug);
 
-  const [posts, setPosts] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [category, setCategory] = useState(null);
 
   useEffect(() => {
-    const fetchPosts = async () => {
-      setIsLoading(true);
-      try {
-        // First, we need to get the category ID for the given slug
-        const categoryResponse = await axios.get(
-          `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${slug}`
-        );
+    fetchChildCategories();
+  }, []);
+  const fetchChildCategories = async () => {
+    try {
+      const parentSlug = "service-activity"; // Replace with your parent category slug
 
-        if (categoryResponse.data.length === 0) {
-          throw new Error("Category not found");
-        }
+      // First, fetch the parent category to get its ID
+      const parentRes = await axios.get(
+        `https://file.gyanodhayam.org/wp-json/wp/v2/categories?slug=${parentSlug}`
+      );
 
-        const categoryId = categoryResponse.data[0].id;
-
-        // Now we can fetch posts for this category
-        const postsResponse = await axios.get(
-          `https://file.gyanodhayam.org/wp-json/wp/v2/posts?categories=${categoryId}&per_page=100`
-        );
-
-        setPosts(postsResponse.data);
-      } catch (e) {
-        setError(e.message);
-      } finally {
-        setIsLoading(false);
+      if (parentRes.data.length === 0) {
+        throw new Error("Parent category not found");
       }
-    };
 
-    fetchPosts();
-  }, [slug]);
+      const parentId = parentRes.data[0].id;
 
-  console.log("posts", posts);
+      // Now fetch the child categories
+      const childrenRes = await axios.get(
+        `https://file.gyanodhayam.org/wp-json/wp/v2/categories?parent=${parentId}`
+      );
+
+      setCategory(childrenRes.data); // This will be an array of child categories
+    } catch (err) {
+      console.error("Error fetching child categories: ", err);
+    }
+  };
 
   return (
     <>
@@ -60,7 +55,7 @@ const ServiceActivityPost = () => {
 
         <EventDetailsBannerMain title="Event Details" />
 
-        <EventsFullDetailsMain slug={slug} posts={posts}  />
+        <EventsFullDetailsMain slug={slug} categories={category}  />
 
         <Footer />
       </div>

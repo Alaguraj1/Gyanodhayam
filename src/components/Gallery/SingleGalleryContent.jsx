@@ -325,9 +325,10 @@ const SingleGalleryContent = ({ slug, posts }) => {
                   {/* Pagination Controls */}
                   <div
                     className="pagination-controls text-center mb-30"
-                    data-aos="fade-up"
-                    data-aos-duration="1200"
-                    data-aos-delay="300" style={{paddingTop:"50px"}}
+                    // data-aos="fade-up"
+                    // data-aos-duration="500"
+                    // data-aos-delay="100" 
+                    style={{paddingTop:"30px"}}
                   >
                     {/* Render Page Numbers with Prev and Next Buttons */}
                     {renderPageNumbers()}

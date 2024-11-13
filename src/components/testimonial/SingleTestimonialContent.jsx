@@ -42,7 +42,7 @@ const SingleTestimonialContent = ({ slug, posts }) => {
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
   };
-  
+
   const getPreviousPost = () => {
     const currentIndex = posts.findIndex((post) => post.slug === slug);
     if (currentIndex > 0) {
@@ -50,7 +50,7 @@ const SingleTestimonialContent = ({ slug, posts }) => {
     }
     return null; // No previous post if current post is the first
   };
-  
+
   const getNextPost = () => {
     const currentIndex = posts.findIndex((post) => post.slug === slug);
     if (currentIndex < posts.length - 1) {
@@ -72,7 +72,8 @@ const SingleTestimonialContent = ({ slug, posts }) => {
                 style={{
                   fontSize: "24px",
                   lineHeight: "28 px",
-                  color: "#f0ecec", marginBottom:"0px"
+                  color: "#f0ecec",
+                  marginBottom: "0px",
                 }}
                 dangerouslySetInnerHTML={{
                   __html: postData?.title.rendered,
@@ -87,16 +88,13 @@ const SingleTestimonialContent = ({ slug, posts }) => {
           <div className="col-lg-3 col-md-4 col-sm-12 col-12">
             <div
               className="sticky"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="1200"
               style={{ background: "#f6d9c5", padding: "20px" }}
             >
               <h4 className="mb-10 course2-title">Announcement & Events</h4>
-              <ul
-                className="founder-nav-list"
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-duration="1200"
-                style={{ marginBottom: "0px" }}
-              >
+              <ul className="founder-nav-list" style={{ marginBottom: "0px" }}>
                 {posts?.map((post) => (
                   <li
                     onClick={() => handleTabClick(post.slug)}
@@ -176,6 +174,9 @@ const SingleTestimonialContent = ({ slug, posts }) => {
                 </div>
 
                 <div
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                  data-aos-delay="300"
                   style={{ display: "flex", justifyContent: "space-between" }}
                 >
                   {/* Previous and Next buttons */}

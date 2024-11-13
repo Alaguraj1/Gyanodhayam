@@ -254,11 +254,11 @@ const TestimonialContent = () => {
                     <div style={{ textAlign: "center" }}>
                       <Link
                         to={`/events/${element.slug}`}
-                        className="title gallery-title"
+                        className="title gallery-title" style={{paddingTop:"0px"}}
                       >
                         {element.title.rendered}
                       </Link>
-                      <div className="post-info gallery-read-more">
+                      <div className="post-info gallery-read-more" style={{paddingTop:"5px"}}>
                         <Link
                           to={`/announcements-events/${element.slug}`}
                           style={{ textDecoration: "underline" }}
