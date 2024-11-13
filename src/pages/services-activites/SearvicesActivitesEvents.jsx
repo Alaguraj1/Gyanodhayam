@@ -8,7 +8,7 @@ import EventContent from "../../components/SetvicesActivites/EventContent";
 const ServicesActivitiesEvents = () => {
   return (
     <div className="main-page-wrapper">
-      <Seo title="Special Days" />
+      <Seo title="service-activity" />
 
       <Sidebar />
 

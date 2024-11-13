@@ -160,7 +160,7 @@ const Footer = () => {
         <div className="row copyright-main">
           <div className="col-md-6">
             <p className="footer-copy-content">
-              Copyright 2023 @ Gyanodhayam Educational Trust. Concept By{" "}
+              Copyright 2024 @ Gyanodhayam Educational Trust. Concept By{" "}
               <a href="https://irepute.in/" target="blank">
                 repute
               </a>

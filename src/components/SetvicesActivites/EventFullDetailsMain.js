@@ -3,13 +3,13 @@ import FeatureMediaSingle from "./FeatureMediaSingle";
 import axios from "axios";
 import Loading from "../loader/Loading";
 
-const EventsFullDetailsMain = ({ slug }) => {
+const EventsFullDetailsMain = ({ slug, posts }) => {
+  console.log("✌️posts --->", posts);
   console.log("✌️postData --->", slug);
 
   const [postData, setPostData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
- 
 
   useEffect(() => {
     const fetchPostData = async () => {
@@ -37,13 +37,21 @@ const EventsFullDetailsMain = ({ slug }) => {
     fetchPostData();
   }, [slug]);
 
-  if (loading) return <div><Loading loading={loading} /></div>;
+  if (loading)
+    return (
+      <div>
+        <Loading loading={loading} />
+      </div>
+    );
   if (error) return <div>Error: {error}</div>;
   if (!postData) return <div>No data found for this post.</div>;
   return (
     <>
       <div className="container mt-50 mb-50">
-        {/* <div
+        <div className="row">
+          <div className="col-lg-3 col-md-4 col-sm-12"> </div>
+          <div className="col-lg-9 col-md-8 col-sm-12">
+            {/* <div
           className="text-end"
           style={{
             display: "flex",
@@ -70,40 +78,43 @@ const EventsFullDetailsMain = ({ slug }) => {
             participate with us
           </Link>
         </div> */}
-        <div className="pb-20 text-center">
-          <h3 className="mb-10 course2-title">{postData.title.rendered}</h3>{" "}
-          {/* <span
+
+            <div className="pb-20 text-center">
+              <h3 className="mb-10 course2-title">{postData.title.rendered}</h3>{" "}
+              {/* <span
             className="course2-content"
             style={{ fontSize: "20px", color: "gray" }}
           >
             Date: {new Date(postData.date).toLocaleDateString()}
           </span> */}
-        </div>
+            </div>
 
-        <div
-          className="pb-20"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
-          {postData._links?.["wp:featuredmedia"]?.map((mediaLink) => (
-            <FeatureMediaSingle
-              key={mediaLink.href}
-              mediaLink={mediaLink.href}
-              className="js-img-single"
+            <div
+              className="pb-20"
+              style={{ display: "flex", justifyContent: "center" }}
+            >
+              {postData._links?.["wp:featuredmedia"]?.map((mediaLink) => (
+                <FeatureMediaSingle
+                  key={mediaLink.href}
+                  mediaLink={mediaLink.href}
+                  className="js-img-single"
+                />
+              ))}
+            </div>
+            <div
+              className="course2-content"
+              dangerouslySetInnerHTML={{ __html: postData.content.rendered }}
             />
-          ))}
-        </div>
-        <div
-          className="course2-content"
-          dangerouslySetInnerHTML={{ __html: postData.content.rendered }}
-        />
-        <div className="text-end">
-          <button
-            className="btn btn-primary "
-            onClick={() => window.history.go(-1)}
-            style={{ backgroundColor: "#f58635", borderColor: "#f58635" }}
-          >
-            back
-          </button>
+            <div className="text-end">
+              <button
+                className="btn btn-primary "
+                onClick={() => window.history.go(-1)}
+                style={{ backgroundColor: "#f58635", borderColor: "#f58635" }}
+              >
+                back
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

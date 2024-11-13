@@ -6,7 +6,7 @@ const EventDetailsBannerMain = ({ title }) => {
       <div className="row intro-main">
         <div className="col-12 intro-header">
           <div className="testimonial">
-            <h3 style={{ color: "white" }}>{title}</h3>
+            <h3 style={{ color: "white", marginBottom:"0px" }}>{title}</h3>
           </div>
         </div>
       </div>
