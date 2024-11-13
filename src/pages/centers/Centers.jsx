@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 const Contact = () => {
   AOS.init();
-  
+
   const [searchTerm, setSearchTerm] = useState("");
 
   // Count total centers before filtering
@@ -41,7 +41,10 @@ const Contact = () => {
   });
 
   // Count the number of filtered centers
-  const filteredCentersCount = regions.reduce((total, { centers }) => total + centers.length, 0);
+  const filteredCentersCount = regions.reduce(
+    (total, { centers }) => total + centers.length,
+    0
+  );
   const hasCenters = filteredCentersCount > 0;
 
   return (
@@ -71,8 +74,15 @@ const Contact = () => {
           regions.map(({ regionName, centers }) => (
             <div key={regionName} className="pt-25">
               {centers.length > 0 && (
-                <div>
-                  <h3 className="region-header">{`${capitalizeFLetter(regionName)} Zone`}</h3>
+                <div
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                  data-aos-duration="1200"
+                >
+                  <h3
+                    className="region-header "
+                    style={{ fontFamily: "archerpromedium_italic" }}
+                  >{`${capitalizeFLetter(regionName)} Zone`}</h3>
                   <div className="row">
                     {centers.map((center) => (
                       <div
@@ -84,14 +94,43 @@ const Contact = () => {
                       >
                         <div style={{ display: "flex" }}>
                           <div>
-                            <h3 className="first-side-header">{center.center}</h3>
-                            <ul className="first-sem-list" style={{ listStyle: "none" }}>
-                              <div style={{ display: "flex", alignItems: "start" }}>
-                                <i className="bi bi-geo-alt" style={{ marginRight: "5px", fontWeight: "bold" }}></i>
-                                <li style={{ textTransform: "capitalize" }} dangerouslySetInnerHTML={{ __html: center.address }}></li>
+                            <h3 className="first-side-header">
+                              {center.center}
+                            </h3>
+                            <ul
+                              className="first-sem-list"
+                              style={{ listStyle: "none" }}
+                            >
+                              <div
+                                style={{ display: "flex", alignItems: "start" }}
+                              >
+                                <i
+                                  className="bi bi-geo-alt"
+                                  style={{
+                                    marginRight: "5px",
+                                    fontWeight: "bold",
+                                  }}
+                                ></i>
+                                <li
+                                  style={{ textTransform: "capitalize" }}
+                                  dangerouslySetInnerHTML={{
+                                    __html: center.address,
+                                  }}
+                                ></li>
                               </div>
-                              <div style={{ display: "flex", alignItems: "center" }}>
-                                <i className="bi bi-telephone" style={{ marginRight: "5px", fontWeight: "bold" }}></i>
+                              <div
+                                style={{
+                                  display: "flex",
+                                  alignItems: "center",
+                                }}
+                              >
+                                <i
+                                  className="bi bi-telephone"
+                                  style={{
+                                    marginRight: "5px",
+                                    fontWeight: "bold",
+                                  }}
+                                ></i>
                                 <li>
                                   <Link to={`tel:${center.contactNumber}`}>
                                     {center.contactNumber}
@@ -109,7 +148,10 @@ const Contact = () => {
             </div>
           ))
         ) : (
-          <div className="first-sem-list" style={{ display: "flex", justifyContent: "center" }}>
+          <div
+            className="first-sem-list"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             No Center Found
           </div>
         )}
