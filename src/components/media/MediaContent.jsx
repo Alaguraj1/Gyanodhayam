@@ -29,7 +29,6 @@ import AudioGuru1 from "../../assets/images/media_press/chainthing-om.mp3";
 import AudioGuru2 from "../../assets/images/media_press/om-namasivaya.mp3";
 import AudioGuru3 from "../../assets/images/media_press/unakkum-kuraikal-uladho.mp3";
 import { Link } from "react-router-dom";
-import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 
 const FounderContent = () => {
