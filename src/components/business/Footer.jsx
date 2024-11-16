@@ -16,7 +16,11 @@ const Footer = () => {
   return (
     <div
       className="container-fluid"
-      style={{ backgroundColor: "rgb(248 225 207 / 15%)", paddingTop: "20px", position: "relative" }}
+      style={{
+        backgroundColor: "rgb(248 225 207 / 15%)",
+        paddingTop: "20px",
+        position: "relative",
+      }}
     >
       <div className="container mt-30 ">
         <div className="row footer-row">
@@ -33,15 +37,13 @@ const Footer = () => {
               <div className="quick-link-outer">
                 <h5 className="footer-title">Quick Links</h5>
                 <ul className="footer-list">
-                
                   <li>
                     <Link to="/founder">Founder - Guru</Link>
                   </li>
                   <li>
                     <Link to="/course">Courses</Link>
                   </li>
-                 
-                
+
                   <li>
                     <Link to={"/gallery"}>Gallery</Link>
                   </li>
@@ -75,7 +77,7 @@ const Footer = () => {
             <div>
               <h5 className="footer-title">Need Help?</h5>
               <ul className="footer-list">
-                <li>About Us</li>
+                {/* <li>About Us</li> */}
                 <li>
                   <Link to="/our-centers">Contact Us</Link>
                 </li>
@@ -90,7 +92,7 @@ const Footer = () => {
             data-aos-delay="300"
             data-aos-duration="1200"
           >
-            <div className="footer-newsletter-outer">
+            {/* <div className="footer-newsletter-outer">
               <h5 className="footer-title">Subscribe to newsletter</h5>
               <div className="footer-email-outer">
                 <input
@@ -102,56 +104,59 @@ const Footer = () => {
                   Submit
                 </p>
               </div>
-            </div>
-          </div>
-        </div>
+            </div> */}
 
-        <div className="social-main mt-30 mb-30 ">
-          <div
-            className="social-title-outer"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            data-aos-duration="1200"
-          >
-            <h5 className="connect-width" style={{ paddingBottom: "10px" }}>
-              Connect With Us
-            </h5>
-            <div>
-              <div className="social-icon-outer">
-                <Link
-                  to="https://www.facebook.com/"
-                  target="_blank"
-                  className="social-icons"
-                >
-                  <img src={facebook} alt="facebook" className="social-icons" />
-                </Link>
-                <Link
-                  to="https://www.instagram.com/"
-                  target="_blank"
-                  className="social-icons"
-                >
-                  <img
-                    src={instagram}
-                    alt="instagram"
-                    className="social-icons"
-                  />
-                </Link>
+            <div className="social-main mt-0 mb-0 ">
+              <div className="social-title-outer">
+                <h5 className="connect-width" style={{ paddingBottom: "10px" }}>
+                  Connect With Us
+                </h5>
+                <div>
+                  <div className="social-icon-outer">
+                    <Link
+                      to="https://www.facebook.com/"
+                      target="_blank"
+                      className="social-icons"
+                    >
+                      <img
+                        src={facebook}
+                        alt="facebook"
+                        className="social-icons"
+                      />
+                    </Link>
+                    <Link
+                      to="https://www.instagram.com/"
+                      target="_blank"
+                      className="social-icons"
+                    >
+                      <img
+                        src={instagram}
+                        alt="instagram"
+                        className="social-icons"
+                      />
+                    </Link>
 
-                <Link
-                  to="https://youtube.com/"
-                  target="_blank"
-                  className="social-icons"
-                >
-                  <img src={youtube} alt="youtube" className="social-icons" />
-                </Link>
+                    <Link
+                      to="https://youtube.com/"
+                      target="_blank"
+                      className="social-icons"
+                    >
+                      <img
+                        src={youtube}
+                        alt="youtube"
+                        className="social-icons"
+                      />
+                    </Link>
 
-                <Link
-                  to="https://x.com/"
-                  target="_blank"
-                  className="social-icons"
-                >
-                  <img src={twiter} alt="twiter" className="social-icons" />
-                </Link>
+                    <Link
+                      to="https://x.com/"
+                      target="_blank"
+                      className="social-icons"
+                    >
+                      <img src={twiter} alt="twiter" className="social-icons" />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

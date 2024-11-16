@@ -47,7 +47,7 @@ const Header = ({ className = "" }) => {
                       <span
                         style={{
                           fontSize: "14px",
-                          lineHeight: "12px",letterSpacing:"1.3px"
+                          lineHeight: "12px",letterSpacing:"1.8px"
                         }}
                       >
                         Educational Trust
