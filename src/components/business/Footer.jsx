@@ -64,7 +64,7 @@ const Footer = () => {
                 <li>
                   <Link to="/media">Media & Press</Link>
                 </li>
-                <li>Donate</li>
+                <li> <Link to="/donate">Donate</Link></li>
               </ul>
             </div>
           </div>
@@ -174,13 +174,13 @@ const Footer = () => {
 
           <div className="col-md-3">
             <p className="footer-copy-content" style={{ textAlign: "end" }}>
-              Privacy Policy
+            <Link to="/privacy">  Privacy Policy</Link>
             </p>
           </div>
 
           <div className="col-md-3">
             <p className="footer-copy-content" style={{ textAlign: "end" }}>
-              Terms and Contidions
+            <Link to="/terms-use"> Terms and Contidions</Link>
             </p>
           </div>
         </div>

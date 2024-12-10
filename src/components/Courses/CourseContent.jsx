@@ -239,9 +239,7 @@ const CourseContent = () => {
                     Gyanodhayam Educational Trust Certificate Course
                   </h4>
                   <p className="course2-content">
-                    We are helping client to create WordPress websites with our
-                    talented expert We are helping client to create WordPress
-                    websites with our talented expert.
+                  The class educates on yoga, meditation, art, science, and spirituality. Being born a human is a great boon.  For self-realization, one should fulfill all his duties and remove the karma attached to the soul by following a disciplined lifestyle, which leads to attaining enlightenment through spirituality.
                   </p>
                 </div>
                 <div

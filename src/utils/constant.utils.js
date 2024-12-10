@@ -258,7 +258,7 @@ export const OurCenters = {
       id: 15,
       center: "Tanjavur",
       address:
-        "19, Municipal Colony,<br/> 12th Cross, Medicl College Road,<br/>Tanjavur - 613004.",
+        " No.7, Lakshmi Estate, Rr Nagar, Pudukkottai Road, Thanjavur - 613005.",
       contactNumber: "95974 30336",
     },
     {
@@ -278,7 +278,7 @@ export const OurCenters = {
     {
       id: 18,
       center: "Pudukkottai",
-      address: "54/1 Thiruvalluvar nagar 2nd street,<br/>Pudukkottai - 622104.",
+      address: "TCPS Computer Education, Dhandapanipural 1st Street, Near New Bustand, Pudukkottai- 622001",
       contactNumber: "99942 89195",
     },
     {
@@ -291,7 +291,7 @@ export const OurCenters = {
     {
       id: 20,
       center: "Pattukottai",
-      address: "Froebel school, Near Bus stand,<br/>Pattukottai - 614602.",
+      address: "202, new housing unit, Ponnavarayan kottai, Pattukottai - 614602",
       contactNumber: "97503 58564",
     },
     {
@@ -317,10 +317,10 @@ export const OurCenters = {
     },
     {
       id: 24,
-      center: "Tiruvaiyar",
+      center: "Thiruvaiyaru",
       address:
-        "Saraswathi Ammal Elementary School,<br/> Tamilar mettu street, <br/>Tiruvaiyar - 613204.",
-      contactNumber: "99760 92246",
+        "No. 2, Chinnammal Nagar,  Vellachimandapam, Vilangudi Road, Thiruvaiyaru - 613204.",
+      contactNumber: "99449 21422",
     },
     // More centers...
   ],
@@ -381,7 +381,7 @@ export const OurCenters = {
       id: 30,
       center: "Singapore",
       address:
-        "Blk 133, #04-301 (Room 3)Jurong gateway Road,Singapore - 6001335 mins walk from Jurong East MRT",
+        "Blk 133, #04-301 (Room 3)Jurong gateway Road, Singapore - 600133  ",
       contactNumber: "+65 8430 7024 , +65 90614699",
     },
     {

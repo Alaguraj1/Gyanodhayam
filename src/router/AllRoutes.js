@@ -77,6 +77,11 @@ import EventsFullDetails from "../pages/services-activites/EventsFullDetails";
 import Centers from "../pages/centers/Centers";
 import Annonunsment from "../pages/announsment/Annonunsment";
 import AnnouncementDetails from "../pages/announsment/AnnounsmentDetails";
+import Privacy from "../pages/privacy/Privacy";
+import Donateus from "../pages/donate/Donateus";
+import TermsConditions from "../pages/terms/TermsConditions";
+
+
 const AllRoutes = () => {
   return (
     <>
@@ -97,6 +102,9 @@ const AllRoutes = () => {
         <Route path="/special-days" element={<SpecialDays />} />
         <Route path="/group-activities" element={<GroupActivities />} />
         <Route path="/services-activites" element={<ServicesActivites />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/donate" element={<Donateus />} />
+        <Route path="/terms-use" element={<TermsConditions />} />
         <Route
           path="/services-activites-events"
           element={<SearvicesActivitesEvents />}
